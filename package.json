@@ -1,16 +1,34 @@
 {
   "name": "learn-aviation-v2",
+  "version": "3.0.0",
+  "description": "Learn Aviation | Discover a World of Aviation Training",
+  "author": "Arya Doroudian",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "build:digitalocean": "yarn install && yarn run build"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "nuxt": "^3.5.2",
+    "sass": "^1.63.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/robots": "^3.0.0",
+    "bootstrap": "^5.3.0",
+    "nuxt-gtag": "^0.5.7",
+    "nuxt-simple-sitemap": "^2.7.0"
   }
 }

@@ -14,12 +14,12 @@
           </p>
           <div class="btn-r pt-2">
             <nuxt-link to="classes">
-              <base-button native-type="submit" class="btn animation-on-hover">
-                <span class="pl-2"
+              <button native-type="submit" class="btn animation-on-hover">
+                <span class="ps-2"
                   ><font-awesome-icon :icon="['fas', 'book-reader']"
                 /></span>
                 کلاس های خصوصی
-              </base-button>
+              </button>
             </nuxt-link>
           </div>
         </div>

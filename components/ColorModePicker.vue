@@ -35,7 +35,6 @@ ul {
 ul li {
   display: inline-block;
   padding: 5px;
-  font-size: 1rem;
 }
 p {
   margin: 0;

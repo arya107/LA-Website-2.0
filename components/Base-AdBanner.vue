@@ -16,12 +16,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-:deep .banner-box {
+.banner-box {
   background-color: #fbbc39 !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.02' fill='%23ffffff' cx='45' cy='45' r='5'/%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E") !important;
   direction: rtl !important;
 }
-:deep .banner-card {
+.banner-card {
   justify-content: center !important;
   align-items: center !important;
   padding: 7px 10px !important;

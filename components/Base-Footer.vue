@@ -10,9 +10,9 @@
       </p>
     </div>
 
-    <div class="fixed-bottomm text-center">
+    <!-- <div class="fixed-bottomm text-center">
       <ColorModePicker />
-    </div>
+    </div> -->
   </footer>
 </template>
 

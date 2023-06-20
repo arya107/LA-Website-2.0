@@ -10,6 +10,8 @@
       <Quiz />
     </div> -->
 
+    <ColorModePicker />
+
     <div class="py-3">
       <TopArticles />
       <div class="container">
@@ -26,8 +28,6 @@
     </div>
   </div>
 </template>
-
-<script></script>
 
 <style lang="scss" scoped>
 .page-bg {

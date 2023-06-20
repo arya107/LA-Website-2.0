@@ -1,12 +1,20 @@
 <template>
   <div dir="rtl" class="page">
-    <base-ad-banner />
-    <base-navbar />
+    <!-- <base-ad-banner /> -->
+    <!-- <base-navbar /> -->
     <NuxtPage />
+    <!-- 
+    <div class="fixed-bottomm text-center">
+      <ColorModePicker />
+    </div> -->
 
-    <base-footer />
+    <!-- <base-footer /> -->
   </div>
 </template>
+
+<script setup>
+//
+</script>
 
 <style>
 /* .page {
@@ -14,7 +22,7 @@
   background-color: #f8fafc !important ; 
 } */
 
-.page-enter-active,
+/* .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
 }
@@ -22,5 +30,5 @@
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-}
+} */
 </style>

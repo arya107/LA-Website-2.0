@@ -31,24 +31,29 @@
 
 <style lang="scss" scoped>
 .subheading2 {
-  color: rgb(0, 0, 0) !important;
+  // color: rgb(0, 0, 0) !important;
+  color: var(--color);
 }
 
 .CustomParagraph {
   font-size: 1.13rem !important;
   line-height: 1.8 !important;
-  color: #3f3f3f !important;
+  // color: #3f3f3f !important;
+  color: var(--color);
 }
 
 .regulations {
-  color: #f7fafc !important;
+  // color: #f7fafc !important;
+  color: var(--color);
+
   // padding-right: 1em;
 }
 
 .regulations:hover {
   text-decoration: none !important;
   text-decoration: transparent !important;
-  color: #f7fafc !important;
+  // color: #f7fafc !important;
+  color: var(--color);
 }
 
 @media screen and (max-width: 768px) {

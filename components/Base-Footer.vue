@@ -10,9 +10,9 @@
       </p>
     </div>
 
-    <!-- <div class="fixed-bottomm text-center">
+    <div class="fixed-bottomm text-center">
       <ColorModePicker />
-    </div> -->
+    </div>
   </footer>
 </template>
 
@@ -27,7 +27,9 @@ footer {
 
 .copyright {
   font-size: 0.85em !important;
-  color: rgb(58, 58, 58);
+  // color: rgb(58, 58, 58);
+  color: var(--color);
+
   padding: 1em 0 0.01em 0;
   direction: rtl;
   background-color: #fafbfe !important;
@@ -38,7 +40,8 @@ footer {
 
   a,
   svg:not(:root).svg-inline--fa {
-    color: #027fc2 !important;
+    // color: #027fc2 !important;
+    color: var(--color);
   }
 }
 

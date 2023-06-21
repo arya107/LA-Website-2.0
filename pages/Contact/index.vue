@@ -74,12 +74,15 @@ export default {
 .title {
   font-size: 1.8rem !important;
   font-family: IranSansBold !important;
-  color: rgb(255, 255, 255) !important;
+  // color: rgb(255, 255, 255) !important;
+  color: var(--color);
 }
 
 .subtitle {
   font-size: 1.1rem !important;
-  color: rgb(247, 247, 247) !important;
+  // color: rgb(247, 247, 247) !important;
+  color: var(--color);
+
   padding-top: 6px;
   margin-bottom: 6em !important;
 }
@@ -109,7 +112,9 @@ export default {
 .iconSection a,
 .iconSection p {
   // color: #030437 !important;
-  color: #007fc2 !important;
+  // color: #007fc2 !important;
+  color: var(--color);
+
   font-size: 1.4em;
   text-align: left;
   font-family: IranSans !important;
@@ -117,13 +122,17 @@ export default {
 
 .contact-section .svg-inline--fa {
   // color: #030437 !important;
-  color: #007fc2 !important;
+  // color: #007fc2 !important;
+  color: var(--color);
+
   font-size: 1.4em;
   margin-right: 15px;
 }
 
 .iconSection a:hover {
-  color: #00486f !important;
+  // color: #00486f !important;
+  color: var(--color);
+
   text-decoration: none !important;
 }
 
@@ -146,7 +155,8 @@ export default {
 
   .subtitle {
     font-size: 1rem;
-    color: rgb(218, 218, 218) !important;
+    // color: rgb(218, 218, 218) !important;
+    color: var(--color);
   }
 }
 

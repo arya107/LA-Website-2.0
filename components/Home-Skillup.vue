@@ -37,7 +37,9 @@ export default {};
 
 <style lang="scss" scoped>
 .section {
-  color: rgb(58, 58, 58);
+  // color: rgb(58, 58, 58);
+  color: var(--color);
+
   font-size: 1em;
   padding-bottom: 2em;
 }
@@ -46,6 +48,7 @@ export default {};
   font-size: 3rem;
   // color: #ec2588;
   color: #027fc2;
+
   display: block;
 }
 </style>

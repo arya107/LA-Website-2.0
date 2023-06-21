@@ -216,7 +216,6 @@ export default {
 
 <style lang="scss" scoped>
 .private-classes-background {
-  // background-color: #030437 !important;
   background-color: #182146 !important;
 }
 
@@ -225,12 +224,10 @@ export default {
   font-size: 13px;
   width: 100%;
   padding: 9px 0;
-  // background: #027fc2 !important;
-  // background: #432cd5 !important;
-  // background: #f8fafc !important;
-  // color: #64748b !important;
   background: #027fc2 !important;
-  color: #fff !important;
+  // color: #fff !important;
+  color: var(--color);
+
   border: 1px solid #0476b4 !important;
 
   font-family: IranSansBold !important;
@@ -238,13 +235,16 @@ export default {
 
 .custom-title {
   font-size: 1.8rem !important;
-  color: #fff !important;
+  // color: #fff !important;
+  color: var(--color);
+
   font-family: IranSansBold !important;
 }
 
 .section-header {
   font-size: 1.5rem;
-  color: white;
+  // color: white;
+  color: var(--color);
 }
 
 .bold {

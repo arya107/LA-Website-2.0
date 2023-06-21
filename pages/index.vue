@@ -10,8 +10,6 @@
       <Quiz />
     </div> -->
 
-    <ColorModePicker />
-
     <div class="py-3">
       <TopArticles />
       <div class="container">
@@ -30,9 +28,9 @@
 </template>
 
 <style lang="scss" scoped>
-.page-bg {
-  background-color: #f8fafc !important ;
-}
+// .page-bg {
+//   background-color: #f8fafc !important ;
+// }
 
 .custom-padding {
   padding-top: 40px !important;

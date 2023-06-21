@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   css: [
     '~/assets/styles/main.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/styles/dark.scss',
   ],
 
   components: { global: true, dirs: ['~/components'] },
@@ -34,6 +35,7 @@ export default defineNuxtConfig({
   // },
 
   devtools: {
-    enabled: true,
+    // enabled: true,
+    enabled: false,
   },
 });

@@ -111,14 +111,18 @@ export default {
 
 .page-title {
   font-size: 1.8rem !important;
-  color: #181818 !important;
+  // color: #181818 !important;
+  color: var(--color);
+
   font-family: IranSansBold !important;
   text-align: center !important;
   padding-top: 1.5em !important;
 
   p {
     display: block !important;
-    color: #606062 !important;
+    // color: #606062 !important;
+    color: var(--color);
+
     font-size: 1.1rem !important;
     padding-top: 0.9em;
     line-height: 1.7em;
@@ -137,7 +141,8 @@ export default {
   padding: 1em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: #fff;
+  // color: #fff;
+  color: var(--color);
 }
 
 span {
@@ -147,7 +152,9 @@ span {
 }
 
 .card-text {
-  color: rgb(48, 48, 48);
+  // color: rgb(48, 48, 48);
+  color: var(--color);
+
   padding: 1em;
 }
 

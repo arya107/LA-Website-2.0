@@ -50,7 +50,9 @@ export default {
     font-size: 3.8em;
     font-family: 'Arial Black', Arial, sans-serif !important;
     font-weight: bolder;
-    color: #fff;
+    // color: #fff;
+    color: var(--color);
+
     padding-top: 2em;
     direction: ltr !important;
   }
@@ -58,12 +60,15 @@ export default {
   .hero-subtitle {
     font-size: 1.3em;
     font-family: IranSans !important;
-    color: rgba(255, 255, 255, 0.9);
+    // color: rgba(255, 255, 255, 0.9);
+    color: var(--color);
   }
 
   .btn {
     background-color: rgb(247, 247, 247) !important;
-    color: rgb(46, 46, 46);
+    // color: rgb(46, 46, 46);
+    color: var(--color);
+
     border-color: rgb(240, 240, 240) !important;
     padding: 12px 35px !important;
     border-radius: 15px !important;

@@ -128,7 +128,9 @@ ul {
 }
 
 a {
-  color: black !important;
+  // color: black !important;
+  color: var(--color);
+
   text-decoration: none !important;
 }
 
@@ -173,7 +175,8 @@ a:hover {
 
   .custom-nav-link {
     font-size: 1.15em !important;
-    color: rgb(0, 0, 0) !important;
+    // color: rgb(0, 0, 0) !important;
+    color: var(--color);
     text-decoration: none;
     text-align: right;
     margin-right: 0 !important;
@@ -187,6 +190,7 @@ a:hover {
 }
 
 a {
-  color: black;
+  // color: black;
+  color: var(--color);
 }
 </style>

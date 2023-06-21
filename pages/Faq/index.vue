@@ -105,7 +105,9 @@ export default {
 <style scoped lang="scss">
 .bg {
   min-height: 100vh !important;
-  background-color: #fafbfe !important;
+  // background-color: #fafbfe !important;
+  background-color: var(--hero-bg) !important;
+
   // margin-bottom: 20em !important;
 }
 
@@ -132,17 +134,17 @@ export default {
 .card {
   margin-bottom: 1.4em;
   border-radius: 10px;
+  border: none !important;
 }
 
 .card-title {
-  background: #027fc2 !important;
+  background: #fbbc39 !important;
+  color: #0f172a !important;
   font-family: IranSansBold !important;
   font-size: 1rem !important;
   padding: 1em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  // color: #fff;
-  color: var(--color);
 }
 
 span {
@@ -152,10 +154,8 @@ span {
 }
 
 .card-text {
-  // color: rgb(48, 48, 48);
-  color: var(--color);
-
-  padding: 1em;
+  color: #0f172a;
+  padding: 0.4em 1em 1em 1em;
 }
 
 :focus {

@@ -71,14 +71,12 @@ export default {
 .title {
   font-size: 1.8rem !important;
   font-family: IranSansBold !important;
-  // color: rgb(255, 255, 255) !important;
-  color: var(--color);
+  color: var(--color-white);
 }
 
 .subtitle {
   font-size: 1.1rem !important;
-  // color: rgb(247, 247, 247) !important;
-  color: var(--color);
+  color: var(--color-white);
 
   padding-top: 6px;
   margin-bottom: 6em !important;
@@ -89,48 +87,35 @@ export default {
   padding-left: 2em;
 }
 
-// .card-section {
-//   margin: 0;
-//   margin-top: 5rem;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
 .card {
   border-radius: 12px;
   padding-right: 2rem;
   width: 550px;
   margin: auto;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--hero-bg) !important;
+  color: var(--hero-text) !important;
+  border: 4px dashed var(--hero-border) !important;
 }
 
 .iconSection a,
 .iconSection p {
-  // color: #030437 !important;
-  // color: #007fc2 !important;
-  color: var(--color);
-
-  font-size: 1.4em;
+  color: var(--hero-text) !important;
+  font-size: 1.6rem;
   text-align: left;
   font-family: IranSans !important;
+  text-decoration: none !important;
 }
 
 .contact-section .svg-inline--fa {
-  // color: #030437 !important;
-  // color: #007fc2 !important;
-  color: var(--color);
-
+  color: var(--hero-text) !important;
   font-size: 1.4em;
   margin-right: 15px;
 }
 
 .iconSection a:hover {
-  // color: #00486f !important;
-  color: var(--color);
-
-  text-decoration: none !important;
+  color: #fbbc39 !important;
+  text-decoration: underline !important;
 }
 
 @media (max-width: 768px) {

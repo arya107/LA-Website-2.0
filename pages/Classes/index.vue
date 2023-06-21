@@ -1,8 +1,8 @@
 <template>
   <div class="private-classes-background">
-    <div class="container pb-5">
-      <h1 class="text-center custom-title pt-5 pb-2">کلاس های خصوصی ما</h1>
-      <div class="private-classes py-5">
+    <div class="container">
+      <h1 class="text-center custom-title pt-5">کلاس های خصوصی ما</h1>
+      <div class="private-classes pt-5">
         <div class="row pricing">
           <!-- 
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-3">
@@ -135,7 +135,7 @@
                   <!-- <li>نقد فيلم و تاک شو ها</li> -->
                   <li>يادگيری لغات، تلفظ و گرامر</li>
                   <li>تمرين ليسنينگ و مکالمه ATC</li>
-                  <li>آزمون شبيه سازی زبان هوانوردیتون</li>
+                  <!-- <li>آزمون شبيه سازی زبان هوانوردیتون</li> -->
                   <li>آموزش نکات کلیدی مکالمه هوانوردی</li>
                   <!-- <li>آموزش نکات کلیدی و کاربردی مکالمه هوانوردی</li> -->
                   <!-- <li>آموزش نکات کلیدی و کاربردی مکالمه</li> -->
@@ -158,7 +158,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-sm-12 mb-3">
+          <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-mock">
                 <!-- <h3 class="titleSize">Mock Test</h3> -->
@@ -172,7 +172,7 @@
                 <ul>
                   <!-- <li>آزمون شبيه سازی زبان هوانوردیتون</li> -->
                   <li>مشاوره تخصصی</li>
-                  <li>آزمون شبيه سازی</li>
+                  <!-- <li>آزمون شبيه سازی</li> -->
                   <li>مکالمه، توصیف عکس و شنیداری</li>
                   <li>آنالیز نقاط ضعف و قوت زبان آموز</li>
                   <!-- <li>ارائه Certificate of Completion</li> -->
@@ -197,7 +197,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   head() {
     return {
@@ -212,12 +212,12 @@ export default {
     };
   },
 };
-</script>
+</script> -->
 
 <style lang="scss" scoped>
 .private-classes-background {
-  // background-color: #182146 !important;
-  background-color: var(--bg);
+  background-color: var(--hero-bg) !important;
+  min-height: 80vh !important;
 }
 
 .btn {
@@ -225,28 +225,23 @@ export default {
   font-size: 13px;
   width: 100%;
   padding: 9px 0;
-  // background: #027fc2 !important;
-  background-color: var(--bg);
-
-  // color: #fff !important;
-  color: var(--color);
-
+  // background-color: var(--bg);
+  background: #027fc2 !important;
+  background-color: #027fc2 !important;
+  color: var(--color-white);
   border: 1px solid #0476b4 !important;
 
   font-family: IranSansBold !important;
 }
 
 .custom-title {
-  font-size: 1.8rem !important;
-  // color: #fff !important;
-  color: var(--color);
-
+  font-size: 1.6rem !important;
+  color: var(--color-title);
   font-family: IranSansBold !important;
 }
 
 .section-header {
   font-size: 1.5rem;
-  // color: white;
   color: var(--color);
 }
 
@@ -261,7 +256,6 @@ ul {
 }
 
 .private-classes {
-  // padding: 0 8%;
   .pricing {
     position: relative;
   }
@@ -375,12 +369,9 @@ ul {
 
   .bg-alpha {
     background-color: #ff9900 !important;
-    // background-color: #00d2d1 !important;
   }
 
   .bg-mock {
-    // background-color: #574ae2 !important;
-    // background-color: #027fc2 !important;
     background-color: #ff0066 !important;
   }
 
@@ -389,7 +380,6 @@ ul {
   }
 
   .bg-immigration {
-    // background-color: #e63946;
     background-color: #00c875 !important;
   }
 }

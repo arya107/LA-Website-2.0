@@ -1,38 +1,74 @@
-$primary-light-dark: #212e48 !default;
-$text-muted-dark: #565674 !default;
-// color: rgb(148 163 184/1);
-
 :root {
-  --color: #243746;
-  --color-primary: #158876;
-  --color-secondary: #0e2233;
-  --bg: #f3f5f4;
-  --bg-secondary: #fff;
-  --border-color: #ddd;
+  // ORIGINAL
+  // --color: #243746;
+  // --color-primary: #158876;
+  // --color-secondary: #0e2233;
+  // --bg: #f3f5f4;
+  // --bg-secondary: #fff;
+  // --border-color: #ddd;
+
+  // CUSTOM
+  --colour-title: #0f172a;
+  --colour-title-2: #cbd1d8;
+  --color: #1a1a1a;
+  --colour-main: #94a3b8;
+  --color-primary: #007fc2;
+  --color-secondary: #fbbc39;
+  --color-muted: #4db3ea;
+  --color-white: #fff;
+  --bg: #f8fafc;
+  --bg-secondary: #007fc2;
+  --bg-blue: #007fc2;
+  --border-color: #ced0d4;
+  --hero-bg: #007fc2;
+  --hero-text: #fff;
+  --hero-border: #198ecd;
 }
 
 .dark-mode {
+  // ORIGINAL
   // --color: #ebf4f1;
-  // --color: rgb(148 163 184/1);
-  --color: #92929f !important;
-  --color-primary: #41b38a;
-  --color-secondary: #fdf9f3;
+  // --color-primary: #41b38a;
+  // --color-secondary: #fdf9f3;
   // --bg: #091a28;
-  // --bg: #1e1e2d;
-  --bg: #0e172a;
-  --bg-secondary: #071521;
-  --border-color: #0d2538;
+  // --bg-secondary: #071521;
+  // --border-color: #0d2538;
+
+  // CUSTOM
+  --colour-title: #fff;
+  --colour-title-2: #cbd1d8;
+  --color: #d1dae7;
+  --colour-main: #94a3b8;
+  --color-primary: #cdcdde;
+  --color-secondary: #565674;
+  --color-muted: #283e70;
+  --color-white: #fff;
+  --bg: #0f172a;
+  --bg-secondary: #0e2338;
+  --bg-blue: #0f172a;
+  --border-color: #e5e7eb;
+  --hero-bg: #0f172a;
+  --hero-text: #fff;
+  --hero-border: #162340;
 }
 .sepia-mode {
+  // ORIGINAL
+  // --color: #433422;
+  // --color-secondary: #504231;
+  // --bg: #f1e7d0;
+  // --bg-secondary: #eae0c9;
+  // --border-color: #ded0bf;
+
+  // CUSTOM
   --color: #433422;
   --color-secondary: #504231;
-  // --bg: #f1e7d0;
   --bg: #fff0e4;
   --bg-secondary: #eae0c9;
   --border-color: #ded0bf;
 }
 
 body {
+  // ORIGINAL
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--bg);
@@ -42,3 +78,182 @@ body {
 a {
   color: var(--color-primary);
 }
+
+// METRONIC DARK THEME
+
+//
+// Bootstrap & Custom Variables
+// Safely override any variable in _variables.custom.scss
+//
+
+// $gray-100-dark: #1b1b29 !default;
+// $gray-200-dark: #2b2b40 !default;
+// $gray-300-dark: #323248 !default;
+// $gray-400-dark: #474761 !default;
+// $gray-500-dark: #565674 !default;
+// $gray-600-dark: #6d6d80 !default;
+// $gray-700-dark: #92929f !default;
+// $gray-800-dark: #cdcdde !default;
+// $gray-900-dark: #ffffff !default;
+
+// $grays-dark: (
+//   '100': $gray-100-dark,
+//   '200': $gray-200-dark,
+//   '300': $gray-300-dark,
+//   '400': $gray-400-dark,
+//   '500': $gray-500-dark,
+//   '600': $gray-600-dark,
+//   '700': $gray-700-dark,
+//   '800': $gray-800-dark,
+//   '900': $gray-900-dark,
+// ) !default;
+
+// // Bootstrap muted color
+// $text-muted-dark: $gray-500-dark !default;
+
+// // Bootstrap contextual colors
+// // Primary colors
+// $primary-light-dark: #212e48 !default;
+
+// // Secondary colors
+// $secondary-dark: $gray-300-dark !default;
+// $secondary-active-dark: $gray-400-dark !default;
+// $secondary-light-dark: $gray-100-dark !default;
+// $secondary-inverse-dark: $gray-700-dark !default;
+
+// // Light colors
+// $light-dark: $gray-200-dark !default;
+// $light-active-dark: $gray-300-dark !default;
+// $light-inverse-dark: $gray-600-dark !default;
+
+// // Success colors
+// $success-light-dark: #1c3833 !default;
+
+// // Info colors
+// $info-light-dark: #2f264f !default;
+
+// // Warning colors
+// $warning-light-dark: #392f28 !default;
+
+// // Danger colors
+// $danger-light-dark: #3a2434 !default;
+
+// // Dark colors
+// $dark-dark: $gray-900-dark !default;
+// $dark-active-dark: lighten($gray-900-dark, 3%) !default;
+// $dark-light-dark: $gray-200-dark !default;
+// $dark-inverse-dark: $gray-100-dark !default;
+
+// $theme-colors-dark: (
+//   'white': $white,
+//   // custom color type
+//   'light': $light-dark,
+//   'primary': $primary,
+//   'success': $success,
+//   'info': $info,
+//   'warning': $warning,
+//   'danger': $danger,
+//   'dark': $dark-dark,
+//   'secondary': $secondary-dark,
+// ) !default;
+
+// $theme-active-colors-dark: (
+//   'primary': $primary-active,
+//   'secondary': $secondary-active-dark,
+//   'light': $light-active-dark,
+//   'success': $success-active,
+//   'info': $info-active,
+//   'warning': $warning-active,
+//   'danger': $danger-active,
+//   'dark': $dark-active-dark,
+// ) !default;
+
+// $theme-inverse-colors-dark: (
+//   'primary': $primary-inverse,
+//   'secondary': $secondary-inverse-dark,
+//   'light': $light-inverse,
+//   'success': $success-inverse,
+//   'info': $info-inverse,
+//   'warning': $warning-inverse,
+//   'danger': $danger-inverse,
+//   'dark': $dark-inverse-dark,
+// ) !default;
+
+// $theme-light-colors-dark: (
+//   'primary': $primary-light-dark,
+//   'success': $success-light-dark,
+//   'info': $info-light-dark,
+//   'warning': $warning-light-dark,
+//   'danger': $danger-light-dark,
+//   'dark': $dark-light-dark,
+//   'secondary': $secondary-light-dark,
+// ) !default;
+
+// $theme-text-colors-dark: (
+//   'white': $white,
+//   'primary': $primary,
+//   'secondary': $secondary-dark,
+//   'light': $light-dark,
+//   'success': $success,
+//   'info': $info,
+//   'warning': $warning,
+//   'danger': $danger,
+//   'dark': $dark-dark,
+//   'muted': $text-muted-dark,
+//   'gray-100': $gray-100-dark,
+//   'gray-200': $gray-200-dark,
+//   'gray-300': $gray-300-dark,
+//   'gray-400': $gray-400-dark,
+//   'gray-500': $gray-500-dark,
+//   'gray-600': $gray-600-dark,
+//   'gray-700': $gray-700-dark,
+//   'gray-800': $gray-800-dark,
+//   'gray-900': $gray-900-dark,
+// ) !default;
+
+// // Body
+// //
+// // Settings for the `<body>` element.
+// $body-bg-dark: #1e1e2d !default;
+// $body-bg-rgb-dark: to-rgb($body-bg-dark) !default;
+// $body-color-dark: $gray-900-dark !default;
+
+// // Links
+// //
+// // Style anchor elements.
+// $link-color-dark: $primary !default;
+
+// // Components
+// //
+// // Define common padding and border radius sizes and more.
+// $border-color-dark: $gray-200-dark !default;
+// $border-dashed-color-dark: $gray-300-dark !default;
+
+// // Keenthemes hover states
+// $component-hover-color-dark: $primary !default;
+// $component-hover-bg-dark: $gray-100-dark !default;
+
+// // Keenthemes active states
+// $component-active-color-dark: $primary-inverse !default;
+// $component-active-bg-dark: $primary !default;
+
+// // Keenthemes checked states
+// $component-checked-color-dark: $primary-inverse !default;
+// $component-checked-bg-dark: $primary !default;
+
+// $headings-color-dark: $gray-900-dark !default;
+// $blockquote-footer-color-dark: $gray-600-dark !default;
+
+// // Box shadow
+// $box-shadow-xs-dark: 0 0.1rem 0.75rem 0.25rem rgba($black, 0.05) !default;
+// $box-shadow-sm-dark: 0 0.1rem 1rem 0.25rem rgba($black, 0.05) !default;
+// $box-shadow-dark: 0 0.5rem 1.5rem 0.5rem rgba($black, 0.075) !default;
+// $box-shadow-lg-dark: 0 1rem 2rem 1rem rgba($black, 0.1) !default;
+// $box-shadow-inset-dark: inset 0 1px 2px rgba($black, 0.075) !default;
+
+// // Card
+// $card-box-shadow-dark: null !default;
+
+// // Tables
+// $table-striped-bg-dark: rgba($gray-100-dark, 0.75) !default;
+// $table-loading-message-box-shadow-dark: 0px 0px 30px rgba(0, 0, 0, 0.3) !default;

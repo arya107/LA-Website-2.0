@@ -4,7 +4,8 @@
       <NuxtLink class="navbar-brand" to="/">
         <img
           src="~public/img/learn-aviation-logo.svg"
-          width="55"
+          width="45"
+          height="45"
           alt="Learn Aviation Logo"
         />
       </NuxtLink>
@@ -20,53 +21,33 @@
       <div class="collapse navbar-collapse" :class="{ show: navOpen }">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="/"
-              >خانه</NuxtLink
-            >
+            <NuxtLink class="custom-nav-link" to="/">خانه</NuxtLink>
           </li>
 
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="/learn"
-            >
+            <NuxtLink class="custom-nav-link" to="/learn">
               اتاق آموزش
             </NuxtLink>
           </li>
 
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="/classes"
-            >
+            <NuxtLink class="custom-nav-link" to="/classes">
               دوره های خصوصی
             </NuxtLink>
           </li>
 
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="/articles"
-              >مقالات</NuxtLink
-            >
+            <NuxtLink class="custom-nav-link" to="/articles">مقالات</NuxtLink>
           </li>
 
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="faq"
-            >
+            <NuxtLink class="custom-nav-link" to="faq">
               سوالات متداول
             </NuxtLink>
           </li>
 
           <li class="nav-item">
-            <NuxtLink
-              class="custom-nav-link nuxt-link-exact-active pr-custom"
-              to="/contact"
-            >
+            <NuxtLink class="custom-nav-link" to="/contact">
               تماس با ما
             </NuxtLink>
           </li>
@@ -82,9 +63,6 @@ const navOpen = ref(false);
 </script>
 
 <style lang="scss" scoped>
-ul {
-  font-family: IranSans !important;
-}
 /* Hide the input checkbox */
 #navToggle {
   position: absolute;
@@ -119,45 +97,32 @@ ul {
 }
 
 /* PREVIOUS NAVBAR STYLES */
-
 .navbar {
-  // background: #fff !important;
   background-color: var(--bg) !important;
-  -webkit-box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
-  box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
+  box-shadow: 0 2px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
+  // border-bottom: 1px solid var(--border-color) !important;
   direction: rtl !important;
-}
-
-.custom-nav-link {
-  font-size: 0.9rem !important;
+  height: 54px;
 }
 
 a {
-  // color: black !important;
-  color: var(--color) !important;
+  color: var(--color-title) !important;
   text-decoration: none !important;
+  font-size: 0.88rem !important;
+  font-family: IranSans !important;
+  padding-left: 0.4rem !important;
 }
 
 a:hover {
   color: #027fc2 !important;
 }
 
-/* .nuxt-link-exact-active {
-  color: #027fc2 !important;
-  font-family: IranSansBold !important;
-} */
-
 @media (min-width: 992px) {
   .navbar {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 0 2em 0 0 !important;
   }
 
-  .pr-custom {
-    padding-left: 0.4rem !important;
-  }
-
-  .pr-custom:first-child {
+  a:first-child {
     padding-right: 3em !important;
   }
 
@@ -173,17 +138,12 @@ a:hover {
     padding-bottom: 0;
   }
 
-  // .navbar-nav {
-  //   padding: 1em 0 0 0 !important;
-  // }
-
   .nav-item {
     padding-bottom: 0.9rem !important;
   }
 
-  .custom-nav-link {
+  a {
     font-size: 1.15em !important;
-    // color: rgb(0, 0, 0) !important;
     color: var(--color);
     text-decoration: none;
     text-align: right;
@@ -192,13 +152,8 @@ a:hover {
     border-bottom: 1px dashed rgb(238, 238, 238);
   }
 
-  .custom-nav-link:last-child {
+  a:last-child {
     border-bottom: none;
   }
-}
-
-a {
-  // color: black;
-  color: var(--color);
 }
 </style>

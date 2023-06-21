@@ -1,17 +1,31 @@
 <template>
-  <footer class="copyright text-center">
-    <div class="container">
-      <p>
+  <!-- <footer class="copyright d-flex align-items-center">
+    <p class="container">
+      طراحی و تولید شده توسط
+      <a href="https://learn-aviation.com">LearnAviation</a>، با افتخار در ایران
+      <font-awesome-icon :icon="['fa', 'heart']" />
+      سال ۱۳۹۶ - ..١۴
+    </p>
+
+    <span dir="ltr" class="">
+      <ColorModePicker />
+    </span>
+  </footer> -->
+
+  <footer class="mt-auto">
+    <div
+      class="container d-flex align-items-baseline justify-content-between pt-3"
+    >
+      <p class="copyright">
         طراحی و تولید شده توسط
         <a href="https://learn-aviation.com">LearnAviation</a>، با افتخار در
         ایران
         <font-awesome-icon :icon="['fa', 'heart']" />
         <!-- سال ۱۳۹۶ - ..١۴ -->
       </p>
-    </div>
-
-    <div dir="ltr" class="fixed-bottomm text-center pb-2">
-      <ColorModePicker />
+      <p dir="ltr">
+        <ColorModePicker />
+      </p>
     </div>
   </footer>
 </template>
@@ -22,27 +36,29 @@ export default {};
 
 <style lang="scss" scoped>
 footer {
-  // background-color: #fafbfe !important;
-  background-color: var(--bg);
+  background-color: var(--bg-blue);
+  bottom: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  // height: 45px !important;
 }
 
 .copyright {
-  font-size: 0.85em !important;
-  // color: rgb(58, 58, 58);
-  color: var(--color);
-  padding: 1em 0 0.01em 0;
-  direction: rtl;
-  // background-color: #fafbfe !important;
-  background-color: var(--bg);
+  font-size: 0.85rem !important;
+  color: var(--color-muted);
+  background-color: var(--bg-blue);
+  direction: rtl !important;
+  padding: 0 !important;
+  margin: 0 !important;
 
   a {
     font-family: IranSans !important;
+    text-decoration: none !important;
   }
 
   a,
   svg:not(:root).svg-inline--fa {
-    // color: #027fc2 !important;
-    color: var(--color);
+    color: var(--color-muted);
   }
 }
 

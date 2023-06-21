@@ -1,9 +1,7 @@
 <template>
   <div dir="rtl" class="page">
     <base-navbar />
-
     <NuxtPage />
-
     <base-footer />
   </div>
 </template>

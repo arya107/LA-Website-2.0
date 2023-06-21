@@ -36,10 +36,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  color: var(--colour-title) !important;
+}
 .section {
   // color: rgb(58, 58, 58);
-  color: var(--color);
-
+  color: var(--color-main);
   font-size: 1em;
   padding-bottom: 2em;
 }

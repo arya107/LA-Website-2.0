@@ -17,6 +17,7 @@
     "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
+    "nuxi": "^3.5.3",
     "nuxt": "^3.5.2",
     "sass": "^1.63.4"
   },

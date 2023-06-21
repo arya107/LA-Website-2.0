@@ -1,8 +1,8 @@
 <template>
   <div class="private-classes-background">
     <div class="container">
-      <h1 class="text-center custom-title pt-5">کلاس های خصوصی ما</h1>
-      <div class="private-classes pt-5">
+      <h1 class="text-center page-title">کلاس های خصوصی ما</h1>
+      <div class="private-classes pt-4">
         <div class="row pricing">
           <!-- 
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-3">
@@ -231,12 +231,6 @@ export default {
   color: var(--color-white);
   border: 1px solid #0476b4 !important;
 
-  font-family: IranSansBold !important;
-}
-
-.custom-title {
-  font-size: 1.6rem !important;
-  color: var(--color-title);
   font-family: IranSansBold !important;
 }
 

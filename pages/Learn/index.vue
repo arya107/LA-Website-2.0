@@ -1,13 +1,11 @@
 <template>
   <div dir="rtl" class="bg">
     <div class="hero">
-      <div class="custom-padding">
-        <div class="container">
-          <h1 class="page-title">
-            اتاق آموزش
-            <p>تمرین شنیداری آزمون هوانوردی</p>
-          </h1>
-        </div>
+      <div class="container">
+        <h1 class="page-title">
+          اتاق آموزش
+          <span class="page-subtitle">تمرین شنیداری آزمون هوانوردی</span>
+        </h1>
       </div>
     </div>
   </div>
@@ -37,51 +35,20 @@
   min-height: 90vh;
 }
 
-.page-title {
-  font-size: 1.8rem !important;
-  color: var(--hero-text) !important;
-  font-family: IranSansBold !important;
-  text-align: center !important;
-  padding: 1em 0;
-
-  p {
-    display: block !important;
-    color: var(--hero-text) !important;
-    font-size: 1.1rem !important;
-    padding: 1em 0;
-  }
-  .icon {
-    font-size: 2.5rem;
-    // color: #027fc2;
-    display: block;
-    padding-bottom: 0.1em !important;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.subheader {
-  font-size: 1rem !important;
-  color: var(--hero-text) !important;
-  font-family: IranSansBold !important;
-  text-align: right;
-  padding: 1.5em;
-}
-
-.custom-padding {
-  display: flex !important;
-  align-items: center !important;
-  padding: 3em 0 0 0 !important;
-}
+// .custom-padding {
+//   display: flex !important;
+//   align-items: center !important;
+//   padding: 3em 0 0 0 !important;
+// }
 
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 31vh;
   }
 
-  .custom-padding {
-    padding: 2.7rem 0 3rem 0 !important;
-  }
+  // .custom-padding {
+  //   padding: 2.7rem 0 3rem 0 !important;
+  // }
 
   .page-title {
     padding: 1.2em 0 0 0 !important;

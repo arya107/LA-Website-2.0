@@ -3,10 +3,10 @@
     <div class="container">
       <h1 class="page-title">
         سوالات متداول
-        <p>
+        <span class="page-subtitle">
           دردر اینجا سعی می‌کنیم به سوالات متداولی که ممکن است برای شما پیش
           بیاید پاسخ دهیم.
-        </p>
+        </span>
       </h1>
       <!-- FAQ's  -->
       <section class="custom-padding text-end">
@@ -72,7 +72,7 @@
               <span>۶ -</span> تفاوت شما با بقیه اساتید زبان هوانوردی چیست؟
             </h4>
             <p class="card-text">
-              استاد نیود انگلستان هستند و با دارا بودن تجربه در زمینه زبان
+              استاد نیتیو انگلستان هستند و با دارا بودن تجربه در زمینه زبان
               هوانوردی میتوانند زبان آموز را به درستی راهنمایی کنند.
             </p>
           </div>
@@ -82,9 +82,9 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
-  // layout: 'maintenance',
+  layout: 'maintenance',
 
   components: {},
   head() {
@@ -100,35 +100,12 @@ export default {
     };
   },
 };
-</script>
+</script> -->
 
 <style scoped lang="scss">
 .bg {
   min-height: 100vh !important;
-  // background-color: #fafbfe !important;
   background-color: var(--hero-bg) !important;
-
-  // margin-bottom: 20em !important;
-}
-
-.page-title {
-  font-size: 1.8rem !important;
-  // color: #181818 !important;
-  color: var(--color);
-
-  font-family: IranSansBold !important;
-  text-align: center !important;
-  padding-top: 1.5em !important;
-
-  p {
-    display: block !important;
-    // color: #606062 !important;
-    color: var(--color);
-
-    font-size: 1.1rem !important;
-    padding-top: 0.9em;
-    line-height: 1.7em;
-  }
 }
 
 .card {
@@ -164,7 +141,7 @@ span {
 
 @media only screen and (min-width: 1300px) {
   .custom-padding {
-    padding: 3.5em 11em !important;
+    padding: 1em 11em !important;
   }
 
   .page-title {
@@ -174,7 +151,7 @@ span {
 
 @media (max-width: 768px) {
   .custom-padding {
-    padding-top: 3em !important;
+    padding-top: 1.6em !important;
     padding-bottom: 6em !important;
   }
 }

@@ -1,3 +1,7 @@
+$primary-light-dark: #212e48 !default;
+$text-muted-dark: #565674 !default;
+// color: rgb(148 163 184/1);
+
 :root {
   --color: #243746;
   --color-primary: #158876;
@@ -8,10 +12,14 @@
 }
 
 .dark-mode {
-  --color: #ebf4f1;
+  // --color: #ebf4f1;
+  // --color: rgb(148 163 184/1);
+  --color: #92929f !important;
   --color-primary: #41b38a;
   --color-secondary: #fdf9f3;
-  --bg: #091a28;
+  // --bg: #091a28;
+  // --bg: #1e1e2d;
+  --bg: #0e172a;
   --bg-secondary: #071521;
   --border-color: #0d2538;
 }

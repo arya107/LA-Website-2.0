@@ -1,6 +1,5 @@
 <template>
   <div dir="rtl" class="page">
-    <base-ad-banner />
     <base-navbar />
 
     <NuxtPage />

@@ -64,7 +64,7 @@
 
           <li class="nav-item">
             <NuxtLink
-              class="nav-link custom-nav-link nuxt-link-exact-active pr-custom"
+              class="custom-nav-link nuxt-link-exact-active pr-custom"
               to="/contact"
             >
               تماس با ما
@@ -105,6 +105,10 @@ ul {
 /* Smooth transition */
 .collapse {
   transition: height 0.3s ease;
+}
+
+.navbar-toggler {
+  display: none !important;
 }
 
 /* Hide the navbar when not expanded on small screens */
@@ -169,8 +173,12 @@ a:hover {
     padding-bottom: 0;
   }
 
-  .navbar-nav {
-    padding: 1em 0 0 0 !important;
+  // .navbar-nav {
+  //   padding: 1em 0 0 0 !important;
+  // }
+
+  .nav-item {
+    padding-bottom: 0.9rem !important;
   }
 
   .custom-nav-link {

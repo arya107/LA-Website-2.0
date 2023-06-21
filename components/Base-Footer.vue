@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <div class="fixed-bottomm text-center">
+    <div dir="ltr" class="fixed-bottomm text-center pb-2">
       <ColorModePicker />
     </div>
   </footer>
@@ -22,17 +22,18 @@ export default {};
 
 <style lang="scss" scoped>
 footer {
-  background-color: #fafbfe !important;
+  // background-color: #fafbfe !important;
+  background-color: var(--bg);
 }
 
 .copyright {
   font-size: 0.85em !important;
   // color: rgb(58, 58, 58);
   color: var(--color);
-
   padding: 1em 0 0.01em 0;
   direction: rtl;
-  background-color: #fafbfe !important;
+  // background-color: #fafbfe !important;
+  background-color: var(--bg);
 
   a {
     font-family: IranSans !important;

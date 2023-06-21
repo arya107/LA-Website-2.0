@@ -117,7 +117,8 @@ ul {
 /* PREVIOUS NAVBAR STYLES */
 
 .navbar {
-  background: #fff !important;
+  // background: #fff !important;
+  background-color: var(--bg) !important;
   -webkit-box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
   box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
   direction: rtl !important;
@@ -129,8 +130,7 @@ ul {
 
 a {
   // color: black !important;
-  color: var(--color);
-
+  color: var(--color) !important;
   text-decoration: none !important;
 }
 

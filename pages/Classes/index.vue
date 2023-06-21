@@ -216,7 +216,8 @@ export default {
 
 <style lang="scss" scoped>
 .private-classes-background {
-  background-color: #182146 !important;
+  // background-color: #182146 !important;
+  background-color: var(--bg);
 }
 
 .btn {
@@ -224,7 +225,9 @@ export default {
   font-size: 13px;
   width: 100%;
   padding: 9px 0;
-  background: #027fc2 !important;
+  // background: #027fc2 !important;
+  background-color: var(--bg);
+
   // color: #fff !important;
   color: var(--color);
 

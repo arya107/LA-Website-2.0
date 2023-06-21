@@ -38,6 +38,7 @@ export default {};
   // background-color: #050539 !important;
   background-color: #007fc2 !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.07' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.09'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  // min-height: 93vh;
 
   .icon {
     font-size: 4.2rem !important;
@@ -47,7 +48,7 @@ export default {};
   }
 
   .hero-title {
-    font-size: 3.1rem !important;
+    font-size: 3rem !important;
     line-height: 1.3em;
     font-family: IranSansBold !important;
     color: #fff !important;

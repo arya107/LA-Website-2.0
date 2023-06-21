@@ -30,18 +30,23 @@
 
 <style lang="scss" scoped>
 .bg {
-  background-color: #fafbfe !important;
+  // background-color: #fafbfe !important;
+  background-color: var(--bg);
 }
 
 .btn {
-  background-color: #027fc2;
+  // background-color: #027fc2;
+  background-color: var(--bg);
+
   font-size: 1rem !important;
   color: #fff;
   border: 1px solid #027fc2 !important;
 }
 
 .btn:hover {
-  background-color: #fff !important;
+  // background-color: #fff !important;
+  background-color: var(--bg);
+
   color: #027fc2;
   border: 1px dashed #027fc2 !important;
 }

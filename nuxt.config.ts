@@ -18,6 +18,15 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
   ],
 
+  content: {
+    markdown: {
+      toc: {
+        depth: 5,
+        searchDepth: 5,
+      },
+    },
+  },
+
   gtag: {
     id: 'G-4325YB08P9',
   },

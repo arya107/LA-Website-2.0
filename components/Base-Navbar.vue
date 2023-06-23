@@ -37,7 +37,7 @@
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/articles">مقالات</NuxtLink>
+            <NuxtLink class="custom-nav-link" to="/blog">مقالات</NuxtLink>
           </li>
 
           <li class="nav-item">

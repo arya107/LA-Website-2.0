@@ -61,7 +61,7 @@ export default {};
   font-size: 1rem;
   border-radius: 18px !important;
   width: 100%;
-  height: 120px;
+  height: 140px;
   background-color: var(--hero-bg) !important;
   color: var(--hero-text) !important;
   border: 2px solid var(--hero-border) !important;

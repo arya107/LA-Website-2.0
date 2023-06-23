@@ -8,23 +8,23 @@ defineProps(['prev', 'next']);
 </script>
 
 <template>
-  <ul class="prev-next-cont d-flex justify-content-between p-3 border rounded">
-    <li class="link-item prev">
+  <div class="prev-next-cont d-flex justify-content-between p-3 border rounded">
+    <span class="link-item prev">
       <NuxtLink v-if="prev" :to="prev._path">
-        <ArrowLeftIcon class="icon" />
+        <font-awesome-icon :icon="['fas', 'arrow-right']" />
         <span> {{ prev.title }} </span>
       </NuxtLink>
-    </li>
-    <li class="link-item next">
+    </span>
+    <span class="link-item next">
       <NuxtLink v-if="next" :to="next._path">
         <span> {{ next.title }} </span>
-        <ArrowRightIcon class="icon" />
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
       </NuxtLink>
-    </li>
-  </ul>
+    </span>
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .prev-next-cont {
   border-color: #ced4da; /* closest to slate-200 */
 }
@@ -32,5 +32,9 @@ defineProps(['prev', 'next']);
 .link-item a {
   display: flex;
   gap: 0.5rem; /* equivalent to 2 in tailwind */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
 }
 </style>

@@ -34,7 +34,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style: none;
   padding: 0;

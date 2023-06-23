@@ -39,7 +39,7 @@ const props = defineProps(['type']);
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .info-box {
   border: 1px solid #ced4da; /* closest to slate-200 */
   color: #6c757d; /* closest to slate-500 */

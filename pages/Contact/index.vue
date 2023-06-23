@@ -6,9 +6,9 @@
         راه ارتباطی ما فقط از این سه طریق می باشد.
       </p>
 
-      <div class="card d-flex align-items-center justify-content-center">
+      <div class="card">
         <div class="iconSection">
-          <p class="pt-3">
+          <p class="contact-item pt-4">
             <a href="https://t.me/AskAryaSomething" class="li-ic"
               >AskAryaSomething@</a
             >
@@ -16,7 +16,8 @@
               <font-awesome-icon :icon="['fab', 'telegram']" />
             </span>
           </p>
-          <p class="pt-1">
+
+          <p class="contact-item pt-1">
             <a
               href="https://api.whatsapp.com/send?phone=989032227796"
               class="fb-ic"
@@ -29,7 +30,8 @@
               <!-- <font-awesome-icon :icon="['fa', 'phone']" /> -->
             </span>
           </p>
-          <p class="pt-1">
+
+          <p class="contact-item pt-1">
             <a href="mailto:info@ask-arya.com" class="fb-ic"
               >info@ask-arya.com</a
             >
@@ -77,7 +79,6 @@ export default {
 .subtitle {
   font-size: 1.1rem !important;
   color: var(--color-white);
-
   padding-top: 6px;
   margin-bottom: 6em !important;
 }
@@ -88,14 +89,23 @@ export default {
 }
 
 .card {
-  border-radius: 12px;
+  border-radius: 15px;
   padding-right: 2rem;
-  width: 550px;
+  width: 500px;
   margin: auto;
-  // box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
   background-color: var(--hero-bg) !important;
   color: var(--hero-text) !important;
   border: 4px dashed var(--hero-border) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.contact-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: end !important;
+  // text-align: left !important;
 }
 
 .iconSection a,

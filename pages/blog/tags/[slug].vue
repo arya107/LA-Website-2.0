@@ -95,7 +95,7 @@ useHead({
   </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .single-article {
   margin-bottom: 1em !important;
   padding: 20px;

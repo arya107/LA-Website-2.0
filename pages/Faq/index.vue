@@ -102,7 +102,7 @@ export default {
 };
 </script> -->
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .bg {
   min-height: 100vh !important;
   background-color: var(--hero-bg) !important;

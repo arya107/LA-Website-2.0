@@ -1,8 +1,7 @@
 <!-- ./components/Toc.vue -->
-
 <script setup>
 // define links prop
-defineProps(["links"]);
+defineProps(['links']);
 
 // flatten TOC links nested arrays to one array
 const flattenLinks = (links) => {
@@ -25,13 +24,17 @@ const flattenLinks = (links) => {
 
 <template>
   <nav class="toc">
-    <header class="toc-header">
-      <h3 class="text-xl font-bold">Table of contents</h3>
+    <header class="toc-header border-bottom pb-2 mb-2">
+      <h3>Table of contents</h3>
     </header>
-    <ul class="toc-links">
+    <ul class="toc-links d-flex flex-column gap-2 px-2">
       <!-- render each link with depth class -->
-      <li v-for="link of flattenLinks(links)" :key="link.id" :class="`toc-link _${link.depth}`">
-        <a :href="`#${link.id}`">
+      <li
+        v-for="link of flattenLinks(links)"
+        :key="link.id"
+        :class="`toc-link _${link.depth}`"
+      >
+        <a :href="`#${link.id}`" class="text-dark">
           {{ link.text }}
         </a>
       </li>
@@ -39,33 +42,30 @@ const flattenLinks = (links) => {
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .toc {
-  @apply p-4 bg-slate-50 border border-slate-200 rounded-lg;
-  @apply max-h-[calc(100vh-6rem)] overflow-auto;
+  max-height: calc(100vh - 6rem);
+  overflow: auto;
+  border: 1px solid grey;
+  padding: 10px !important;
+  border-radius: 10px;
 }
 
-.toc-header {
-  @apply pb-2 mb-2 border-b border-slate-200;
-}
-
-.toc-links {
-  @apply flex flex-col gap-2 px-2;
-}
-
-.toc-link {
-  @apply text-slate-500;
+.toc-links,
+a {
+  text-decoration: none !important;
+  margin-right: 10px !important;
 }
 
 .toc-link._3 {
-  @apply pl-3;
+  padding-left: 1rem;
 }
 
 .toc-link._4 {
-  @apply pl-6;
+  padding-left: 1.5rem;
 }
 
 .toc-link._undefined {
-  @apply pl-8;
+  padding-left: 2rem;
 }
 </style>

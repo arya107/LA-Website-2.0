@@ -70,8 +70,7 @@ const articleTags = [...new Set(flatten(data.value, 'tags'))];
 console.log({ articleTags });
 </script>
 
-<style scoped>
-/* ... */
+<style lang="scss" scoped>
 .pill {
   display: inline-block;
   padding: 0.7em 1em;

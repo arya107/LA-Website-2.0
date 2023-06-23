@@ -6,7 +6,7 @@
   </a>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .button {
   border: none !important;
   background-color: transparent !important;

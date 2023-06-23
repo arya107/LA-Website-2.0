@@ -275,26 +275,6 @@ useHead({
     color: rgb(24, 24, 24);
   }
 
-  .main-blog-text {
-    // padding: 2em 15% !important;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    max-width: 750px;
-    font-size: 1.18em !important;
-    line-height: 2.1em !important;
-    direction: rtl !important;
-    text-align: right;
-    font-family: IranSans !important;
-    color: rgb(26, 26, 26) !important;
-  }
-
-  @media only screen and (max-width: 608px) {
-    .main-blog-text {
-      padding: 1.5em 1em !important;
-      // padding: 2em 7% !important;
-    }
-  }
-
   .subtitle {
     font-size: 1.1em;
     font-family: IranSansBold !important;

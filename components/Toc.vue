@@ -49,12 +49,14 @@ const flattenLinks = (links) => {
   border: 1px solid grey;
   padding: 10px !important;
   border-radius: 10px;
+  color: var(--color) !important;
 }
 
 .toc-links,
 a {
   text-decoration: none !important;
   margin-right: 10px !important;
+  color: var(--color) !important;
 }
 
 .toc-link._3 {

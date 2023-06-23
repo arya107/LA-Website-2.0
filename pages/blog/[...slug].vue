@@ -25,7 +25,7 @@
 
       <article class="article col-12 col-md-9">
         <!-- render document coming from query -->
-        <ContentRenderer class="blog-text" :value="data.article">
+        <ContentRenderer dir="auto" class="blog-text" :value="data.article">
           <!-- render rich text from document
           <MarkdownRenderer :value="data.article" /> -->
 
@@ -137,18 +137,33 @@ useHead({
 }
 
 .blog-text {
-  color: #1a1a1a !important;
+  // color: #1a1a1a !important;
   font-family: IranSans !important;
   font-size: 1.15rem !important;
   line-height: 2em !important;
 }
 
-h1,
-h2,
-h3,
-a {
+::v-deep h1 a {
   font-family: IranSansBold !important;
-  font-size: 1.5rem !important;
-  padding-top: 2rem !important;
+  font-size: 1.6rem !important;
+  padding: 2rem 0 !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+::v-deep h2 a {
+  font-family: IranSansBold !important;
+  font-size: 1.4rem !important;
+  padding: 2rem 0 4rem 0 !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+::v-deep h3 a {
+  font-family: IranSansBold !important;
+  font-size: 1.2rem !important;
+  padding: 2rem 0 3rem 0 !important;
+  text-decoration: none !important;
+  cursor: default !important;
 }
 </style>

@@ -1,11 +1,38 @@
 <!-- ./components/Tags.vue -->
 
+<template>
+  <div class="container">
+    <div
+      class="tag-list d-flex align-items-center p-2 border-0 rounded"
+      :class="{ active: expanded }"
+    >
+      <!-- Button to toggle expand -->
+      <!-- <button @click="toggleExpand" class="cta btn btn-link">
+      <TagIcon class="icon" />
+      <span>Tags</span>
+    </button> -->
+      <div
+        class="article-tags list-unstyled m-0 p-0"
+        :class="{ 'w-100': expanded }"
+      >
+        <!-- list out tags with links -->
+        <div v-for="(tag, n) in articleTags" :key="n" class="tag pill">
+          <NuxtLink :to="`/blog/tags/${tag}`" class="font-weight-bold">
+            {{ tag }}
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 // import icon
 import { TagIcon } from '@heroicons/vue/24/solid';
 
 // tag list state
-const expanded = ref(false);
+// const expanded = ref(false);
+const expanded = ref(true);
 
 // helper function to flatten tags array
 const flatten = (tags, key) => {
@@ -43,33 +70,36 @@ const articleTags = [...new Set(flatten(data.value, 'tags'))];
 console.log({ articleTags });
 </script>
 
-<template>
-  <div
-    class="tag-list d-flex align-items-center p-2 border-0 rounded"
-    :class="{ active: expanded }"
-  >
-    <!-- Button to toggle expand -->
-    <button @click="toggleExpand" class="cta btn btn-link">
-      <TagIcon class="icon" />
-      <span>Tags</span>
-    </button>
-    <ul
-      class="article-tags list-unstyled m-0 p-0"
-      :class="{ 'w-100': expanded }"
-    >
-      <!-- list out tags with links -->
-      <li v-for="(tag, n) in articleTags" :key="n" class="tag">
-        <NuxtLink :to="`/blog/tags/${tag}`" class="font-weight-bold">
-          {{ tag }}
-        </NuxtLink>
-      </li>
-    </ul>
-  </div>
-</template>
-
 <style scoped>
 /* ... */
-/* ... */
+.pill {
+  display: inline-block;
+  padding: 0.7em 1em;
+  margin: 0 0 8px 8px !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  /* gray 800 */
+  /* color: #fefce8; */
+  /* gray 200 */
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 5px !important;
+  /* border-radius: 50rem; */
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+a {
+  color: #334155 !important;
+  text-decoration: none !important;
+}
+
+.pill:hover {
+  color: #fff !important;
+  background-color: #027fc2;
+}
 .tag-list {
   transition: all 0.3s;
 }
@@ -79,7 +109,7 @@ console.log({ articleTags });
 }
 
 .article-tags {
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   max-width: 0;
   overflow: hidden;
 }

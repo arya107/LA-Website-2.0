@@ -48,8 +48,12 @@ useHead({
         }"
       >
         <template v-slot="{ list }">
-          <ul class="list-unstyled">
-            <li v-for="article in list" :key="article._path" class="list-item">
+          <ul class="list-unstyled container">
+            <li
+              v-for="article in list"
+              :key="article._path"
+              class="list-item single-article"
+            >
               <NuxtLink :to="article._path">
                 <div class="container">
                   <div class="img-fluid w-25">
@@ -90,3 +94,13 @@ useHead({
     </section>
   </main>
 </template>
+
+<style scoped>
+.single-article {
+  margin-bottom: 1em !important;
+  padding: 20px;
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  border-radius: 15px;
+}
+</style>

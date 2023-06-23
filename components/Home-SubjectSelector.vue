@@ -6,7 +6,7 @@
       <div class="row text-center">
         <!-- Button 1 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="learn">
+          <nuxt-link to="blog">
             <button native-type="submit" class="btn btn-1 shadow-sm">
               <font-awesome-icon :icon="['fa', 'plane']" class="icon" />
               <br />
@@ -39,7 +39,7 @@
 
         <!-- BUTTON 4 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="classes">
+          <nuxt-link to="blog">
             <button native-type="submit" class="btn btn-3 shadow-sm">
               <font-awesome-icon :icon="['fa', 'book']" class="icon" />
               <br />
@@ -61,10 +61,10 @@ export default {};
   font-size: 1rem;
   border-radius: 18px !important;
   width: 100%;
-  height: 140px;
-  background-color: var(--hero-bg) !important;
+  height: 130px;
+  background-color: var(--hero-button-bg) !important;
   color: var(--hero-text) !important;
-  border: 2px solid var(--hero-border) !important;
+  border: 3px dashed var(--hero-border) !important;
   box-shadow: inset 0 1px 0 0 #ffffff0d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -74,9 +74,9 @@ export default {};
   // border: 2px solid #223662 !important;
   border: 3px dashed #fbbc39 !important;
 
-  // .icon {
-  //   color: var(--hero-bg) !important;
-  // }
+  .icon {
+    color: #fbbc39 !important;
+  }
 }
 
 .icon {

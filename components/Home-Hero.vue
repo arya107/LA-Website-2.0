@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="pt-5">
+    <div class="pt-4">
       <home-subject-selector />
     </div>
   </section>
@@ -38,14 +38,12 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-content-homepage {
-  // background-image: url(~/img/frontend/hero-bg-tw.jpg) !important;
-  // background-size: 150rem !important;
   min-height: calc(100vh - 114px);
   background-color: var(--hero-bg) !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.05' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
 
   .icon {
-    font-size: 4.2rem !important;
+    font-size: 4.3rem !important;
     color: var(--hero-text) !important;
     display: block;
     text-align: center;
@@ -76,10 +74,10 @@ export default {};
   .btn {
     background-color: white;
     color: var(--hero-bg) !important;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     border: 1px solid rgba(255, 255, 255, 0.7) !important;
     border-radius: 8px !important;
-    padding: 8px 18px !important;
+    padding: 10px 20px !important;
     margin-top: 2em !important;
   }
 
@@ -89,15 +87,6 @@ export default {};
     border: 1px solid #fff !important;
   }
 }
-
-// .text-section {
-//   padding-top: 20px;
-//   -webkit-box-pack: center;
-//   -webkit-justify-content: center;
-//   -moz-box-pack: center;
-//   -ms-flex-pack: center;
-//   justify-content: center;
-// }
 
 @media screen and (min-width: 1000px) {
   .custom-padding {
@@ -143,9 +132,5 @@ export default {};
   .hero-title {
     text-align: center !important;
   }
-
-  // .custom-padding {
-  //   padding: 1rem 0 !important;
-  // }
 }
 </style>

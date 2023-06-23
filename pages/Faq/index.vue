@@ -116,7 +116,7 @@ export default {
 
 .card-title {
   background: #fbbc39 !important;
-  color: #0f172a !important;
+  color: #fff !important;
   font-family: IranSansBold !important;
   font-size: 1rem !important;
   padding: 1em;

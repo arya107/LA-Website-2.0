@@ -41,7 +41,7 @@
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="faq">
+            <NuxtLink class="custom-nav-link" to="/faq">
               سوالات متداول
             </NuxtLink>
           </li>

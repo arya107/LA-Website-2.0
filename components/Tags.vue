@@ -81,8 +81,8 @@ console.log({ articleTags });
   /* gray 800 */
   /* color: #fefce8; */
   /* gray 200 */
-  background-color: #e2e8f0;
-  border: 1px solid #cbd5e1;
+  background-color: #fbbc39;
+  border: 1px solid #e6ad33;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;

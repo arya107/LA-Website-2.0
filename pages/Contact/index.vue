@@ -104,8 +104,8 @@ export default {
 .contact-item {
   display: flex !important;
   align-items: center !important;
-  justify-content: end !important;
-  // text-align: left !important;
+  // justify-content: end !important;
+  justify-content: flex-end !important;
 }
 
 .iconSection a,

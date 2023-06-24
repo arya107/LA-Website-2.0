@@ -28,7 +28,6 @@
 
 <script setup>
 // import icon
-import { TagIcon } from '@heroicons/vue/24/solid';
 
 // tag list state
 // const expanded = ref(false);

@@ -1,13 +1,6 @@
 <!-- ./components/content/InfoBox.vue -->
 
 <script setup>
-// import icons from HeroIcons
-import {
-  InformationCircleIcon,
-  ExclamationTriangleIcon,
-  ExclamationCircleIcon,
-} from '@heroicons/vue/24/solid';
-
 // define props in <script>
 const props = defineProps(['type']);
 </script>

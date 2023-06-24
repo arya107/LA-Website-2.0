@@ -18,9 +18,11 @@
     </header>
     <hr />
     <section class="article-section row g-5">
-      <aside class="toc col-12 col-md-3">
+      <aside class="col-12 col-md-3">
         <!-- Toc Component -->
-        <Toc :links="data.article.body.toc.links" />
+        <div class="toc">
+          <Toc :links="data.article.body.toc.links" />
+        </div>
       </aside>
 
       <article class="article col-12 col-md-9">
@@ -124,10 +126,12 @@ useHead({
   position: relative;
 }
 
-.TOC {
-  /* padding-top: 3.5rem !important; */
-  position: sticky !important;
-  top: 20px !important;
+@media (min-width: 992px) {
+  .toc {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
 }
 
 .article {
@@ -136,10 +140,11 @@ useHead({
   margin: 0 auto;
 }
 
-.blog-text {
-  // color: #1a1a1a !important;
-  font-family: IranSans !important;
-  font-size: 1.15rem !important;
+::v-deep .blog-text {
+  // color: red !important;
+  // font-family: IranSans !important;
+  font-family: sans-serif, Arial, Helvetica !important;
+  font-size: 1.2rem !important;
   line-height: 2em !important;
 }
 

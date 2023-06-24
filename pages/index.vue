@@ -33,15 +33,7 @@ definePageMeta({
 
 <style lang="scss" scoped>
 .page-bg {
-  // background-color: #f8fafc !important ;
   // min-height: calc(100vh - 54px);
   min-height: calc(100vh - 114px);
-
-  // min-height: 100vh;
 }
-
-// .custom-padding {
-//   padding-top: 40px !important;
-//   padding-bottom: 85px !important;
-// }
 </style>

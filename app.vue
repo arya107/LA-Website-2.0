@@ -5,7 +5,7 @@
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} | Learn Aviation` : 'Learn Aviation';

@@ -1,26 +1,5 @@
 <!-- ./pages/blog/tags/[slug].vue -->
 
-<script setup>
-// const print = (wareev) => {
-//   console.log(wareev);
-// };
-
-// get current route
-const {
-  params: { slug },
-} = useRoute();
-
-const filter = slug.split(',');
-console.log({ filter });
-
-// set meta for page
-useHead({
-  title: `All articles with ${slug}`,
-  meta: [
-    { name: 'description', content: "Here's a list of all my great articles" },
-  ],
-});
-</script>
 <template>
   <main>
     <header class="page-heading">
@@ -94,6 +73,24 @@ useHead({
     </section>
   </main>
 </template>
+
+<script setup>
+// get current route
+const {
+  params: { slug },
+} = useRoute();
+
+const filter = slug.split(',');
+console.log({ filter });
+
+// set meta for page
+useHead({
+  title: `All articles with ${slug}`,
+  meta: [
+    { name: 'description', content: "Here's a list of all our great articles" },
+  ],
+});
+</script>
 
 <style lang="scss" scoped>
 .single-article {

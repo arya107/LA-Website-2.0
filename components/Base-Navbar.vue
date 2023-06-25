@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <NuxtLink class="navbar-brand" to="/">
+      <NuxtLink class="navbar-brand large" to="/">
         <img
           src="~public/img/learn-aviation-logo.svg"
           width="45"
@@ -9,6 +9,14 @@
           alt="Learn Aviation Logo"
         />
       </NuxtLink>
+
+      <a class="custom-nav-link mobile" href="/">
+        <img
+          src="~public/img/learn-aviation-logo.svg"
+          width="45"
+          height="45"
+          alt="Learn Aviation Logo"
+      /></a>
 
       <input
         class="btn navbar-toggler d-lg-none"
@@ -24,35 +32,43 @@
       <div class="collapse navbar-collapse" :class="{ show: navOpen }">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/">خانه</NuxtLink>
+            <NuxtLink class="custom-nav-link large" to="/">خانه</NuxtLink>
+            <a class="custom-nav-link mobile" href="/">خانه</a>
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/learn">
+            <NuxtLink class="custom-nav-link large" to="/learn">
               اتاق آموزش
             </NuxtLink>
+            <a class="custom-nav-link mobile" href="/learn"> اتاق آموزش</a>
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/classes">
+            <NuxtLink class="custom-nav-link large" to="/classes">
               دوره های خصوصی
             </NuxtLink>
+            <a class="custom-nav-link mobile" href="/classes">
+              دوره های خصوصی</a
+            >
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/blog">مقالات</NuxtLink>
+            <NuxtLink class="custom-nav-link large" to="/blog">مقالات</NuxtLink>
+            <a class="custom-nav-link mobile" href="/blog">مقالات</a>
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/faq">
+            <NuxtLink class="custom-nav-link large" to="/faq">
               سوالات متداول
             </NuxtLink>
+            <a class="custom-nav-link mobile" href="/faq"> سوالات متداول </a>
           </li>
 
           <li class="nav-item">
-            <NuxtLink class="custom-nav-link" to="/contact">
+            <NuxtLink class="custom-nav-link large" to="/contact">
               تماس با ما
             </NuxtLink>
+            <a class="custom-nav-link mobile" href="/contact"> تماس با ما </a>
           </li>
         </ul>
       </div>
@@ -118,6 +134,9 @@ const navOpen = ref(false);
   .nav-item {
     margin-right: 1.6em !important;
   }
+  .mobile {
+    display: none !important;
+  }
 }
 
 /* Hide the navbar when not expanded on small screens */
@@ -137,6 +156,10 @@ const navOpen = ref(false);
 
   .ms-auto {
     padding-right: 15px !important;
+  }
+
+  .large {
+    display: none !important;
   }
 }
 </style>

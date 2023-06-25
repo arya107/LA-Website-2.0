@@ -81,6 +81,7 @@ export default {
   color: var(--color-white);
   padding-top: 6px;
   margin-bottom: 6em !important;
+  font-family: IranSans !important;
 }
 
 .iconSection {

@@ -126,7 +126,7 @@ export default {
 
 span {
   margin-left: 0.4rem;
-  font-family: IranSansBold !important;
+  font-family: IranSans !important;
   font-size: 1rem !important;
 }
 

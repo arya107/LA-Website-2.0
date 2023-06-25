@@ -11,7 +11,7 @@
             :icon="['fa', 'heart']"
             class="footer__copyright-icon"
           />
-          سال ۱۳۹۶ - ۱۴۰۲
+          <!-- سال ۱۳۹۶ - ۱۴۰۲ -->
         </p>
         <div class="footer__mode-switcher">
           <ColorModePicker />
@@ -68,6 +68,9 @@ export default {};
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: 75px !important;
+  }
   .footer__container {
     flex-direction: column !important;
     align-items: stretch !important;

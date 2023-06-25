@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center pb-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
           <nuxt-link to="blog" class="btn__link">
             <button class="btn shadow-sm">
@@ -71,7 +71,7 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-content-homepage {
-  min-height: calc(100vh - 114px) !important;
+  min-height: calc(100vh - 110px) !important;
   background-color: var(--hero-bg) !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.05' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E") !important;
 
@@ -212,6 +212,12 @@ export default {};
 
 @media screen and (max-width: 576px) {
   .hero-content-homepage {
+    min-height: 100vh !important;
+
+    &__container {
+      padding: 1rem 0 1.5rem 0 !important;
+    }
+
     &__title {
       font-size: 1.6rem !important;
     }
@@ -229,7 +235,7 @@ export default {};
     }
 
     &__subtitle {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
     }
   }
 }

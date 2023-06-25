@@ -67,6 +67,23 @@ const navOpen = ref(false);
 </script>
 
 <style lang="scss">
+// .navbar {
+//   height: 55px;
+// }
+
+.custom-nav-link {
+  font-family: IranSans;
+  font-size: 0.9rem !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-right: 1rem !important;
+  color: black;
+}
+
+.custom-nav-link:hover {
+  color: #007fc2;
+}
+
 /* Hide the input checkbox */
 #navToggle {
   position: absolute;
@@ -93,28 +110,33 @@ const navOpen = ref(false);
   display: none !important;
 }
 
+@media (min-width: 991px) {
+  .navbar {
+    height: 55px !important;
+  }
+
+  .nav-item {
+    margin-right: 1.6em !important;
+  }
+}
+
 /* Hide the navbar when not expanded on small screens */
 @media (max-width: 991px) {
   .collapse:not(.show) {
     display: none;
   }
-}
 
-/* Custom styles for nav items */
-.nav-item {
-  margin-right: 10px;
-}
+  .nav-item {
+    padding: 14px 0 !important;
+    margin-right: 0 !important;
+  }
 
-.custom-nav-link {
-  font-family: IranSans;
-  font-size: 1rem !important;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding-right: 1rem !important;
-  color: black;
-}
+  .custom-nav-link {
+    font-size: 1.05rem !important;
+  }
 
-.custom-nav-link:hover {
-  color: #007fc2;
+  .ms-auto {
+    padding-right: 15px !important;
+  }
 }
 </style>

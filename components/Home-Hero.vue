@@ -23,8 +23,44 @@
         </div>
       </div>
     </div>
-    <div class="hero-content-homepage__subject-selector">
-      <home-subject-selector />
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+          <nuxt-link to="blog" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'plane']" class="btn__icon" />
+              <span class="btn__text">LPR Training Material</span>
+            </button>
+          </nuxt-link>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+          <nuxt-link to="maintenance" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
+              <span class="btn__text">Radio Telephony Material</span>
+            </button>
+          </nuxt-link>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+          <nuxt-link to="classes" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'comments']" class="btn__icon" />
+              <span class="btn__text">Aviation English Classes</span>
+            </button>
+          </nuxt-link>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+          <nuxt-link to="blog" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'book']" class="btn__icon" />
+              <span class="btn__text">Aviation Articles</span>
+            </button>
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -64,23 +100,22 @@ export default {};
     color: var(--hero-text) !important;
     font-family: IranSans !important;
     line-height: 1.6em !important;
-    padding: 1.4em 18% 0 !important;
+    padding: 1em 18% 0 !important;
     text-align: center !important;
   }
 
   &__button-container {
     text-align: center !important;
-    padding: 1rem 0 !important;
   }
 
   &__button {
     background-color: white !important;
     color: var(--hero-bg) !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     border: 1px solid rgba(255, 255, 255, 0.7) !important;
     border-radius: 8px !important;
     padding: 10px 20px !important;
-    margin-top: 2em !important;
+    margin: 1.8em 0 4em 0 !important;
     font-family: IranSans !important;
 
     &:hover {
@@ -93,9 +128,40 @@ export default {};
   &__button-icon {
     padding-left: 0.5rem !important;
   }
+}
 
-  &__subject-selector {
-    padding-top: 4rem !important;
+.page-bg {
+  .btn {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    border-radius: 18px !important;
+    width: 100% !important;
+    height: 130px !important;
+    background-color: var(--hero-button-bg) !important;
+    color: var(--hero-text) !important;
+    border: 3px dashed var(--hero-border) !important;
+    box-shadow: inset 0 1px 0 0 #ffffff0d !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    text-decoration: none !important;
+
+    &:hover {
+      box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
+      border: 3px dashed #fbbc39 !important;
+    }
+
+    &__icon {
+      font-size: 2rem !important;
+      padding-bottom: 0.8rem !important;
+      color: var(--hero-text) !important;
+    }
+
+    &__text {
+      margin-top: 0.5rem !important;
+      font-family: sans-serif, Verdana, Geneva, Tahoma !important;
+    }
   }
 }
 
@@ -130,11 +196,16 @@ export default {};
     }
 
     &__subtitle {
-      font-size: 0.9rem !important;
+      font-size: 0.95rem !important;
     }
 
     &__icon {
       font-size: 5.1em !important;
+    }
+
+    &__button {
+      margin: 1.5em 0 2em 0 !important;
+      font-size: 0.9rem !important;
     }
   }
 }
@@ -146,7 +217,7 @@ export default {};
     }
 
     &__subtitle {
-      font-size: 0.85rem !important;
+      font-size: 1rem !important;
     }
   }
 }

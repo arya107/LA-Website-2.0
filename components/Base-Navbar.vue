@@ -14,9 +14,12 @@
         class="btn navbar-toggler d-lg-none"
         type="checkbox"
         id="navToggle"
-        aria-label="Toggle navigation"
       />
-      <label class="navbar-toggler-icon d-lg-none" for="navToggle"></label>
+      <label
+        class="navbar-toggler-icon d-lg-none"
+        for="navToggle"
+        @click="navOpen = !navOpen"
+      ></label>
 
       <div class="collapse navbar-collapse" :class="{ show: navOpen }">
         <ul class="navbar-nav ms-auto">
@@ -59,10 +62,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
 const navOpen = ref(false);
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* Hide the input checkbox */
 #navToggle {
   position: absolute;
@@ -96,64 +100,21 @@ const navOpen = ref(false);
   }
 }
 
-/* PREVIOUS NAVBAR STYLES */
-.navbar {
-  background-color: var(--bg) !important;
-  box-shadow: 0 2px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
-  // border-bottom: 1px solid var(--border-color) !important;
-  direction: rtl !important;
-  height: 54px;
+/* Custom styles for nav items */
+.nav-item {
+  margin-right: 10px;
 }
 
-a {
-  color: var(--color-title) !important;
-  text-decoration: none !important;
-  font-size: 0.88rem !important;
-  font-family: IranSans !important;
-  padding-left: 0.4rem !important;
+.custom-nav-link {
+  font-family: IranSans;
+  font-size: 1rem !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-right: 1rem !important;
+  color: black;
 }
 
-a:hover {
-  color: #027fc2 !important;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    padding: 0 2em 0 0 !important;
-  }
-
-  a:first-child {
-    padding-right: 3em !important;
-  }
-
-  a {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .nav-item {
-    padding-bottom: 0.9rem !important;
-  }
-
-  a {
-    font-size: 1.15em !important;
-    color: var(--color);
-    text-decoration: none;
-    text-align: right;
-    margin-right: 0 !important;
-    padding: 0.5em 1em !important;
-    border-bottom: 1px dashed rgb(238, 238, 238);
-  }
-
-  a:last-child {
-    border-bottom: none;
-  }
+.custom-nav-link:hover {
+  color: #007fc2;
 }
 </style>

@@ -1,31 +1,22 @@
 <template>
-  <!-- <footer class="copyright d-flex align-items-center">
-    <p class="container">
-      طراحی و تولید شده توسط
-      <a href="https://learn-aviation.com">LearnAviation</a>، با افتخار در ایران
-      <font-awesome-icon :icon="['fa', 'heart']" />
-      سال ۱۳۹۶ - ..١۴
-    </p>
-
-    <span dir="ltr" class="">
-      <ColorModePicker />
-    </span>
-  </footer> -->
-
-  <footer class="mt-auto">
-    <div
-      class="container d-flex align-items-baseline justify-content-between pt-3"
-    >
-      <p class="copyright">
-        طراحی و تولید شده توسط
-        <a href="https://learn-aviation.com">LearnAviation</a>، با افتخار در
-        ایران
-        <font-awesome-icon :icon="['fa', 'heart']" />
-        <!-- سال ۱۳۹۶ - ..١۴ -->
-      </p>
-      <p dir="ltr">
-        <ColorModePicker />
-      </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <p class="footer__copyright">
+          طراحی و تولید شده توسط
+          <a href="https://learn-aviation.com" class="footer__copyright-link"
+            >LearnAviation</a
+          >، با افتخار در ایران
+          <font-awesome-icon
+            :icon="['fa', 'heart']"
+            class="footer__copyright-icon"
+          />
+          سال ۱۳۹۶ - ۱۴۰۲
+        </p>
+        <div class="footer__mode-switcher">
+          <ColorModePicker />
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -35,44 +26,67 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-footer {
-  background-color: var(--bg-blue);
+.footer {
+  background-color: var(--bg-blue) !important;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
-  // height: 45px !important;
 }
 
-.copyright {
-  font-size: 0.85rem !important;
-  color: var(--color-muted);
-  background-color: var(--bg-blue);
+.footer__container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%; // Make sure container takes full width
+}
+
+.footer__copyright {
+  font-size: 0.8rem !important; // Adjust font-size so it fits in 40px height
+  font-family: IranSans !important;
+  color: var(--color-muted) !important;
   direction: rtl !important;
   padding: 0 !important;
   margin: 0 !important;
+}
 
-  a {
-    font-family: IranSans !important;
-    text-decoration: none !important;
-  }
+.footer__copyright-link {
+  font-family: IranSans !important;
+  text-decoration: none !important;
+  color: var(--color-muted) !important;
+}
 
-  a,
-  svg:not(:root).svg-inline--fa {
-    color: var(--color-muted);
-  }
+.footer__copyright-icon {
+  color: var(--color-muted) !important;
+}
+
+.footer__mode-switcher {
+  width: auto !important;
 }
 
 @media (max-width: 768px) {
-  .copyright {
-    p {
-      font-size: 0.82em !important;
-    }
+  .footer__container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center !important;
   }
 
-  .copyright {
-    a {
-      font-size: 0.9em !important;
-    }
+  .footer__copyright {
+    font-size: 0.82em !important;
+    text-align: center !important;
+  }
+
+  .footer__copyright-link {
+    font-size: 0.9em !important;
+  }
+
+  .footer__mode-switcher {
+    width: 100% !important;
+    // order: -1 !important;
+    margin: 0.7em 0 !important;
   }
 }
 </style>

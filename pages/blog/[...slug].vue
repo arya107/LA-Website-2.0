@@ -1,7 +1,7 @@
 <!-- ./pages/blog/[…slug.vue] -->
 
 <template>
-  <main id="main" class="article-main">
+  <main dir="ltr" id="main" class="article-main container py-5">
     <header v-if="data.article" class="article-header">
       <div class="img-cont mb-3">
         <img
@@ -29,7 +29,7 @@
         <!-- render document coming from query -->
         <ContentRenderer dir="auto" class="blog-text" :value="data.article">
           <!-- render rich text from document
-          <MarkdownRenderer :value="data.article" /> -->
+        <MarkdownRenderer :value="data.article" /> -->
 
           <!-- display if document content is empty -->
           <template #empty>
@@ -81,94 +81,137 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-.article-main {
-  padding: 1.5rem;
-  max-width: 64rem; /* Approx 5xl in Tailwind */
-  margin: 0 auto;
+::v-deep .article-main {
+  font-family: 'Georgia', serif !important;
 }
 
-.article-header {
+::v-deep .article-header {
+  margin-bottom: 2rem !important;
+}
+
+::v-deep .article-header h1 {
   font-size: 2rem !important;
-  padding: 1.5rem;
-  padding-bottom: 3rem;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
 }
 
-.article-image {
-  height: 200px;
+::v-deep .article-header .lead {
+  font-size: 1.2rem !important;
+  margin-bottom: 1rem !important;
 }
 
-.pill {
-  display: inline-block;
-  padding: 0.7em 1em;
-  margin: 0 0 8px 8px !important;
-  font-size: 0.8rem;
-  line-height: 1;
-
-  background-color: #fbbc39;
-  border: 1px solid #e6ad33;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 5px !important;
-  font-family: Helvetica, Arial, sans-serif !important;
+::v-deep .pill {
+  display: inline-block !important;
+  padding: 0.2em 0.6em 0.3em !important;
+  font-size: 75% !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  color: #000 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: baseline !important;
+  border-radius: 0.25rem !important;
+  background-color: #ddd !important;
+  margin-right: 0.375rem !important;
+  margin-bottom: 0.375rem !important;
 }
 
-.pill:hover {
-  color: #fff !important;
-  background-color: #027fc2;
+// ::v-deep .article-image {
+//   width: 100% !important;
+//   height: auto !important;
+// }
+
+::v-deep .article-image {
+  width: 400px !important; /* adjust as necessary */
+  height: 300px !important; /* adjust as necessary */
+  object-fit: cover !important;
 }
 
-.img-cont img {
-  border-radius: 1rem; /* Approx 2xl in Tailwind */
+::v-deep .article-section {
+  margin-top: 2rem !important;
 }
 
-.article-section {
-  position: relative;
-}
-
-@media (min-width: 992px) {
-  .toc {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-}
-
-.article {
-  padding: 1.5rem;
-  max-width: 48rem; /* Approx 3xl in Tailwind */
-  margin: 0 auto;
+::v-deep .toc {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 1rem !important;
 }
 
 ::v-deep .blog-text {
-  // color: red !important;
-  // font-family: IranSans !important;
-  font-family: sans-serif, Arial, Helvetica !important;
+  // font-family: 'Georgia', serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #333 !important;
+  line-height: 1.4 !important;
   font-size: 1.2rem !important;
-  line-height: 2em !important;
 }
 
-::v-deep h1 a {
-  font-family: IranSansBold !important;
-  font-size: 1.6rem !important;
-  padding: 2rem 0 !important;
-  text-decoration: none !important;
-  cursor: default !important;
+::v-deep .blog-text h1,
+::v-deep .blog-text h2,
+::v-deep .blog-text h3,
+::v-deep .blog-text h4,
+::v-deep .blog-text h5,
+::v-deep .blog-text h6 {
+  margin-top: 1.4em !important;
+  margin-bottom: 1.4em !important;
+  font-weight: bold !important;
 }
 
-::v-deep h2 a {
-  font-family: IranSansBold !important;
-  font-size: 1.4rem !important;
-  padding: 2rem 0 4rem 0 !important;
-  text-decoration: none !important;
-  cursor: default !important;
+::v-deep .blog-text p {
+  margin-bottom: 1.5em !important;
 }
 
-::v-deep h3 a {
-  font-family: IranSansBold !important;
-  font-size: 1.2rem !important;
-  padding: 2rem 0 3rem 0 !important;
-  text-decoration: none !important;
-  cursor: default !important;
+::v-deep .blog-text a {
+  color: #1a0dab !important;
+  text-decoration: underline !important;
 }
+
+::v-deep .blog-text ul,
+::v-deep .blog-text ol {
+  padding-left: 40px !important;
+}
+
+::v-deep .blog-text li {
+  margin-bottom: 1em !important;
+}
+
+@media (min-width: 992px) {
+  ::v-deep .article-header h1 {
+    font-size: 3.5rem !important;
+  }
+
+  ::v-deep .article-header .lead {
+    font-size: 1.5rem !important;
+  }
+}
+
+// ::v-deep .blog-text {
+
+//   font-family: sans-serif, Arial, Helvetica !important;
+//   font-size: 1.2rem !important;
+//   line-height: 2em !important;
+// }
+
+// ::v-deep h1 a {
+//   font-family: IranSansBold !important;
+//   font-size: 1.6rem !important;
+//   padding: 2rem 0 !important;
+//   text-decoration: none !important;
+//   cursor: default !important;
+// }
+
+// ::v-deep h2 a {
+//   font-family: IranSansBold !important;
+//   font-size: 1.4rem !important;
+//   padding: 2rem 0 4rem 0 !important;
+//   text-decoration: none !important;
+//   cursor: default !important;
+// }
+
+// ::v-deep h3 a {
+//   font-family: IranSansBold !important;
+//   font-size: 1.2rem !important;
+//   padding: 2rem 0 3rem 0 !important;
+//   text-decoration: none !important;
+//   cursor: default !important;
+// }
 </style>

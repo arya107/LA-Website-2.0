@@ -12,8 +12,10 @@
         </p>
       </div>
     </header>
+
     <section class="page-section">
       <Tags />
+
       <ContentList
         path="/blog"
         :query="{
@@ -27,41 +29,42 @@
         }"
       >
         <template v-slot="{ list }">
-          <div class="container">
-            <div
-              v-for="article in list"
-              :key="article._path"
-              class="single-article card"
-            >
-              <NuxtLink :to="article._path">
-                <div class="container">
-                  <div class="img-fluid w-25">
+          <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col" v-for="article in list" :key="article._path">
+                <NuxtLink
+                  :to="article._path"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card h-100">
                     <img
                       :src="`/${article.img}`"
                       :alt="article.title"
-                      class="rounded img-thumbnail"
+                      class="card-img-top article-img rounded img-thumbnail"
                     />
-                  </div>
-                  <header>
-                    <h1 class="h2 font-weight-bold">{{ article.title }}</h1>
-                    <p>{{ article.description }}</p>
-                    <ul class="list-inline">
-                      <li
-                        class="list-inline-item"
-                        v-for="(tag, n) in article.tags"
-                        :key="n"
-                      >
-                        <NuxtLink
-                          :to="`/blog/tags/${tag}`"
-                          class="text-decoration-none"
+                    <div class="card-body">
+                      <h5 class="card-title h2 font-weight-bold">
+                        {{ article.title }}
+                      </h5>
+                      <p class="card-text">{{ article.description }}</p>
+                      <p class="card-text">
+                        <small
+                          class="badge bg-primary text-white rounded-pill me-1"
+                          v-for="(tag, n) in article.tags"
+                          :key="n"
                         >
-                          {{ tag }}
-                        </NuxtLink>
-                      </li>
-                    </ul>
-                  </header>
-                </div>
-              </NuxtLink>
+                          <NuxtLink
+                            :to="`/blog/tags/${tag}`"
+                            class="text-decoration-none text-white"
+                          >
+                            {{ tag }}
+                          </NuxtLink>
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </template>
@@ -93,11 +96,17 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-.single-article {
-  margin-bottom: 1em !important;
-  padding: 20px;
-  background-color: #e2e8f0;
-  border: 1px solid #cbd5e1;
-  border-radius: 15px;
+// .single-article {
+//   margin-bottom: 1em !important;
+//   padding: 20px;
+//   background-color: #e2e8f0;
+//   border: 1px solid #cbd5e1;
+//   border-radius: 15px;
+// }
+
+.article-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 </style>

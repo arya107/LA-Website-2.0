@@ -27,41 +27,37 @@
         }"
       >
         <template v-slot="{ list }">
-          <ul class="list-unstyled mt-4 container">
-            <li
-              v-for="article in list"
-              :key="article._path"
-              class="single-article"
-            >
-              <NuxtLink :to="article._path">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-2">
-                      <img
-                        :src="`/${article.img}`"
-                        :alt="article.title"
-                        class="article-img"
-                      />
-                    </div>
-
-                    <div class="col-10">
-                      <header>
-                        <h1 class="article-title">{{ article.title }}</h1>
-                        <p class="article-desc">{{ article.description }}</p>
-                        <span
-                          class="article-tags"
+          <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col" v-for="article in list" :key="article._path">
+                <NuxtLink
+                  :to="article._path"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card h-100">
+                    <img
+                      :src="`/${article.img}`"
+                      :alt="article.title"
+                      class="card-img-top article-img"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">{{ article.title }}</h5>
+                      <p class="card-text">{{ article.description }}</p>
+                      <p class="card-text">
+                        <small
+                          class="badge bg-primary text-white rounded-pill"
                           v-for="(tag, n) in article.tags"
                           :key="n"
                         >
                           {{ tag }}
-                        </span>
-                      </header>
+                        </small>
+                      </p>
                     </div>
                   </div>
-                </div>
-              </NuxtLink>
-            </li>
-          </ul>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
         </template>
 
         <template #not-found>
@@ -97,6 +93,12 @@ useHead({
 .page {
   background-color: var(--hero-bg) !important;
   padding-bottom: 2em;
+}
+
+.article-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .single-article {

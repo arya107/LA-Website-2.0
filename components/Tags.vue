@@ -27,8 +27,6 @@
 </template>
 
 <script setup>
-// import icon
-
 // tag list state
 // const expanded = ref(false);
 const expanded = ref(true);

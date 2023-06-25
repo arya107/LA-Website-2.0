@@ -1,32 +1,29 @@
 <template>
-  <section dir="rtl" class="hero-content-homepage">
-    <div class="container py-5">
-      <div class="text-section">
-        <div class="icon">
+  <section class="hero-content-homepage">
+    <div class="hero-content-homepage__container">
+      <div class="hero-content-homepage__text-section">
+        <div class="hero-content-homepage__icon">
           <font-awesome-icon :icon="['fab', 'avianex']" />
         </div>
-        <h1 class="hero-title">آموزش مطالب خلبانی با آریا درودیان.</h1>
-        <p class="hero-subtitle py-2">
-          <!-- هدف ما آموزش اصولی زبان هوانوردی و پیشرفت سطح دانش زبان شما با ارائه
-            مقاله های به روز هوانوردی پست های آموزشی رایگان، پادکست های هوانوردی
-            و برگزاری کلاس های خصوصی و نمیه خصوصی و ماک تست است. -->
-
+        <h1 class="hero-content-homepage__title">
+          آموزش مطالب خلبانی با آریا درودیان.
+        </h1>
+        <p class="hero-content-homepage__subtitle">
           هدف ما آموزش اصولی زبان هوانوردی و پیشرفت سطح دانش زبان شما.
         </p>
-        <div class="text-center py-3">
+        <div class="hero-content-homepage__button-container">
           <nuxt-link to="classes">
-            <button native-type="submit" class="btn animation-on-hover">
-              <span class="ps-2"
-                ><font-awesome-icon :icon="['fas', 'book-reader']"
-              /></span>
+            <button class="hero-content-homepage__button">
+              <span class="hero-content-homepage__button-icon">
+                <font-awesome-icon :icon="['fas', 'book-reader']" />
+              </span>
               کلاس های خصوصی
             </button>
           </nuxt-link>
         </div>
       </div>
     </div>
-
-    <div class="pt-4">
+    <div class="hero-content-homepage__subject-selector">
       <home-subject-selector />
     </div>
   </section>
@@ -38,99 +35,131 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-content-homepage {
-  min-height: calc(100vh - 114px);
+  min-height: calc(100vh - 114px) !important;
   background-color: var(--hero-bg) !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.05' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.05' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E") !important;
 
-  .icon {
+  &__container {
+    padding: 2.5rem 0 !important;
+  }
+
+  &__icon {
     font-size: 4.3rem !important;
     color: var(--hero-text) !important;
-    display: block;
-    text-align: center;
-    padding-top: 1rem;
+    display: block !important;
+    text-align: center !important;
+    padding-top: 1rem !important;
   }
 
-  .hero-title {
+  &__title {
     font-size: 3.4rem !important;
-    line-height: 1.3em;
+    line-height: 1.3em !important;
     font-family: IranSansBold !important;
     color: var(--hero-text) !important;
-    margin: 0;
-    text-align: center;
+    text-align: center !important;
   }
 
-  .hero-subtitle {
-    font-size: 1.1rem;
+  &__subtitle {
+    font-size: 1.1rem !important;
     color: var(--hero-text) !important;
     font-family: IranSans !important;
-    line-height: 1.6em;
-    padding-left: 18%;
-    padding-right: 18%;
-    padding-top: 1.9em !important;
-    text-align: center;
-    margin: 0;
+    line-height: 1.6em !important;
+    padding: 1.4em 18% 0 !important;
+    text-align: center !important;
   }
 
-  .btn {
-    background-color: white;
+  &__button-container {
+    text-align: center !important;
+    padding: 1rem 0 !important;
+  }
+
+  &__button {
+    background-color: white !important;
     color: var(--hero-bg) !important;
-    font-size: 0.9rem;
+    font-size: 1rem !important;
     border: 1px solid rgba(255, 255, 255, 0.7) !important;
     border-radius: 8px !important;
     padding: 10px 20px !important;
     margin-top: 2em !important;
+    font-family: IranSans !important;
+
+    &:hover {
+      background-color: var(--hero-bg) !important;
+      color: var(--hero-text) !important;
+      border: 1px solid #fff !important;
+    }
   }
 
-  .btn:hover {
-    background-color: var(--hero-bg) !important;
-    color: var(--hero-text) !important;
-    border: 1px solid #fff !important;
+  &__button-icon {
+    padding-left: 0.5rem !important;
+  }
+
+  &__subject-selector {
+    padding-top: 4rem !important;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .custom-padding {
-    padding-top: 3rem !important;
+@media screen and (max-width: 1200px) {
+  .hero-content-homepage {
+    &__title {
+      font-size: 2.8rem !important;
+    }
+
+    &__subtitle {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content-homepage {
+    &__title {
+      font-size: 2.4rem !important;
+    }
+
+    &__subtitle {
+      font-size: 0.95rem !important;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero-content-homepage {
-    .hero-title {
-      font-size: 2.1rem !important;
-      color: #fff !important;
-      text-align: right;
-      margin: 0;
+    &__title {
+      font-size: 2rem !important;
     }
 
-    .hero-subtitle {
-      font-size: 1em;
-      color: rgb(236, 236, 236);
-      padding-left: 0.1%;
-      padding-right: 0.1%;
-      margin: 0;
-      text-align: center;
+    &__subtitle {
+      font-size: 0.9rem !important;
     }
-  }
 
-  .icon {
-    font-size: 5.1em;
-    margin: 0;
-  }
-
-  .text-section {
-    padding-top: 3px;
-  }
-
-  .btn {
-    font-size: 0.9rem;
+    &__icon {
+      font-size: 5.1em !important;
+    }
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 678px) {
-  .hero-title {
-    text-align: center !important;
+@media screen and (max-width: 576px) {
+  .hero-content-homepage {
+    &__title {
+      font-size: 1.6rem !important;
+    }
+
+    &__subtitle {
+      font-size: 0.85rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content-homepage {
+    &__title {
+      font-size: 1.4rem !important;
+    }
+
+    &__subtitle {
+      font-size: 0.8rem !important;
+    }
   }
 }
 </style>

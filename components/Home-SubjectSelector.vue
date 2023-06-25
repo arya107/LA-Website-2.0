@@ -1,49 +1,39 @@
 <template>
   <section dir="rtl" class="page-bg">
     <div class="container">
-      <!-- <h2 class="section-header mb-4">گام‌های یادگیری</h2> -->
-
       <div class="row text-center">
-        <!-- Button 1 -->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="blog">
-            <button native-type="submit" class="btn btn-1 shadow-sm">
-              <font-awesome-icon :icon="['fa', 'plane']" class="icon" />
-              <br />
-              LPR Training Material
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+          <nuxt-link to="blog" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'plane']" class="btn__icon" />
+              <span class="btn__text">LPR Training Material</span>
             </button>
           </nuxt-link>
         </div>
 
-        <!-- BUTTON 2 -->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="maintenance">
-            <button native-type="submit" class="btn btn-2 shadow-sm">
-              <font-awesome-icon :icon="['fa', 'headset']" class="icon" />
-              <br />
-              Radio Telephony Material
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+          <nuxt-link to="maintenance" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
+              <span class="btn__text">Radio Telephony Material</span>
             </button>
           </nuxt-link>
         </div>
 
-        <!-- BUTTON 3 -->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="classes">
-            <button native-type="submit" class="btn btn-3 shadow-sm">
-              <font-awesome-icon :icon="['fa', 'comments']" class="icon" />
-              <br />
-              Aviation English Classes
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+          <nuxt-link to="classes" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'comments']" class="btn__icon" />
+              <span class="btn__text">Aviation English Classes</span>
             </button>
           </nuxt-link>
         </div>
 
-        <!-- BUTTON 4 -->
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <nuxt-link to="blog">
-            <button native-type="submit" class="btn btn-3 shadow-sm">
-              <font-awesome-icon :icon="['fa', 'book']" class="icon" />
-              <br />
-              Aviation Articles
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+          <nuxt-link to="blog" class="btn__link">
+            <button class="btn shadow-sm">
+              <font-awesome-icon :icon="['fa', 'book']" class="btn__icon" />
+              <span class="btn__text">Aviation Articles</span>
             </button>
           </nuxt-link>
         </div>
@@ -58,57 +48,43 @@ export default {};
 
 <style lang="scss" scoped>
 .btn {
-  font-size: 1rem;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
   border-radius: 18px !important;
-  width: 100%;
-  height: 130px;
+  width: 100% !important;
+  height: 130px !important;
   background-color: var(--hero-button-bg) !important;
   color: var(--hero-text) !important;
   border: 3px dashed var(--hero-border) !important;
-  box-shadow: inset 0 1px 0 0 #ffffff0d;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  box-shadow: inset 0 1px 0 0 #ffffff0d !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  text-decoration: none !important;
 
-.btn:hover {
-  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
-  // border: 2px solid #223662 !important;
-  border: 3px dashed #fbbc39 !important;
+  &:hover {
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
+    border: 3px dashed #fbbc39 !important;
+  }
 
-  .icon {
-    color: #fbbc39 !important;
+  &__icon {
+    font-size: 2rem !important;
+    padding-bottom: 0.8rem !important;
+    color: var(--hero-text) !important;
+  }
+
+  &__text {
+    margin-top: 0.5rem !important;
+    font-family: sans-serif, Verdana, Geneva, Tahoma !important;
   }
 }
 
-.icon {
-  font-size: 2rem;
-  padding-bottom: 0.8rem;
-  // color: var(--color-main) !important;
-  color: var(--hero-text) !important;
-}
-
-// .btn-1 {
-//   background-color: #fcd9e2 !important;
-//   color: #912741 !important;
-//   border: 1px solid #fbc6d3 !important;
-// }
-
-// .btn-2 {
-//   background-color: #e3d7fb !important;
-//   color: #44228c !important;
-//   border: 1px solid #d5c4f9 !important;
-// }
-
-// .btn-3 {
-//   background-color: #ccecfd !important;
-//   color: #005f94 !important;
-//   border: 1px solid #b3e2fd !important;
-// }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .btn {
-    width: 290px;
-    height: 100px;
-    padding-top: 10px;
+    width: 290px !important;
+    height: 100px !important;
+    padding-top: 10px !important;
   }
 }
 </style>

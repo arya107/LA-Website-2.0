@@ -1,17 +1,16 @@
 <template>
   <nav dir="ltr" class="toc">
-    <header class="toc-header border-bottom pb-2 mb-2">
-      <h3>Table of contents</h3>
+    <header>
+      <h3 class="toc-header">Table of contents</h3>
     </header>
     <div class="toc-scrollable">
-      <ul class="toc-links d-flex flex-column gap-2 px-2">
-        <!-- render each link with depth class -->
+      <ul class="toc-links">
         <li
           v-for="link of flattenLinks(links)"
           :key="link.id"
           :class="`toc-link _${link.depth}`"
         >
-          <a :href="`#${link.id}`" class="text-dark">
+          <a :href="`#${link.id}`">
             {{ link.text }}
           </a>
         </li>
@@ -22,10 +21,8 @@
 </template>
 
 <script setup>
-// define links prop
 defineProps(['links']);
 
-// flatten TOC links nested arrays to one array
 const flattenLinks = (links) => {
   let _links = links
     .map((link) => {
@@ -50,41 +47,44 @@ const flattenLinks = (links) => {
   max-height: 100vh;
   overflow: auto;
   border: 1px solid #dee2e6 !important;
-  padding: 15px !important;
-  border-radius: 5px !important;
-  font-family: 'Georgia', serif !important;
-  color: #333 !important;
-  background-color: #f7f7f7 !important;
-  text-align: left !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) !important;
-  position: relative; /* Added */
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #f7f7f7;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 ::v-deep h3 {
-  font-size: 1.25rem;
-  font-weight: 700 !important;
+  font-size: 1.1rem;
+  font-weight: 700;
   line-height: 1.75rem;
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-bottom: 1px solid #dee2e6;
+  border-width: 70%;
 }
 
 ::v-deep .toc-links,
 ::v-deep a {
-  text-decoration: none !important;
-  margin-right: 10px !important;
-  color: #555 !important;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #555;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   list-style: none;
-  transition: color 0.3s ease !important; /* smooth color transition */
+  transition: color 0.3s ease;
 }
 
 ::v-deep .toc-links a:hover {
-  color: #007bff !important; /* link color on hover */
+  color: #007bff;
 }
 
 ::v-deep .toc-link._3 {
@@ -99,40 +99,38 @@ const flattenLinks = (links) => {
   padding-left: 2rem;
 }
 
-/* Custom scroll bar for Chrome, Safari */
 ::v-deep .toc::-webkit-scrollbar {
-  width: 6px !important;
+  width: 6px;
 }
 
 ::v-deep .toc::-webkit-scrollbar-track {
-  background: #f1f1f1 !important;
+  background: #f1f1f1;
 }
 
 ::v-deep .toc::-webkit-scrollbar-thumb {
-  background: #888 !important;
+  background: #888;
 }
 
 ::v-deep .toc::-webkit-scrollbar-thumb:hover {
-  background: #555 !important;
+  background: #555;
 }
 
 ::v-deep .toc-scrollable {
   position: relative;
-  max-height: 80vh; /* Change the max-height value as needed */
+  max-height: 60vh;
   overflow-y: auto;
-  z-index: 0; /* Added */
+  z-index: 0;
 }
 
-::v-deep .fade-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  // height: 20px; /* Adjust as needed */
-  height: 30%; /* Adjust as needed */
-  // background: linear-gradient(rgba(247, 247, 247, 0), #f7f7f7);
-  background: linear-gradient(transparent, #f7fafc);
-  z-index: 1;
-  width: 90% !important;
-}
+// THIS IS FOR THE FADE AT THE BOTTOM
+// ::v-deep .fade-overlay {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 30%;
+//   background: linear-gradient(transparent, #f7fafc);
+//   z-index: 1;
+//   width: 90%;
+// }
 </style>

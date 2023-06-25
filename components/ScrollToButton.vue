@@ -23,7 +23,6 @@
   border-radius: 50% !important;
   width: 40px;
   height: 40px;
-
   font-size: 20px !important;
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.22) !important;

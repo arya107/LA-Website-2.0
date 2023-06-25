@@ -27,7 +27,7 @@
         </div>
       </aside>
       <!-- Add responsive classes for grid columns -->
-      <article class="article col-12 col-lg-9">
+      <article class="article col-12 col-lg-9 mt-2">
         <ContentRenderer dir="auto" class="blog-text" :value="data.article">
           <template #empty>
             <p>No content found.</p>
@@ -71,7 +71,7 @@ useHead({
 
 <style lang="scss" scoped>
 ::v-deep .article-main {
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', serif !important;
 }
 
 ::v-deep .article-header {
@@ -91,22 +91,25 @@ useHead({
 
 ::v-deep .pill {
   display: inline-block;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 75%;
-  font-weight: 700;
+  padding: 0.35em 0.6em !important;
+  font-size: 0.95em !important;
+  font-weight: 600 !important;
   line-height: 1;
-  color: #000;
+  color: #0284c7 !important;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
-  background-color: #ddd;
+  border-radius: 0.375rem !important;
+  border: 1px solid #bae6fd !important;
+  background-color: #e0f2fe !important;
+  margin-left: 6px !important;
 }
 
 ::v-deep .article-image {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: none !important;
 }
 
 ::v-deep .article-section {
@@ -121,33 +124,34 @@ useHead({
 
 ::v-deep .blog-text {
   font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #334155 !important;
   line-height: 1.4;
   font-size: 1.2rem;
 }
 
 ::v-deep .blog-text h1 {
-  font-size: 2em;
-  margin-top: 1.4em;
-  margin-bottom: 1.4em;
-  font-weight: bold;
+  font-size: 1.7rem !important;
+  margin-top: 1.4em !important;
+  margin-bottom: 1.4em !important;
+  font-weight: bold !important;
+  color: #0f172a !important;
 }
 
 ::v-deep .blog-text h2 {
-  font-size: 1.8em;
+  font-size: 1.4rem !important;
+  font-weight: bold !important;
 }
 
 ::v-deep .blog-text h3 {
-  font-size: 1.6em;
+  font-size: 1.3rem !important;
+  font-weight: bold !important;
 }
 
-::v-deep .blog-text h4 {
-  font-size: 1.4em;
-}
-
+::v-deep .blog-text h4,
 ::v-deep .blog-text h5,
 ::v-deep .blog-text h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  font-weight: bold !important;
 }
 
 ::v-deep .blog-text p {
@@ -155,8 +159,8 @@ useHead({
 }
 
 ::v-deep .blog-text a {
-  color: #1a0dab;
-  text-decoration: underline;
+  color: #0f172a !important;
+  text-decoration: none !important;
 }
 
 ::v-deep .blog-text ul,

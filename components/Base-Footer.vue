@@ -13,7 +13,7 @@
           />
           <!-- سال ۱۳۹۶ - ۱۴۰۲ -->
         </p>
-        <div class="footer__mode-switcher">
+        <div dir="ltr" class="footer__mode-switcher">
           <ColorModePicker />
         </div>
       </div>

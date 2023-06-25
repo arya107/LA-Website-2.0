@@ -27,11 +27,11 @@
         }"
       >
         <template v-slot="{ list }">
-          <ul class="list-unstyled container">
-            <li
+          <div class="container">
+            <div
               v-for="article in list"
               :key="article._path"
-              class="list-item single-article"
+              class="single-article card"
             >
               <NuxtLink :to="article._path">
                 <div class="container">
@@ -62,8 +62,8 @@
                   </header>
                 </div>
               </NuxtLink>
-            </li>
-          </ul>
+            </div>
+          </div>
         </template>
 
         <template #not-found>

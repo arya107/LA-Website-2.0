@@ -4,47 +4,6 @@
       <h1 class="text-center page-title">کلاس های خصوصی ما</h1>
       <div class="private-classes pt-4">
         <div class="row pricing">
-          <!-- 
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-3">
-            <div class="pricing-box hover">
-              <div class="pricing-title bg-bronze">
-                <h3 class="titleSize">
-                  برنز
-                  Group Classes
-                </h3>
-              </div>
-              <div class="pricing-field">
-                <p class="price">۳۵۰,۰۰۰ <span class="toman">تومان</span></p>
-                <p class="py-0 my-0 smalltext">
-                  گروهی - ۵ جلسه
-                </p>
-              </div>
-              <div class="pricing-features pt-3">
-                <ul>
-                  <li class="bold">
-                    ظرفيت ٤ الی ۶ نفر
-                  </li>
-                  <li>تمرین مکالمه</li>
-                  <li>تمرین لیسنینگ</li>
-                  <li>تمرین لغات و تلفظ</li>
-                  <li>گواهی پایان دوره</li>
-                </ul>
-              </div>
-              <div class="pricing-action">
-                <a href="https://t.me/AskAryaSomething" target="_blank">
-                  <button
-                    block
-                    disabled
-                    native-type="submit"
-                    class="btn btn-info"
-                  >
-                    رزرو کلاس
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div> -->
-
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-immigration">
@@ -79,46 +38,10 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-4 col-sm-12 mb-4">
-            <div class="pricing-box hover">
-              <div class="pricing-title bg-silver">
-                <h3 class="titleSize">Bravo</h3>
-              </div>
-              <div class="pricing-field">
-                <p class="price">۳,۷۵۰,۰۰۰ <span class="toman">تومان</span></p>
-                <p class="py-0 my-0 smalltext">۹ جلسه</p>
-              </div>
-              <div class="pricing-features pt-3">
-                <ul>
-                  <li>تمرین مکالمه</li>
-                  <li>تمرین لغات، تلفظ و گرامر</li>
-                  <li>تمرین لیسنینگ</li>
-                  <li>يادگيری لغات، تلفظ و گرامر</li>
-                  <li>خواندن کتاب و مجلات</li>
-                  <li>آموزش نکات کلیدی مکالمه هوانوردی</li>
-                  <li>برگزاری ۱ آزمون در طول ترم</li>
-                  <li>خواندن مقالات هوانوردی</li>
-                  <li>گواهی پایان دوره</li>
-                </ul>
-              </div>
-              <div class="pricing-action">
-                <a href="https://t.me/AskAryaSomething" target="_blank">
-                  <base-button
-                    block
-                    native-type="submit"
-                    class="btn btn-info animation-on-hover"
-                  >
-                    رزرو کلاس
-                  </base-button>
-                </a>
-              </div>
-            </div>
-          </div> -->
 
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-alpha">
-                <!-- <h3 class="titleSize">Alpha</h3> -->
                 <h3 class="titleSize">آلفا</h3>
               </div>
               <div class="pricing-field">
@@ -132,14 +55,9 @@
                 <ul>
                   <li>بحث آزاد</li>
                   <li>تمرين مكالمه</li>
-                  <!-- <li>نقد فيلم و تاک شو ها</li> -->
                   <li>يادگيری لغات، تلفظ و گرامر</li>
                   <li>تمرين ليسنينگ و مکالمه ATC</li>
-                  <!-- <li>آزمون شبيه سازی زبان هوانوردیتون</li> -->
                   <li>آموزش نکات کلیدی مکالمه هوانوردی</li>
-                  <!-- <li>آموزش نکات کلیدی و کاربردی مکالمه هوانوردی</li> -->
-                  <!-- <li>آموزش نکات کلیدی و کاربردی مکالمه</li> -->
-                  <!-- <li>ترجمه رزومه جهت مهاجرت</li> -->
                   <li>برگزاری ۲ آزمون در طول ترم</li>
                   <li>گواهی پایان دوره</li>
                 </ul>
@@ -161,7 +79,6 @@
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-mock">
-                <!-- <h3 class="titleSize">Mock Test</h3> -->
                 <h3 class="titleSize">آزمون ماک</h3>
               </div>
               <div class="pricing-field">
@@ -170,12 +87,9 @@
               </div>
               <div class="pricing-features pt-3">
                 <ul>
-                  <!-- <li>آزمون شبيه سازی زبان هوانوردیتون</li> -->
                   <li>مشاوره تخصصی</li>
-                  <!-- <li>آزمون شبيه سازی</li> -->
                   <li>مکالمه، توصیف عکس و شنیداری</li>
                   <li>آنالیز نقاط ضعف و قوت زبان آموز</li>
-                  <!-- <li>ارائه Certificate of Completion</li> -->
                 </ul>
               </div>
               <div class="pricing-action">
@@ -197,23 +111,6 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  head() {
-    return {
-      title: `کلاس های خصوصی ما | Learn Aviation`,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'کلاس های خصوصی ما | Learn Aviation',
-        },
-      ],
-    };
-  },
-};
-</script> -->
-
 <style lang="scss" scoped>
 .private-classes-background {
   background-color: var(--hero-bg) !important;
@@ -225,18 +122,18 @@ export default {
   font-size: 13px;
   width: 100%;
   padding: 9px 0;
-  // background-color: var(--bg);
   background: #027fc2 !important;
-  background-color: #027fc2 !important;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border: 1px solid #0476b4 !important;
-
   font-family: IranSansBold !important;
 }
 
-.section-header {
+.page-title {
   font-size: 1.5rem;
-  color: var(--color);
+  // color: var(--color) !important;
+  font-family: IranSansBold !important;
+  text-align: center !important;
+  padding-bottom: 2em;
 }
 
 .bold {
@@ -258,9 +155,7 @@ ul {
     position: relative;
     border-radius: 16px !important;
     text-align: center;
-    // box-shadow: 0 10px 19px 6px rgba(0, 0, 0, 0.199) !important;
-    // background-color: #eeeeee;
-    background-color: #fff;
+    background-color: #fff !important;
   }
 
   .pricing-title {
@@ -271,7 +166,6 @@ ul {
   .titleSize {
     color: #fff !important;
     font-size: 1.23rem !important;
-    // font-family: sans-serif, Verdana, Tahoma !important;
     font-family: IranSansBold !important;
     padding: 12px 0 9px 0;
   }
@@ -290,24 +184,6 @@ ul {
     letter-spacing: -0.03em !important;
     padding-top: 0;
     margin: 0 !important;
-  }
-
-  .pricing-price:after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    border-top: 1px solid rgba(224, 224, 224, 0.3);
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    margin-left: -50px;
-  }
-
-  .pricing-price span {
-    display: inline-block;
-    color: #fff;
-    margin: 7px 3px 0 0;
-    font-size: 2rem;
   }
 
   .toman {
@@ -329,6 +205,7 @@ ul {
     padding: 6px 0;
     font-size: 0.98rem !important;
     color: rgb(63, 63, 63);
+    font-family: IranSans;
   }
 
   .pricing-action {
@@ -336,18 +213,14 @@ ul {
   }
 
   .hover {
-    -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 5px;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   .hover:hover {
-    -webkit-box-shadow: 0 10px 30px -5px rgba(136, 136, 136, 0.4);
-    box-shadow: 0 10px 30px -5px rgba(114, 114, 114, 0.4);
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5);
+    box-shadow: 0 10px 30px -5px rgba(136, 136, 136, 0.4);
+    transform: translateY(-5px);
     cursor: pointer;
   }
 
@@ -381,10 +254,8 @@ ul {
 .group-text {
   font-size: 13px;
   padding: 0.4rem 0.9rem;
-  // color: #ecfdf5;
   color: #fff !important;
   border-radius: 5px;
-  // background-color: #34d399;
   background-color: #ff9900 !important;
 }
 

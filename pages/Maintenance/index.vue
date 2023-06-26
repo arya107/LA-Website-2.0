@@ -6,7 +6,10 @@
       <p class="hero-subtitle pt-1 pb-3">سایت در حال بروز رسانی می باشد.</p>
 
       <nuxt-link to="/">
-        <base-button native-type="submit" class="btn animation-on-hover">
+        <base-button
+          native-type="submit"
+          class="btn shadow-sm animation-on-hover"
+        >
           مشاهده صفحه اصلی
         </base-button>
       </nuxt-link>
@@ -35,9 +38,7 @@ export default {
 .hero-content-homepage {
   background-color: #ff0066 !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.2' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.2'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-
-  // height: 100vh !important;
-  min-height: calc(100vh - 54px);
+  min-height: calc(100vh - 110px) !important;
 
   .hero-text-section {
     position: absolute;
@@ -48,12 +49,11 @@ export default {
   }
 
   .hero-title {
-    font-size: 3.8em;
+    font-size: 3.6em;
     font-family: 'Arial Black', Arial, sans-serif !important;
     font-weight: bolder;
     color: #fff;
-
-    padding-top: 2em;
+    // padding-top: 2em;
     direction: ltr !important;
   }
 
@@ -65,12 +65,16 @@ export default {
 
   .btn {
     background-color: rgb(247, 247, 247) !important;
-    color: rgb(46, 46, 46);
-    // color: var(--color);
-
+    color: #2e2e2e;
+    font-family: IranSans !important;
     border-color: rgb(240, 240, 240) !important;
-    padding: 12px 35px !important;
+    padding: 10px 30px !important;
     border-radius: 15px !important;
+    font-size: 1em;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
 }
 

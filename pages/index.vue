@@ -32,8 +32,7 @@ definePageMeta({
 </script> -->
 
 <style lang="scss" scoped>
-.page-bg {
-  // min-height: calc(100vh - 54px);
-  min-height: calc(100vh - 114px);
-}
+// .page-bg {
+//   min-height: calc(100vh - 114px);
+// }
 </style>

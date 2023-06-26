@@ -112,7 +112,7 @@ export default {};
     background-color: white !important;
     color: var(--hero-bg) !important;
     font-size: 0.9rem !important;
-    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    border: 2px solid rgba(255, 255, 255, 0.7) !important;
     border-radius: 8px !important;
     padding: 10px 20px !important;
     margin: 1.8em 0 4em 0 !important;
@@ -121,7 +121,7 @@ export default {};
     &:hover {
       background-color: var(--hero-bg) !important;
       color: var(--hero-text) !important;
-      border: 1px solid #fff !important;
+      border: 2px dashed #fff !important;
     }
   }
 

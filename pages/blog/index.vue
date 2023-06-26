@@ -122,7 +122,8 @@ useHead({
   }
   .article-title {
     // font-family: IranSansBold !important;
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    // font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
     font-size: 1.4rem !important;
     text-decoration: none !important;
     color: #2d2d2d;
@@ -139,7 +140,7 @@ useHead({
     border-color: rgb(208 205 255 / 1);
     background-color: #4001ff !important;
     padding: 0.25rem 0.75rem;
-    margin: 0 0.1rem;
+    margin: 0 0.1rem 0;
     font-family: Hepta Slab, ui-sans-serif, system-ui, -apple-system,
       BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
       'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',

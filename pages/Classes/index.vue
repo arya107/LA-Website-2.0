@@ -7,12 +7,13 @@
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-immigration">
-                <h3 class="titleSize">آلفا +</h3>
+                <!-- <h3 class="titleSize">آلفا +</h3> -->
+                <h3 class="titleSize">آلفا</h3>
               </div>
               <div class="pricing-field">
                 <p class="price">۱۳,۵۰۰,۰۰۰ <span class="toman">تومان</span></p>
               </div>
-              <div class="pricing-features pt-3">
+              <div class="pricing-features pt-1">
                 <ul>
                   <li>مشاوره تخصصی</li>
                   <li>نوشتن رزومه حرفه ای</li>
@@ -42,14 +43,15 @@
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
               <div class="pricing-title bg-alpha">
-                <h3 class="titleSize">آلفا</h3>
+                <!-- <h3 class="titleSize">آلفا</h3> -->
+                <h3 class="titleSize">براوو</h3>
               </div>
               <div class="pricing-field">
-                <p class="price">۶,۵۰۰,۰۰۰ <span class="toman">تومان</span></p>
-                <p class="py-0 mt-0 smalltext">۱۲ جلسه</p>
-                <span class="group-text">
-                  کلاس های گروهی، هر نفر ۲,۸۵۰,۰۰۰ تومان
-                </span>
+                <p class="price">۷,۰۰۰,۰۰۰ <span class="toman">تومان</span></p>
+                <!-- <p class="py-0 mt-0 smalltext">۱۲ جلسه</p> -->
+                <p class="group-text mx-auto">
+                  کلاس های گروهی، هر نفر ۳,۲۵۰,۰۰۰ تومان
+                </p>
               </div>
               <div class="pricing-features">
                 <ul>
@@ -83,9 +85,9 @@
               </div>
               <div class="pricing-field">
                 <p class="price">۳۵۰,۰۰۰ <span class="toman">تومان</span></p>
-                <p class="py-0 my-0 smalltext">آنلاین</p>
+                <!-- <p class="py-0 my-0 smalltext">آنلاین</p> -->
               </div>
-              <div class="pricing-features pt-3">
+              <div class="pricing-features pt-1">
                 <ul>
                   <li>مشاوره تخصصی</li>
                   <li>مکالمه، توصیف عکس و شنیداری</li>
@@ -232,10 +234,12 @@ ul {
   .smalltext {
     font-size: 17px;
     color: rgb(88, 88, 88);
+    font-family: IranSans;
   }
 
   .bg-alpha {
-    background-color: #ff9900 !important;
+    // background-color: #ff9900 !important;
+    background-color: #22c55e !important;
   }
 
   .bg-mock {
@@ -247,16 +251,22 @@ ul {
   }
 
   .bg-immigration {
-    background-color: #00c875 !important;
+    // background-color: #00c875 !important;
+    background-color: #facc15 !important;
   }
 }
 
 .group-text {
-  font-size: 13px;
-  padding: 0.4rem 0.9rem;
-  color: #fff !important;
-  border-radius: 5px;
-  background-color: #ff9900 !important;
+  font-size: 12px !important;
+  padding: 0.4rem 0.6rem !important;
+  width: 70%;
+  margin-top: 1.2em !important;
+  color: #16a34a !important;
+  text-align: center !important;
+  font-family: IranSansBold !important;
+  border-radius: 5px !important;
+  background-color: #bbf7d0 !important;
+  border: 2px solid #a8f0c1;
 }
 
 @media (min-width: 1400px) {

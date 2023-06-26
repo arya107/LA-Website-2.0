@@ -19,11 +19,6 @@
     </header>
     <hr class="pb-5" />
     <section class="article-section row g-5">
-      <aside class="col-12 col-lg-3">
-        <div class="toc">
-          <Toc :links="data.article.body.toc.links" />
-        </div>
-      </aside>
       <article class="article col-12 col-lg-9">
         <ContentRenderer dir="auto" class="blog-text" :value="data.article">
           <template #empty>
@@ -31,6 +26,12 @@
           </template>
         </ContentRenderer>
       </article>
+
+      <aside class="col-12 col-lg-3">
+        <div class="toc">
+          <Toc :links="data.article.body.toc.links" />
+        </div>
+      </aside>
     </section>
     <PrevNext :prev="prev" :next="next" />
   </main>
@@ -124,7 +125,6 @@ useHead({
 
 ::v-deep .blog-text h1 {
   font-size: 1.6rem !important;
-  // margin-top: 1.4em !important;
   margin-bottom: 1.4em !important;
   font-weight: bold !important;
   color: #0f172a !important;
@@ -137,16 +137,17 @@ useHead({
   padding-top: 0.8em !important;
 }
 
-::v-deep .blog-text h3 {
-  font-size: 1.3rem !important;
-  font-weight: bold !important;
-  padding-top: 0.8em !important;
-}
+// ::v-deep .blog-text h3 {
+//   font-size: 1.2rem !important;
+//   font-weight: bold !important;
+//   padding-top: 0.8em !important;
+// }
 
+::v-deep .blog-text h3,
 ::v-deep .blog-text h4,
 ::v-deep .blog-text h5,
 ::v-deep .blog-text h6 {
-  font-size: 1.2rem;
+  font-size: 1.25rem !important;
   font-weight: bold !important;
 }
 

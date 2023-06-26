@@ -1,22 +1,24 @@
 <template>
   <nav dir="ltr" class="toc">
-    <header>
-      <h3 class="toc-header">Table of contents</h3>
-    </header>
-    <div class="toc-scrollable">
-      <ul class="toc-links">
-        <li
-          v-for="link of flattenLinks(links)"
-          :key="link.id"
-          :class="`toc-link _${link.depth}`"
-        >
-          <a :href="`#${link.id}`">
-            {{ link.text }}
-          </a>
-        </li>
-      </ul>
+    <div class="toc-border">
+      <header>
+        <h3 class="toc-header">Table of contents</h3>
+      </header>
+      <div class="toc-scrollable">
+        <ul class="toc-links">
+          <li
+            v-for="link of flattenLinks(links)"
+            :key="link.id"
+            :class="`toc-link _${link.depth}`"
+          >
+            <a :href="`#${link.id}`">
+              {{ link.text }}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="fade-overlay"></div>
     </div>
-    <div class="fade-overlay"></div>
   </nav>
 </template>
 
@@ -46,9 +48,7 @@ const flattenLinks = (links) => {
   min-height: minTableOfContentsHeight;
   max-height: 100vh;
   overflow: auto;
-  border: 1px solid #dee2e6 !important;
   padding: 15px;
-  border-radius: 5px;
   font-family: 'Georgia', serif;
   color: #333;
   background-color: #f7f7f7;
@@ -57,6 +57,12 @@ const flattenLinks = (links) => {
   position: relative;
 }
 
+// ::v-deep .toc-border {
+//   border-left: 1px solid #e5e7eb !important;
+//   padding: 10px;
+//   border-radius: 15px;
+// }
+
 ::v-deep h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -64,6 +70,7 @@ const flattenLinks = (links) => {
   margin-bottom: 1.3rem;
   padding-bottom: 0.3rem;
   text-transform: uppercase;
+  font-style: italic !important;
   letter-spacing: 1px;
   border-bottom: 1px solid #dee2e6;
   border-width: 70%;

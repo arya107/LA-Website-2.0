@@ -1,5 +1,3 @@
-<!-- ./pages/blog/index.vue -->
-
 <template>
   <main class="page">
     <div class="hero container">
@@ -27,9 +25,13 @@
         }"
       >
         <template v-slot="{ list }">
-          <div class="container mt-4">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col" v-for="article in list" :key="article._path">
+          <div dir="ltr" class="container mt-4">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 mb-3"
+                v-for="article in list"
+                :key="article._path"
+              >
                 <NuxtLink
                   :to="article._path"
                   class="text-decoration-none text-dark"
@@ -38,14 +40,14 @@
                     <img
                       :src="`/${article.img}`"
                       :alt="article.title"
-                      class="card-img-top article-img"
+                      class="card__img blog-page__article-img"
                     />
-                    <div class="card-body">
-                      <h5 class="card-title">{{ article.title }}</h5>
-                      <p class="card-text">{{ article.description }}</p>
-                      <p class="card-text">
+                    <div class="card__body">
+                      <h5 class="card__title">{{ article.title }}</h5>
+                      <p class="card__text">{{ article.description }}</p>
+                      <p class="card__text">
                         <small
-                          class="badge bg-primary text-white rounded-pill"
+                          class="badge"
                           v-for="(tag, n) in article.tags"
                           :key="n"
                         >
@@ -84,99 +86,83 @@ const filter = ref(tags?.split(','));
 useHead({
   title: 'All articles',
   meta: [
-    { name: 'description', content: "Here's a list of all my great articles" },
+    { name: 'description', content: "Here's a list of all our great articles" },
   ],
 });
 </script>
 
 <style lang="scss" scoped>
 .page {
-  min-height: calc(100vh - 110px) !important;
-  background-color: var(--hero-bg) !important;
+  min-height: calc(100vh - 7rem);
+  background-color: var(--blog-bg);
   padding-bottom: 2em;
 }
 
-.article-img {
+.page_title,
+.page_subtitle {
+  color: var(--blog-title);
+}
+
+.blog-page__article-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
-.single-article {
-  margin-bottom: 1em !important;
-  padding: 20px;
-  background-color: #e2e8f0;
-  border: 1px solid #cbd5e1;
-  border-radius: 15px;
-  text-align: right !important;
-  direction: ltr !important;
-  font-family: IranSans !important;
-  text-decoration: none !important;
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+  border: none;
+  max-width: 540px;
+  margin: auto;
 
-  a {
-    text-decoration: none !important;
+  &:hover {
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .article-img {
-    width: 80px !important;
-  }
-  .article-title {
-    // font-family: IranSansBold !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    // font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
-    font-size: 1.4rem !important;
-    text-decoration: none !important;
-    color: #2d2d2d;
-
-    &:hover {
-      text-decoration: underline !important;
-    }
+  .card__body {
+    padding: 1.5rem;
+    text-align: justify;
   }
 
-  .article-tags {
-    cursor: pointer;
-    border-radius: 1.5rem;
-    border-width: 1px;
-    border-color: rgb(208 205 255 / 1);
-    background-color: #4001ff !important;
-    padding: 0.25rem 0.75rem;
-    margin: 0 0.1rem 0;
-    font-family: Hepta Slab, ui-sans-serif, system-ui, -apple-system,
-      BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-      'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 1rem;
-    line-height: 1rem;
-    font-weight: 600;
-    color: #d4c6ff !important;
+  .card__title {
+    margin-bottom: 1rem;
+    font-weight: bold;
   }
+
+  .card__text {
+    font-size: 0.875rem;
+  }
+}
+
+.badge {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #4001ff;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.1rem 0 0;
+  font-family: sans-serif, Arial, Helvetica;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .blog-page__hero {
     min-height: 31vh;
   }
 
-  .page-title {
-    padding: 1.2em 0 0 0 !important;
-    font-size: 2rem !important;
-
-    .icon {
-      font-size: 1.3em;
-      padding-bottom: 0.3rem !important;
-    }
-  }
-
-  .subheader {
-    font-size: 1.2rem !important;
+  .blog-page__title {
+    padding: 1.2em 0 0 0;
+    font-size: 2rem;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .hero {
-    // min-height: 31vh !important;
-    margin-bottom: 2em !important;
+  .blog-page__hero {
+    margin-bottom: 2em;
   }
 }
 </style>

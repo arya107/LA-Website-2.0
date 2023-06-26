@@ -1,17 +1,25 @@
 <template>
-  <div dir="rtl" class="bg">
-    <div class="hero">
-      <div class="container">
-        <h1 class="page-title">
-          اتاق آموزش
-          <span class="page-subtitle">تمرین شنیداری آزمون هوانوردی</span>
-        </h1>
+  <div>
+    <section dir="rtl" class="hero-content-homepage">
+      <div class="container hero-text-section">
+        <h1 class="hero-title">Under Maintenance</h1>
+        <p class="hero-subtitle pt-1 pb-3">سایت در حال بروز رسانی می باشد.</p>
+
+        <nuxt-link to="/">
+          <button class="btn shadow-sm animation-on-hover">
+            مشاهده صفحه اصلی
+          </button>
+        </nuxt-link>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
-<script>
+<script setup>
+definePageMeta({
+  layout: 'maintenance',
+});
+
 // export default {
 //   layout: 'maintenance',
 //   head() {

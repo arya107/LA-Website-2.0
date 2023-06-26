@@ -83,9 +83,10 @@ const navOpen = ref(false);
 </script>
 
 <style lang="scss">
-// .navbar {
-//   height: 55px;
-// }
+.navbar {
+  // box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
+  border-bottom: 1px solid #0f172a1a !important;
+}
 
 .custom-nav-link {
   font-family: IranSans;

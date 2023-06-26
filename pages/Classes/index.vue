@@ -2,7 +2,7 @@
   <div class="private-classes-background">
     <div class="container">
       <h1 class="text-center page-title">کلاس های خصوصی ما</h1>
-      <div class="private-classes pt-4">
+      <div class="private-classes py-4">
         <div class="row pricing">
           <div class="col-lg-4 col-sm-12 mb-4">
             <div class="pricing-box hover">
@@ -115,7 +115,8 @@
 
 <style lang="scss" scoped>
 .private-classes-background {
-  background-color: var(--hero-bg) !important;
+  // background-color: var(--hero-bg) !important;
+  background-color: var(--classes-bg) !important;
   min-height: 80vh !important;
 }
 
@@ -132,7 +133,7 @@
 
 .page-title {
   font-size: 1.5rem;
-  // color: var(--color) !important;
+  color: var(--classes-title) !important;
   font-family: IranSansBold !important;
   text-align: center !important;
   padding-bottom: 2em;
@@ -158,6 +159,8 @@ ul {
     border-radius: 16px !important;
     text-align: center;
     background-color: #fff !important;
+    // border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a !important;
   }
 
   .pricing-title {

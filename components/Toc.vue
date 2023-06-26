@@ -106,6 +106,10 @@ const flattenLinks = (links) => {
   padding-left: 2rem;
 }
 
+::v-deep .toc-links a:target {
+  color: #007bff !important;
+}
+
 ::v-deep .toc::-webkit-scrollbar {
   width: 6px;
 }

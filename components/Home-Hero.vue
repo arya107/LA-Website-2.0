@@ -26,7 +26,8 @@
     <div class="container">
       <div class="row text-center pb-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
-          <nuxt-link to="blog" class="btn__link">
+          <!-- <nuxt-link to="blog" class="btn__link"> -->
+          <nuxt-link to="learn" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'plane']" class="btn__icon" />
               <span class="btn__text">LPR Training Material</span>
@@ -35,7 +36,8 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
-          <nuxt-link to="maintenance" class="btn__link">
+          <!-- <nuxt-link to="maintenance" class="btn__link"> -->
+          <nuxt-link to="learn" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
               <span class="btn__text">Radio Telephony Material</span>

@@ -153,6 +153,12 @@ useHead({
 
 ::v-deep .blog-text p {
   margin-bottom: 1.5em;
+  color: #0f172a !important;
+}
+
+::v-deep .blog-text p img {
+  max-width: 60% !important;
+  // text-align: center !important;
 }
 
 ::v-deep .blog-text a {
@@ -162,11 +168,12 @@ useHead({
 
 ::v-deep .blog-text ul,
 ::v-deep .blog-text ol {
-  padding-left: 40px;
+  padding-left: 40px !important;
 }
 
 ::v-deep .blog-text li {
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
+  color: #0f172a !important;
 }
 
 @media (min-width: 576px) {

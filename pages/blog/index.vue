@@ -25,7 +25,7 @@
         }"
       >
         <template v-slot="{ list }">
-          <div dir="ltr" class="container mt-4">
+          <!-- <div dir="ltr" class="container mt-4">
             <div class="row">
               <div
                 class="col-lg-4 col-md-6 col-sm-12 mb-3"
@@ -61,9 +61,9 @@
                 </NuxtLink>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <!-- <div dir="ltr" class="container mt-4">
+          <div dir="ltr" class="container mt-4">
             <div class="row">
               <div
                 class="col-lg-4 col-md-6 col-sm-12 mb-3"
@@ -97,7 +97,7 @@
                 </NuxtLink>
               </div>
             </div>
-          </div> -->
+          </div>
         </template>
 
         <template #not-found>
@@ -145,12 +145,13 @@ useHead({
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card {
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px 0 rgba(151, 151, 151, 0.1);
+  border-radius: 10px !important;
   transition: all 0.3s linear;
   border: none;
   max-width: 540px;
@@ -178,13 +179,17 @@ useHead({
 .badge {
   font-size: 0.8rem;
   line-height: 1rem;
-  color: #fff;
-  border-radius: 10px;
-  background-color: #4001ff;
+  color: rgb(29 78 216 / 1) !important;
+  border-radius: 5px;
+  border: 1px solid rgb(29 78 216 / 0.1) !important;
+  background-color: rgb(239 246 255 / 1);
   padding: 0.25rem 0.75rem;
-  margin: 0 0.1rem 0 0;
-  font-family: sans-serif, Arial, Helvetica;
+  margin: 0 3px 3px 0 !important;
+  // font-family: sans-serif, Arial, Helvetica !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif !important;
   text-transform: uppercase;
+  // font-weight: 600 !important;
 }
 
 @media screen and (max-width: 768px) {

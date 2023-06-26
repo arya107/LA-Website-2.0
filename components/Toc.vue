@@ -64,30 +64,30 @@ const flattenLinks = (links) => {
 // }
 
 ::v-deep h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-  margin-bottom: 1.3rem;
-  padding-bottom: 0.3rem;
-  text-transform: uppercase;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5rem !important;
+  margin-bottom: 1.3rem !important;
+  padding-bottom: 0.3rem !important;
+  text-transform: uppercase !important;
   font-style: italic !important;
-  letter-spacing: 1px;
-  border-bottom: 1px solid #dee2e6;
-  border-width: 70%;
+  letter-spacing: 1px !important;
+  border-bottom: 1px solid #dee2e6 !important;
+  border-width: 70% !important;
 }
 
 ::v-deep .toc-links,
 ::v-deep a {
-  text-decoration: none;
-  margin-right: 10px;
-  color: #555;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  list-style: none;
-  transition: color 0.3s ease;
+  text-decoration: none !important;
+  margin-right: 10px !important;
+  color: #555 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+  padding-left: 0.2rem !important;
+  padding-right: 0.2rem !important;
+  list-style: none !important;
+  transition: color 0.3s ease !important;
 }
 
 ::v-deep .toc-links a:hover {

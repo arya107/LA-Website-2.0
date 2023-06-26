@@ -32,7 +32,7 @@
 <style lang="scss" scoped>
 .bg {
   background-color: var(--hero-bg) !important;
-  min-height: 90vh;
+  min-height: calc(100vh - 110px) !important;
 }
 
 // .custom-padding {

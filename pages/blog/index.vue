@@ -11,7 +11,7 @@
       </h1>
     </div>
 
-    <section class="page-section">
+    <section>
       <Tags />
 
       <ContentList
@@ -91,6 +91,7 @@ useHead({
 
 <style lang="scss" scoped>
 .page {
+  min-height: calc(100vh - 110px) !important;
   background-color: var(--hero-bg) !important;
   padding-bottom: 2em;
 }
@@ -173,7 +174,8 @@ useHead({
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .hero {
-    min-height: 31vh !important;
+    // min-height: 31vh !important;
+    margin-bottom: 2em !important;
   }
 }
 </style>

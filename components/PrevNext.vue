@@ -7,17 +7,17 @@ defineProps(['prev', 'next']);
 </script>
 
 <template>
-  <div class="prev-next-cont d-flex justify-content-between p-3 border rounded">
-    <span class="link-item prev">
+  <div class="prev-next-cont">
+    <span class="link-item">
       <NuxtLink v-if="prev" :to="prev._path">
-        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
         <span> {{ prev.title }} </span>
       </NuxtLink>
     </span>
-    <span class="link-item next">
+    <span class="link-item">
       <NuxtLink v-if="next" :to="next._path">
         <span> {{ next.title }} </span>
-        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <font-awesome-icon :icon="['fas', 'arrow-right']" />
       </NuxtLink>
     </span>
   </div>
@@ -25,15 +25,19 @@ defineProps(['prev', 'next']);
 
 <style lang="scss" scoped>
 .prev-next-cont {
-  border-color: #ced4da; /* closest to slate-200 */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ced4da; /* closest to slate-200 */
+  border-radius: 0.25rem;
+  margin-top: 1rem;
 }
 
 .link-item a {
   display: flex;
   gap: 0.5rem; /* equivalent to 2 in tailwind */
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-decoration: none !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 </style>

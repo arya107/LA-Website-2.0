@@ -2,14 +2,14 @@
 title: 'This is my second article!'
 description: 'Guess what? Nuxt content is awesome!'
 img: 'img/cover (2).JPG'
-tags: [Nuxt, Content, Learning, second]
+tags: [Nuxt, Content, Learning, Test, Arya]
 ---
 
-## My second blog post
+# My second blog post
 
 Welcome to my second blog post using [content v2 module](https://content.nuxtjs.org/)
 
-> Hey there! 👋🏾  This is my second blog post learning nuxt content.
+> Hey there! 👋🏾 This is my second blog post learning nuxt content.
 
 I'm currently building it using the following:
 
@@ -34,7 +34,7 @@ yarn dev -o
 
 export default defineNuxtConfig({
   // My Nuxt config
-})
+});
 ```
 
 ::InfoBox{type="info"}

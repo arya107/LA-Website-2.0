@@ -2,7 +2,6 @@
   <main dir="ltr" id="main" class="article-main container py-md-5 py-3">
     <header v-if="data.article" class="article-header mb-3">
       <div class="img-cont mb-3">
-        <!-- Add Bootstrap class for responsive image -->
         <img
           :src="`/${data.article.img}`"
           :alt="data.article.title"
@@ -18,16 +17,14 @@
         >{{ tag }}</span
       >
     </header>
-    <hr />
+    <hr class="pb-5" />
     <section class="article-section row g-5">
-      <!-- Add responsive classes for grid columns -->
       <aside class="col-12 col-lg-3">
         <div class="toc">
           <Toc :links="data.article.body.toc.links" />
         </div>
       </aside>
-      <!-- Add responsive classes for grid columns -->
-      <article class="article col-12 col-lg-9 mt-2">
+      <article class="article col-12 col-lg-9">
         <ContentRenderer dir="auto" class="blog-text" :value="data.article">
           <template #empty>
             <p>No content found.</p>
@@ -70,10 +67,6 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-::v-deep .article-main {
-  font-family: 'Georgia', serif !important;
-}
-
 ::v-deep .article-header {
   margin-bottom: 2rem;
 }
@@ -112,9 +105,9 @@ useHead({
   display: none !important;
 }
 
-::v-deep .article-section {
-  margin-top: 2rem;
-}
+// ::v-deep .article-section {
+//   margin-top: 2rem;
+// }
 
 ::v-deep .toc {
   position: -webkit-sticky;
@@ -123,28 +116,31 @@ useHead({
 }
 
 ::v-deep .blog-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   color: #334155 !important;
-  line-height: 1.4;
-  font-size: 1.2rem;
+  line-height: 1.7;
+  font-size: 1.15rem;
 }
 
 ::v-deep .blog-text h1 {
-  font-size: 1.7rem !important;
-  margin-top: 1.4em !important;
+  font-size: 1.6rem !important;
+  // margin-top: 1.4em !important;
   margin-bottom: 1.4em !important;
   font-weight: bold !important;
   color: #0f172a !important;
+  text-decoration: underline !important;
 }
 
 ::v-deep .blog-text h2 {
   font-size: 1.4rem !important;
   font-weight: bold !important;
+  padding-top: 0.8em !important;
 }
 
 ::v-deep .blog-text h3 {
   font-size: 1.3rem !important;
   font-weight: bold !important;
+  padding-top: 0.8em !important;
 }
 
 ::v-deep .blog-text h4,
@@ -184,21 +180,15 @@ useHead({
 
 @media (min-width: 992px) {
   ::v-deep .article-header h1 {
-    font-size: 3rem;
+    font-size: 2.6rem !important;
   }
 
   ::v-deep .article-header .lead {
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
+    padding-bottom: 1em !important ;
   }
 }
 
-@media (min-width: 1200px) {
-  ::v-deep .article-header h1 {
-    font-size: 3.5rem;
-  }
-
-  ::v-deep .article-header .lead {
-    font-size: 1.6rem;
-  }
-}
+// @media (min-width: 1200px) {
+// }
 </style>

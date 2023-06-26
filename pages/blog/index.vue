@@ -37,6 +37,44 @@
                   class="text-decoration-none text-dark"
                 >
                   <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ article.title }}</h5>
+                      <p class="card-text">{{ article.description }}</p>
+                      <div class="card-text">
+                        <small
+                          class="badge"
+                          v-for="(tag, n) in article.tags"
+                          :key="n"
+                        >
+                          {{ tag }}
+                        </small>
+                      </div>
+                      <a href="#" class="stretched-link"
+                        >Continue reading
+                        <span>
+                          <font-awesome-icon
+                            :icon="['fas', 'arrow-right']"
+                          /> </span
+                      ></a>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div dir="ltr" class="container mt-4">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 mb-3"
+                v-for="article in list"
+                :key="article._path"
+              >
+                <NuxtLink
+                  :to="article._path"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card h-100">
                     <img
                       :src="`/${article.img}`"
                       :alt="article.title"
@@ -59,7 +97,7 @@
                 </NuxtLink>
               </div>
             </div>
-          </div>
+          </div> -->
         </template>
 
         <template #not-found>

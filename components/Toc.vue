@@ -37,7 +37,8 @@ const flattenLinks = (links) => {
     })
     .flat(1);
 
-  console.log({ _links });
+  // For testing purposes
+  // console.log({ _links });
 
   return _links;
 };
@@ -129,7 +130,7 @@ const flattenLinks = (links) => {
 
 ::v-deep .toc-scrollable {
   position: relative;
-  max-height: 60vh;
+  max-height: 47vh;
   overflow-y: auto;
   z-index: 0;
 }

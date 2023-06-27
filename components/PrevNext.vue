@@ -28,9 +28,10 @@ defineProps(['prev', 'next']);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border: 1px solid #ced4da; /* closest to slate-200 */
-  border-radius: 0.25rem;
-  margin-top: 1rem;
+  // border: 1px solid #ced4da; /* closest to slate-200 */
+  border: 1px solid #e1e3e5 !important;
+  border-radius: 10px !important;
+  margin-top: 1.5rem !important;
 }
 
 .link-item a {
@@ -39,5 +40,9 @@ defineProps(['prev', 'next']);
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
 }
 </style>

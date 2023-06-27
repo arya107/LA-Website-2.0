@@ -16,22 +16,6 @@
         :key="n"
         >{{ tag }}</span
       >
-
-      <!-- Display author name -->
-      <p v-if="data.article.author" class="author">
-        Author: {{ data.article.author }}
-      </p>
-
-      <!-- Display reading time -->
-      <!-- Display reading time -->
-      <p v-if="data.article['reading time']" class="reading-time">
-        Reading Time: {{ data.article['reading time'] }}
-      </p>
-
-      <!-- Display publication date -->
-      <p v-if="data.article.date" class="date">
-        Published on: {{ new Date(data.article.date).toLocaleDateString() }}
-      </p>
     </header>
     <hr class="pb-5" />
     <section class="article-section row g-5">
@@ -46,6 +30,41 @@
       <aside class="col-12 col-lg-3">
         <div class="toc">
           <Toc :links="data.article.body.toc.links" />
+
+          <div class="article-info-row mt-3">
+            <!-- Display author name -->
+            <p v-if="data.article.author" class="author">
+              Author: <span>{{ data.article.author }}</span>
+
+              <!-- <span class="icon">
+                <font-awesome-icon :icon="['fas', 'id-card']" />
+              </span>
+              {{ data.article.author }} -->
+            </p>
+
+            <!-- Display reading time -->
+            <p v-if="data.article['reading time']" class="reading-time">
+              Reading Time: <span>{{ data.article['reading time'] }}</span>
+
+              <!-- <span class="icon">
+                <font-awesome-icon :icon="['fas', 'stopwatch']" />
+              </span>
+              {{ data.article['reading time'] }} -->
+            </p>
+
+            <!-- Display publication date -->
+            <p v-if="data.article.date" class="date">
+              Published on:
+              <span>
+                {{ new Date(data.article.date).toLocaleDateString() }}
+              </span>
+
+              <!-- <span class="icon">
+                <font-awesome-icon :icon="['fas', 'calendar-alt']" />
+              </span>
+              {{ new Date(data.article.date).toLocaleDateString() }} -->
+            </p>
+          </div>
         </div>
       </aside>
     </section>
@@ -85,7 +104,8 @@ useHead({
 
 <style lang="scss" scoped>
 ::v-deep .article-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 ::v-deep .article-header h1 {
@@ -123,9 +143,32 @@ useHead({
   display: none !important;
 }
 
-// ::v-deep .article-section {
-//   margin-top: 2rem;
-// }
+::v-deep .article-info-row {
+  margin-top: 4em !important;
+  color: #838383 !important;
+  border: 3px dashed #eaecee !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  text-align: left !important;
+  font-size: 0.85rem !important;
+
+  p {
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    text-align: left !important;
+  }
+
+  // .icon {
+  //   margin-right: 1.2em !important;
+  //   color: #cfcfcf !important;
+  // }
+}
+
+::v-deep .article-section {
+  margin-bottom: 4rem !important;
+}
 
 ::v-deep .toc {
   position: -webkit-sticky;

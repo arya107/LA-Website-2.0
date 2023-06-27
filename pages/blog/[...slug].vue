@@ -146,7 +146,7 @@ useHead({
 ::v-deep .article-info-row {
   margin-top: 4em !important;
   color: #838383 !important;
-  border: 3px dashed #eaecee !important;
+  border: 2px dashed #eaecee !important;
   border-radius: 10px !important;
   padding: 10px !important;
   text-align: left !important;

@@ -28,10 +28,10 @@ export default {};
 <style lang="scss" scoped>
 .footer {
   background-color: var(--bg-blue) !important;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 55px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   bottom: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -41,11 +41,11 @@ export default {};
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  width: 100%; // Make sure container takes full width
+  width: 100% !important;
 }
 
 .footer__copyright {
-  font-size: 0.8rem !important; // Adjust font-size so it fits in 40px height
+  font-size: 0.8rem !important;
   font-family: IranSans !important;
   color: var(--color-muted) !important;
   direction: rtl !important;
@@ -57,6 +57,8 @@ export default {};
   font-family: IranSans !important;
   text-decoration: none !important;
   color: var(--color-muted) !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .footer__copyright-icon {
@@ -69,7 +71,7 @@ export default {};
 
 @media (max-width: 768px) {
   .footer {
-    height: 75px !important;
+    height: 80px !important;
   }
   .footer__container {
     flex-direction: column !important;
@@ -83,13 +85,21 @@ export default {};
   }
 
   .footer__copyright-link {
-    font-size: 0.9em !important;
+    font-size: 0.92em !important;
+    // font-size: 0.82em !important;
   }
 
   .footer__mode-switcher {
     width: 100% !important;
     // order: -1 !important;
-    margin: 0.7em 0 !important;
+    // margin: 0.7em 0 !important;
+    margin-top: 0.7em !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    min-height: 90px !important;
   }
 }
 </style>

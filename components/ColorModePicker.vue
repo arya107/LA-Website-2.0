@@ -37,12 +37,13 @@
 <style lang="scss" scoped>
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 ul li {
   display: inline-block;
-  padding: 5px;
+  padding: 0 5px !important;
+  margin: 0 !important;
 }
 p {
   margin: 0;

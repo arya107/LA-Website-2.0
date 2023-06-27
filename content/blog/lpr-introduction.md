@@ -1,6 +1,6 @@
 ---
 title: 'ICAO Language Proficiency: An Introduction'
-description: 'Understanding ICAOs language requirements in aviation'
+description: "Understanding ICAO's language requirements in aviation"
 author: 'Arya Doroudian'
 date: '2023-06-27'
 reading time: '7 minutes'
@@ -26,7 +26,7 @@ ICAO LPR covers six vital areas of language proficiency to ensure effective avia
 
 1. **Pronunciation**: This doesn't mean a person must lose their accent completely. It means that their speech should be understood by others, even if they have an accent. For instance, a pilot from France should pronounce English words in a way that a controller in Australia can clearly understand.
 
-2. **Structure**: This involves the use of grammar and sentence structures correctly. For example, a pilot should be able to correctly form sentences like, "Requesting permission to ascend to 30,000 feet," using the right tense and word order.
+2. **Structure**: This refers to the ability to correctly use grammar and sentence structures. For example, air traffic controllers should be able to properly articulate complex instructions such as, "Turn right heading 270, descend and maintain 3,000 feet, speed 180 knots," in a manner that is grammatically sound and easily understood.
 
 3. **Vocabulary**: It is crucial to use the right terms, especially those specific to aviation. Misuse of terms can lead to misunderstanding. For instance, pilots and air traffic controllers should understand and correctly use terms like "taxi," "hold short," "cleared for takeoff," etc.
 

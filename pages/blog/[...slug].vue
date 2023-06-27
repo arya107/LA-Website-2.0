@@ -16,6 +16,22 @@
         :key="n"
         >{{ tag }}</span
       >
+
+      <!-- Display author name -->
+      <p v-if="data.article.author" class="author">
+        Author: {{ data.article.author }}
+      </p>
+
+      <!-- Display reading time -->
+      <!-- Display reading time -->
+      <p v-if="data.article['reading time']" class="reading-time">
+        Reading Time: {{ data.article['reading time'] }}
+      </p>
+
+      <!-- Display publication date -->
+      <p v-if="data.article.date" class="date">
+        Published on: {{ new Date(data.article.date).toLocaleDateString() }}
+      </p>
     </header>
     <hr class="pb-5" />
     <section class="article-section row g-5">
@@ -73,9 +89,10 @@ useHead({
 }
 
 ::v-deep .article-header h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
+  font-weight: bold !important;
 }
 
 ::v-deep .article-header .lead {

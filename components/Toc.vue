@@ -91,7 +91,8 @@ const flattenLinks = (links) => {
 }
 
 ::v-deep .toc-links a:hover {
-  color: #007bff;
+  color: #007bff !important;
+  text-decoration: underline !important;
 }
 
 ::v-deep .toc-link._3 {

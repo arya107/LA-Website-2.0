@@ -162,7 +162,7 @@ useHead({
 }
 
 ::v-deep .blog-text a {
-  color: #0f172a !important;
+  // color: #0f172a !important;
   text-decoration: none !important;
 }
 

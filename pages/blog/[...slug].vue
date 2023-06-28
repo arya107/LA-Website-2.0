@@ -138,9 +138,9 @@ useHead({
 
 ::v-deep .article-image {
   width: 100%;
-  height: auto;
+  height: 400px;
   object-fit: cover;
-  display: none !important;
+  // display: none !important;
 }
 
 ::v-deep .article-info-row {

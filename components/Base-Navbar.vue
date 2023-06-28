@@ -86,6 +86,7 @@ const navOpen = ref(false);
 .navbar {
   // box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
   border-bottom: 1px solid #0f172a1a !important;
+  background-color: var(--navbar-bg) !important;
 }
 
 .custom-nav-link {
@@ -94,7 +95,8 @@ const navOpen = ref(false);
   text-decoration: none;
   transition: color 0.3s ease;
   padding-right: 1rem !important;
-  color: black;
+  // color: black;
+  color: var(--navbar-text) !important;
 }
 
 .custom-nav-link:hover {
@@ -106,12 +108,18 @@ const navOpen = ref(false);
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
+  color: var(--navbar-text) !important;
 }
 
 /* Use the label to create a custom toggle button */
 #navToggle + label {
   cursor: pointer;
 }
+
+// .navbar-toggler-icon {
+//   // background-color: var(--navbar-text) !important;
+//   border: 1px solid var(--navbar-text) !important;
+// }
 
 /* Show the menu when the checkbox is checked */
 #navToggle:checked ~ .collapse {

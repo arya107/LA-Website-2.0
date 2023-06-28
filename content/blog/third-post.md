@@ -2,7 +2,7 @@
 title: 'This is my third article!'
 description: 'You finally got the point about Nuxt content'
 img: 'img/cover (3).png'
-tags: [Aviation, Helicopters, Content, Learning, third]
+tags: [Aviation, Helicopters]
 ---
 
 # Exploring the Fascinating World of Aviation

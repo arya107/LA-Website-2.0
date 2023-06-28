@@ -25,44 +25,6 @@
         }"
       >
         <template v-slot="{ list }">
-          <!-- <div dir="ltr" class="container mt-4">
-            <div class="row">
-              <div
-                class="col-lg-4 col-md-6 col-sm-12 mb-3"
-                v-for="article in list"
-                :key="article._path"
-              >
-                <NuxtLink
-                  :to="article._path"
-                  class="text-decoration-none text-dark"
-                >
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5 class="card-title">{{ article.title }}</h5>
-                      <p class="card-text">{{ article.description }}</p>
-                      <div class="card-text">
-                        <small
-                          class="badge"
-                          v-for="(tag, n) in article.tags"
-                          :key="n"
-                        >
-                          {{ tag }}
-                        </small>
-                      </div>
-                      <a href="#" class="stretched-link"
-                        >Continue reading
-                        <span>
-                          <font-awesome-icon
-                            :icon="['fas', 'arrow-right']"
-                          /> </span
-                      ></a>
-                    </div>
-                  </div>
-                </NuxtLink>
-              </div>
-            </div>
-          </div> -->
-
           <div dir="ltr" class="container mt-4">
             <div class="row">
               <div
@@ -83,7 +45,7 @@
                     <div class="card__body">
                       <h5 class="card__title">{{ article.title }}</h5>
                       <p class="card__text">{{ article.description }}</p>
-                      <p class="card__text">
+                      <span class="card__tags">
                         <small
                           class="badge"
                           v-for="(tag, n) in article.tags"
@@ -91,7 +53,7 @@
                         >
                           {{ tag }}
                         </small>
-                      </p>
+                      </span>
                     </div>
                   </div>
                 </NuxtLink>
@@ -143,7 +105,7 @@ useHead({
 
 .blog-page__article-img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -155,41 +117,53 @@ useHead({
   transition: all 0.3s linear;
   border: none;
   max-width: 540px;
-  margin: auto;
+  min-height: 350px;
+  position: relative !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 
   &:hover {
-    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+
+    .card__title {
+      text-decoration: underline !important;
+      color: #007fc2 !important;
+    }
+
+    .badge {
+      border: 1px dashed #113bae2b !important;
+    }
   }
 
   .card__body {
     padding: 1.5rem;
-    text-align: justify;
+    text-align: left;
   }
 
   .card__title {
-    margin-bottom: 1rem;
     font-weight: bold;
   }
 
   .card__text {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
   }
-}
 
-.badge {
-  font-size: 0.8rem;
-  line-height: 1rem;
-  color: rgb(29 78 216 / 1) !important;
-  border-radius: 5px;
-  border: 1px solid rgb(29 78 216 / 0.1) !important;
-  background-color: rgb(239 246 255 / 1);
-  padding: 0.25rem 0.75rem;
-  margin: 0 3px 3px 0 !important;
-  // font-family: sans-serif, Arial, Helvetica !important;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif !important;
-  text-transform: uppercase;
-  // font-weight: 600 !important;
+  .card__tags {
+    position: absolute !important;
+    bottom: 0px !important;
+  }
+
+  .badge {
+    font-size: 0.75rem !important;
+    // line-height: 1rem;
+    color: #007fc2 !important;
+    border-radius: 5px;
+    border: 1px solid rgb(29 78 216 / 0.1) !important;
+    background-color: rgb(239 246 255 / 1);
+    padding: 0.25rem 0.65rem;
+    margin: 20px 4px 20px 0 !important;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
 }
 
 @media screen and (max-width: 768px) {

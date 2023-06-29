@@ -143,6 +143,9 @@ h1 {
   .card__body {
     padding: 1.2rem;
     text-align: left;
+    display: flex; // New
+    flex-direction: column; // New
+    justify-content: space-between; // New
   }
 
   .card__title {
@@ -155,19 +158,19 @@ h1 {
     color: var(--blog-card-text) !important;
   }
 
-  .card__tags {
-    position: absolute !important;
-    bottom: 0px !important;
-  }
+  // .card__tags {
+  //   position: absolute !important;
+  //   bottom: 0px !important;
+  // }
 
   .badge {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
     color: var(--blog-tag-text) !important;
     border: 1px solid var(--blog-tag-border) !important;
     background-color: var(--blog-tag-bg) !important;
     border-radius: 5px;
     padding: 0.25rem 0.65rem;
-    margin: 20px 6px 20px 0 !important;
+    margin: 5px 5px 0 0 !important;
     text-transform: uppercase;
     font-weight: bold;
   }

@@ -1,16 +1,19 @@
 <!-- ./pages/blog/tags/[slug].vue -->
 
 <template>
-  <main>
-    <header class="page-heading">
-      <div class="container">
-        <h1 class="display-4 font-weight-bold">
-          All articles with "{{ slug }}"
-        </h1>
-        <p class="font-weight-medium lead">
+  <main class="page">
+    <header class="hero container">
+      <h1 class="page-title">
+        تمام مقالات با: "{{ slug }}"
+        <!-- <p class="font-weight-medium lead page-subtitle">
           Here's a list of all my great articles
-        </p>
-      </div>
+        </p> -->
+        <div>
+          <NuxtLink to="/blog" class="btn btn-outline-primary btn-back">
+            بازگشت به مقالات
+          </NuxtLink>
+        </div>
+      </h1>
     </header>
 
     <section class="page-section">
@@ -29,9 +32,13 @@
         }"
       >
         <template v-slot="{ list }">
-          <div class="container mt-4">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col" v-for="article in list" :key="article._path">
+          <div dir="ltr" class="container my-5">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 mb-3"
+                v-for="article in list"
+                :key="article._path"
+              >
                 <NuxtLink
                   :to="article._path"
                   class="text-decoration-none text-dark"
@@ -40,27 +47,26 @@
                     <img
                       :src="`/${article.img}`"
                       :alt="article.title"
-                      class="card-img-top article-img rounded img-thumbnail"
+                      class="card__img blog-page__article-img"
                     />
-                    <div class="card-body">
-                      <h5 class="card-title h2 font-weight-bold">
+                    <div class="card__body">
+                      <h5 class="card__title">
                         {{ article.title }}
                       </h5>
-                      <p class="card-text">{{ article.description }}</p>
-                      <p class="card-text">
+                      <p class="card__text">
+                        {{ article.description }}
+                      </p>
+                      <span class="card__tags">
                         <small
-                          class="badge bg-primary text-white rounded-pill me-1"
+                          class="badge"
                           v-for="(tag, n) in article.tags"
                           :key="n"
                         >
-                          <NuxtLink
-                            :to="`/blog/tags/${tag}`"
-                            class="text-decoration-none text-white"
-                          >
+                          <NuxtLink :to="`/blog/tags/${tag}`">
                             {{ tag }}
                           </NuxtLink>
                         </small>
-                      </p>
+                      </span>
                     </div>
                   </div>
                 </NuxtLink>
@@ -96,17 +102,107 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
-// .single-article {
-//   margin-bottom: 1em !important;
-//   padding: 20px;
-//   background-color: #e2e8f0;
-//   border: 1px solid #cbd5e1;
-//   border-radius: 15px;
-// }
+.page {
+  min-height: calc(100vh - 7rem);
+  background-color: var(--blog-bg);
+  padding-bottom: 2em;
+}
 
-.article-img {
+h1 {
+  color: var(--blog-title) !important;
+}
+
+.page_title,
+.page_subtitle {
+  color: var(--blog-title) !important;
+}
+
+.btn-back {
+  // color: var(--blog-title) !important;
+  // border: 1px solid var(--blog-title) !important;
+  font-size: 0.8rem !important;
+  margin-top: 1em !important;
+
+  // &:hover {
+  //   color: var(--blog-title) !important;
+  //   text-decoration: underline;
+  // }
+}
+
+.blog-page__article-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card {
+  background-color: var(--blog-card-bg) !important;
+  border-radius: 10px !important;
+  transition: all 0.3s linear;
+  border: none;
+  max-width: 540px;
+  min-height: 400px;
+  position: relative !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+
+  &:hover {
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+
+    .card__title {
+      text-decoration: underline !important;
+      color: #007fc2 !important;
+    }
+  }
+
+  .card__body {
+    padding: 1.2rem !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+
+  .card__title {
+    font-weight: bold;
+    color: var(--blog-card-title) !important;
+  }
+
+  .card__text {
+    font-size: 0.95rem;
+    color: var(--blog-card-text) !important;
+  }
+
+  .badge {
+    font-size: 0.75rem !important;
+    color: var(--blog-tag-text) !important;
+    border: 1px solid var(--blog-tag-border) !important;
+    background-color: var(--blog-tag-bg) !important;
+    border-radius: 5px;
+    padding: 0.25rem 0.65rem;
+    margin: 5px 5px 0 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-page__hero {
+    min-height: 31vh;
+  }
+
+  .blog-page__title {
+    padding: 1.2em 0 0 0;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .blog-page__hero {
+    margin-bottom: 2em;
+  }
 }
 </style>

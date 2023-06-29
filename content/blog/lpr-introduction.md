@@ -4,7 +4,9 @@ description: "Understanding ICAO's language requirements in aviation"
 author: 'Arya Doroudian'
 date: '2023-06-27'
 reading time: '7 minutes'
-img: 'img/cover (1).jpg'
+img: 'img/blogcard/ICAO Language Proficiency - An Introduction.jpg'
+header: 'img/blogheader/ICAO Language Proficiency - An Introduction header.jpg'
+
 tags: ['ICAO', 'Aviation', 'Communication']
 ---
 

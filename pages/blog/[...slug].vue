@@ -1,13 +1,6 @@
 <template>
   <main dir="ltr" id="main" class="article-main container py-md-5 py-3">
     <header v-if="data.article" class="article-header mb-3">
-      <div class="img-cont mb-3">
-        <img
-          :src="`/${data.article.img}`"
-          :alt="data.article.title"
-          class="rounded img-fluid article-image"
-        />
-      </div>
       <h1>{{ data.article.title }}</h1>
       <p class="lead">{{ data.article.description }}</p>
       <span
@@ -16,8 +9,16 @@
         :key="n"
         >{{ tag }}</span
       >
+
+      <div class="img-container">
+        <img
+          :src="`/${data.article.header}`"
+          :alt="data.article.title"
+          class="roundedd img-fluidd article-image"
+        />
+      </div>
+      <hr />
     </header>
-    <hr class="pb-5" />
     <section class="article-section row g-5">
       <article class="article col-12 col-lg-9">
         <ContentRenderer dir="auto" class="blog-text" :value="data.article">
@@ -136,9 +137,14 @@ useHead({
   margin-left: 6px !important;
 }
 
+::v-deep .img-container {
+  // text-align: center !important;
+  padding: 1em 0 !important;
+}
+
 ::v-deep .article-image {
-  width: 100%;
-  height: 400px;
+  width: 100% !important;
+  // height: 400px !important;
   object-fit: cover;
   // display: none !important;
 }
@@ -222,7 +228,7 @@ useHead({
 }
 
 ::v-deep .blog-text a {
-  // color: #0f172a !important;
+  color: #0f172a !important;
   text-decoration: none !important;
 }
 

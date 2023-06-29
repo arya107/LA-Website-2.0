@@ -45,21 +45,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  head() {
-    return {
-      title: `تماس با ما | Learn Aviation`,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'تماس با ما | Learn Aviation',
-        },
-      ],
-    };
-  },
-};
+<script setup>
+// definePageMeta({
+//   colorMode: 'dark',
+// });
+
+// set meta for page
+useHead({
+  title: 'تماس با ما | Learn Aviation',
+  meta: [{ name: 'description', content: 'تماس با ما ' }],
+});
 </script>
 
 <style lang="scss" scoped>

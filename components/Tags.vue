@@ -33,7 +33,7 @@ const expanded = ref(true);
 
 // helper function to flatten tags array
 const flatten = (tags, key) => {
-  console.log(tags);
+  // console.log(tags);
 
   let _tags = tags
     .map((tag) => {

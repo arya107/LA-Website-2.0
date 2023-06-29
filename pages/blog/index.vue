@@ -72,6 +72,7 @@
 
 <script setup>
 definePageMeta({
+  // colorMode: 'light',
   key: (route) => route.fullPath,
 });
 
@@ -98,26 +99,31 @@ useHead({
   padding-bottom: 2em;
 }
 
+h1 {
+  color: var(--blog-title) !important;
+}
+
 .page_title,
 .page_subtitle {
-  color: var(--blog-title);
+  color: var(--blog-title) !important;
 }
 
 .blog-page__article-img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: cover !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .card {
-  box-shadow: 0 4px 6px 0 rgba(151, 151, 151, 0.1);
+  // box-shadow: 0 4px 6px 0 rgba(151, 151, 151, 0.1);
+  background-color: var(--blog-card-bg) !important;
   border-radius: 10px !important;
   transition: all 0.3s linear;
   border: none;
   max-width: 540px;
-  min-height: 350px;
+  min-height: 400px;
   position: relative !important;
   font-family: Arial, Helvetica, sans-serif !important;
 
@@ -129,22 +135,24 @@ useHead({
       color: #007fc2 !important;
     }
 
-    .badge {
-      border: 1px dashed #113bae2b !important;
-    }
+    // .badge {
+    //   border: 1px dashed #fbbc39 !important;
+    // }
   }
 
   .card__body {
-    padding: 1.5rem;
+    padding: 1.2rem;
     text-align: left;
   }
 
   .card__title {
     font-weight: bold;
+    color: var(--blog-card-title) !important;
   }
 
   .card__text {
     font-size: 0.95rem;
+    color: var(--blog-card-text) !important;
   }
 
   .card__tags {
@@ -154,11 +162,10 @@ useHead({
 
   .badge {
     font-size: 0.75rem !important;
-    // line-height: 1rem;
-    color: #007fc2 !important;
+    color: var(--blog-tag-text) !important;
+    border: 1px solid var(--blog-tag-border) !important;
+    background-color: var(--blog-tag-bg) !important;
     border-radius: 5px;
-    border: 1px solid rgb(29 78 216 / 0.1) !important;
-    background-color: rgb(239 246 255 / 1);
     padding: 0.25rem 0.65rem;
     margin: 20px 4px 20px 0 !important;
     text-transform: uppercase;

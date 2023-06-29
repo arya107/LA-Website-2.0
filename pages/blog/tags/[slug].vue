@@ -84,7 +84,7 @@ const {
 } = useRoute();
 
 const filter = slug.split(',');
-console.log({ filter });
+// console.log({ filter });
 
 // set meta for page
 useHead({

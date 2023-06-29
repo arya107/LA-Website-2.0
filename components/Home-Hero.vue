@@ -39,7 +39,7 @@
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
               <span class="btn__text showlarge">Radio Telephony Material</span>
-              <span class="btn__text showmobile">RT Material</span>
+              <span class="btn__text showmobile">Radio Telephony</span>
             </button>
           </nuxt-link>
         </div>
@@ -155,6 +155,10 @@ export default {};
     &:hover {
       box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
       border: 3px dashed #fbbc39 !important;
+
+      .btn__icon {
+        color: #fbbc39 !important;
+      }
     }
 
     &__icon {

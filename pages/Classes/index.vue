@@ -116,7 +116,7 @@
 <style lang="scss" scoped>
 .private-classes-background {
   // background-color: var(--hero-bg) !important;
-  background-color: var(--classes-bg) !important;
+  background-color: #0f172a !important;
   min-height: 80vh !important;
 }
 
@@ -126,14 +126,14 @@
   width: 100%;
   padding: 9px 0;
   background: #027fc2 !important;
-  color: var(--color-white) !important;
+  color: white !important;
   border: 1px solid #0476b4 !important;
   font-family: IranSansBold !important;
 }
 
 .page-title {
   font-size: 1.5rem;
-  color: var(--classes-title) !important;
+  color: white !important;
   font-family: IranSansBold !important;
   text-align: center !important;
   padding-bottom: 2em;

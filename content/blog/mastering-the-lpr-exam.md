@@ -4,11 +4,10 @@ description: 'Learn valuable tips and strategies to ace the LPR exam.'
 author: 'Arya Doroudian'
 date: 'June 26, 2023'
 reading time: '6 minutes'
-img: 'img/cover (2).jpg'
-tags: ['LPR', 'Test Preparation', 'Tips & Tricks']
+img: 'img/blogcard/Mastering the LPR Exam - Your Path to Success.jpg'
+header: 'img/blogheader/Mastering the LPR Exam - Your Path to Success header.jpg'
+tags: ['LPR', 'Test Prep', 'Tips & Tricks']
 ---
-
-![LPR Exam](https://example.com/image.jpg)
 
 ## Introduction
 

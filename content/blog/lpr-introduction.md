@@ -7,7 +7,7 @@ reading time: '7 minutes'
 img: 'img/blogcard/ICAO Language Proficiency - An Introduction.jpg'
 header: 'img/blogheader/ICAO Language Proficiency - An Introduction header.jpg'
 
-tags: ['ICAO', 'Aviation', 'Communication']
+tags: ['ICAO', 'Communication', 'Proficiency']
 ---
 
 ## Introduction

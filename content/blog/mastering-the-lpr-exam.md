@@ -54,7 +54,3 @@ On the day of the exam, remember to stay confident and relaxed. Nervousness can 
 Mastering the LPR exam requires dedication, practice, and strategic preparation. By familiarizing yourself with the exam format, expanding your vocabulary, honing your reading comprehension and grammar skills, managing your time effectively, and seeking guidance when needed, you can confidently tackle the LPR exam and achieve the success you desire. Remember, perseverance and a positive mindset are key to reaching your language proficiency goals. Good luck on your journey towards success!
 
 _Disclaimer: The LPR exam may vary in format and content. Please consult the specific guidelines and syllabus provided by the exam administering authority._
-
-[![Author](https://example.com/author.jpg)](https://example.com/author-page)
-
-_Author: Arya Doroudian_

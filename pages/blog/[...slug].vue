@@ -230,7 +230,7 @@ useHead({
 
 ::v-deep .blog-text a {
   color: var(--blog-main-text) !important;
-  text-decoration: none !important;
+  text-decoration: underline !important;
 }
 
 ::v-deep .blog-text ul,

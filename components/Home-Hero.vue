@@ -25,8 +25,7 @@
     </div>
     <div class="container">
       <div class="row text-center pb-5">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
-          <!-- <nuxt-link to="blog" class="btn__link"> -->
+        <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="learn" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'plane']" class="btn__icon" />
@@ -35,26 +34,27 @@
           </nuxt-link>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
-          <!-- <nuxt-link to="maintenance" class="btn__link"> -->
+        <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="learn" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
-              <span class="btn__text">Radio Telephony Material</span>
+              <span class="btn__text showlarge">Radio Telephony Material</span>
+              <span class="btn__text showmobile">RT Material</span>
             </button>
           </nuxt-link>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+        <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="classes" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'comments']" class="btn__icon" />
-              <span class="btn__text">Aviation English Classes</span>
+              <span class="btn__text showlarge">Aviation English Classes</span>
+              <span class="btn__text showmobile">Aviation English</span>
             </button>
           </nuxt-link>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-3">
+        <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="blog" class="btn__link">
             <button class="btn shadow-sm">
               <font-awesome-icon :icon="['fa', 'book']" class="btn__icon" />
@@ -147,7 +147,10 @@ export default {};
     border: 3px dashed var(--hero-border) !important;
     box-shadow: inset 0 1px 0 0 #ffffff0d !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    text-decoration: none !important;
+
+    a {
+      text-decoration: none !important;
+    }
 
     &:hover {
       box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
@@ -164,6 +167,10 @@ export default {};
       margin-top: 0.5rem !important;
       font-family: sans-serif, Verdana, Geneva, Tahoma !important;
     }
+  }
+
+  .btn__link {
+    text-decoration: none !important;
   }
 }
 
@@ -192,6 +199,9 @@ export default {};
 }
 
 @media screen and (max-width: 768px) {
+  .row {
+    --bs-gutter-x: 0.9rem !important; /* update the value as per your requirement */
+  }
   .hero-content-homepage {
     &__title {
       font-size: 2rem !important;
@@ -214,10 +224,14 @@ export default {};
 
 @media screen and (max-width: 576px) {
   .hero-content-homepage {
-    min-height: 100vh !important;
+    min-height: 85vh !important;
+
+    &__icon {
+      font-size: 3.8rem !important;
+    }
 
     &__container {
-      padding: 1rem 0 1.5rem 0 !important;
+      padding: 0.5rem 0 1.3rem 0 !important;
     }
 
     &__title {
@@ -228,17 +242,44 @@ export default {};
       font-size: 1rem !important;
     }
   }
+
+  .page-bg {
+    .btn {
+      font-size: 0.8rem !important;
+
+      &__icon {
+        font-size: 1.7rem !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
   .hero-content-homepage {
     &__title {
-      font-size: 1.4rem !important;
+      font-size: 1.3rem !important;
     }
 
     &__subtitle {
-      font-size: 0.9rem !important;
+      font-size: 0.85rem !important;
     }
+
+    &__button {
+      font-size: 0.8rem !important;
+      padding: 8px 16px !important;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .showmobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .showlarge {
+    display: none !important;
   }
 }
 </style>

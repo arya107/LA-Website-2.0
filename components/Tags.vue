@@ -3,7 +3,7 @@
 <template>
   <div class="container">
     <div
-      class="tag-list d-flex align-items-center p-2 border-0 rounded"
+      class="tag-list d-flex align-items-center text-center p-2 border-0 rounded"
       :class="{ active: expanded }"
     >
       <!-- Button to toggle expand -->
@@ -17,7 +17,7 @@
       >
         <!-- list out tags with links -->
         <div v-for="(tag, n) in articleTags" :key="n" class="tag pill">
-          <NuxtLink :to="`/blog/tags/${tag}`" class="font-weight-bold">
+          <NuxtLink :to="`/blog/tags/${tag}`">
             {{ tag }}
           </NuxtLink>
         </div>
@@ -73,29 +73,33 @@ console.log({ articleTags });
   padding: 0.7em 1em;
   margin: 0 0 8px 8px !important;
   font-size: 0.8rem;
+  font-weight: bold;
   line-height: 1;
-  /* gray 800 */
-  /* color: #fefce8; */
-  /* gray 200 */
-  background-color: #fbbc39;
-  border: 1px solid #e6ad33;
+  color: var(--blog-tag-text) !important;
+  border: 2px dashed var(--blog-tag-border) !important;
+  background-color: var(--blog-tag-bg) !important;
+  // background-color: #fbbc39;
+  // border: 1px solid #e6ad33;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 5px !important;
-  /* border-radius: 50rem; */
   font-family: Helvetica, Arial, sans-serif !important;
+
+  &:hover {
+    // border: 1px dashed #fbbc39 !important;
+    border: 2px solid var(--blog-tag-border) !important;
+    text-decoration: underline !important;
+  }
 }
 
 a {
-  color: #334155 !important;
+  // color: #334155 !important;
+  color: var(--blog-tag-text) !important;
+  text-transform: uppercase !important;
   text-decoration: none !important;
 }
 
-.pill:hover {
-  color: #fff !important;
-  background-color: #027fc2;
-}
 .tag-list {
   transition: all 0.3s;
 }

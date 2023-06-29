@@ -133,6 +133,7 @@ span {
 .card-text {
   color: #0f172a;
   padding: 0.4em 1em 1em 1em;
+  font-family: IranSans;
 }
 
 :focus {

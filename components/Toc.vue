@@ -51,7 +51,7 @@ const flattenLinks = (links) => {
   overflow: auto;
   padding: 15px;
   font-family: 'Georgia', serif;
-  color: #333;
+  color: var(--blog-toc) !important;
   background-color: #f7f7f7;
   text-align: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -75,13 +75,14 @@ const flattenLinks = (links) => {
   letter-spacing: 1px !important;
   border-bottom: 1px solid #dee2e6 !important;
   border-width: 70% !important;
+  color: var(--blog-toc) !important;
 }
 
 ::v-deep .toc-links,
 ::v-deep a {
   text-decoration: none !important;
   margin-right: 10px !important;
-  color: #555 !important;
+  color: var(--blog-toc) !important;
   display: flex !important;
   flex-direction: column !important;
   gap: 0.5rem !important;

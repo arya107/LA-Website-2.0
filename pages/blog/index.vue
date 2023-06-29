@@ -25,7 +25,7 @@
         }"
       >
         <template v-slot="{ list }">
-          <div dir="ltr" class="container mt-4">
+          <div dir="ltr" class="container my-5">
             <div class="row">
               <div
                 class="col-lg-4 col-md-6 col-sm-12 mb-3"
@@ -110,8 +110,8 @@ h1 {
 
 .blog-page__article-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover !important;
+  // height: 200px;
+  // object-fit: cover !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -161,15 +161,15 @@ h1 {
   }
 
   .badge {
-    font-size: 0.75rem !important;
+    font-size: 0.8rem !important;
     color: var(--blog-tag-text) !important;
     border: 1px solid var(--blog-tag-border) !important;
     background-color: var(--blog-tag-bg) !important;
     border-radius: 5px;
     padding: 0.25rem 0.65rem;
-    margin: 20px 4px 20px 0 !important;
+    margin: 20px 6px 20px 0 !important;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: bold;
   }
 }
 

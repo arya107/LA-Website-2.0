@@ -6,12 +6,14 @@
   --colour-main: #94a3b8;
   --color-primary: #007fc2;
   --color-secondary: #fbbc39;
-  --color-muted: #a5e0ff;
+  --color-muted: #81bdde;
   --color-white: #fff;
   --bg: #f8fafc;
   --bg-secondary: #007fc2;
   --bg-blue: #007fc2;
   --border-color: #ced0d4;
+
+  // HERO COMPONENT
   --hero-bg: #007fc2;
   --hero-text: #fff;
   --hero-border: #0e97e0;
@@ -21,10 +23,12 @@
   --navbar-bg: #f1f5f9;
   --navbar-text: #0f172a;
 
+  // FOOTER COMPONENT
+  --footer-bg: #f1f5f9;
+  --footer-text: #ffffff;
+
   // BLOG PAGE
   --blog-bg: #f1f5f9;
-  // --blog-page-title: #0f172a
-  // --blog-page-subtitle: #0f172a
   --blog-title: #0f172a;
   --blog-card-bg: #fff;
   --blog-card-title: #0f172a;
@@ -32,6 +36,7 @@
   --blog-tag-bg: rgb(96 165 250 / 0.1);
   --blog-tag-border: rgb(96 165 250 / 0.3);
   --blog-tag-text: rgb(96 165 250 / 1);
+  --blog-info-border: #c3c8cc;
 
   // CLASSES PAGE
   --classes-bg: #f1f5f9;
@@ -52,14 +57,20 @@
   --bg-secondary: #0e2338;
   --bg-blue: #0f172a;
   --border-color: #e5e7eb;
+
+  // HERO COMPONENT
   --hero-bg: #0f172a;
   --hero-text: #fff;
   --hero-border: #1d2e52;
   --hero-button-bg: #131e36;
 
-  // NAVBAR
+  // NAVBAR COMPONENT
   --navbar-bg: #0f172a;
   --navbar-text: #fff;
+
+  // FOOTER COMPONENT
+  --footer-bg: #0f172a;
+  --footer-text: #5770ac;
 
   // CLASSES PAGE
   --classes-bg: #0f172a;
@@ -74,6 +85,9 @@
   --blog-tag-bg: rgb(250 204 21 / 0.1);
   --blog-tag-border: rgb(250 204 21 / 0.2);
   --blog-tag-text: rgb(234 179 8 / 1);
+  --blog-main-text: #d9dce1;
+  --blog-toc: #b5b9c1;
+  --blog-info-border: #1c2949;
 }
 
 .sepia-mode {

@@ -47,7 +47,7 @@ export default {};
 .footer__copyright {
   font-size: 0.8rem !important;
   font-family: IranSans !important;
-  color: var(--color-muted) !important;
+  color: var(--footer-text) !important;
   direction: rtl !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -56,13 +56,13 @@ export default {};
 .footer__copyright-link {
   font-family: IranSans !important;
   text-decoration: none !important;
-  color: var(--color-muted) !important;
+  color: var(--footer-text) !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .footer__copyright-icon {
-  color: var(--color-muted) !important;
+  color: var(--footer-text) !important;
 }
 
 .footer__mode-switcher {

@@ -7,7 +7,7 @@
   "author": "Arya Doroudian",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "build": "nuxt build",
@@ -16,7 +16,7 @@
     "start": "nuxt start",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build:digitalocean": "npm install && npm run build"
+    "build:digitalocean": "yarn install && yarn run build"
   },
   "devDependencies": {
     "@nuxt/content": "^2.7.0",

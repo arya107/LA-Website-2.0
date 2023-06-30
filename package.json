@@ -1,5 +1,5 @@
 {
-  "name": "learn-aviation-v2",
+  "name": "learn-aviation-v3",
   "license": "UNLICENSED",
   "description": "Learn Aviation | Discover a World of Aviation Training",
   "version": "3.0.0",
@@ -7,7 +7,7 @@
   "author": "Arya Doroudian",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "scripts": {
     "build": "nuxt build",

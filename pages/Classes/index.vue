@@ -113,6 +113,16 @@
   </div>
 </template>
 
+<script setup>
+// SET META FOR PAGE
+useHead({
+  title: `کلاس های خصوصی ما | Learn Aviation`,
+  meta: [
+    { name: 'description', content: 'کلاس های خصوصی ما | Learn Aviation' },
+  ],
+});
+</script>
+
 <style lang="scss" scoped>
 .private-classes-background {
   // background-color: var(--hero-bg) !important;

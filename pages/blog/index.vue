@@ -85,9 +85,9 @@ const filter = ref(tags?.split(','));
 
 // set meta for page
 useHead({
-  title: 'All articles',
+  title: `مقالات آموزش هوانوردی | Learn Aviation`,
   meta: [
-    { name: 'description', content: "Here's a list of all our great articles" },
+    { name: 'description', content: 'مقالات آموزش هوانوردی | Learn Aviation' },
   ],
 });
 </script>

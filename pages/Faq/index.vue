@@ -82,25 +82,13 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  layout: 'maintenance',
-
-  components: {},
-  head() {
-    return {
-      title: ` سوالات متداول | Learn Aviation`,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: ' سوالات متداول | Learn Aviation',
-        },
-      ],
-    };
-  },
-};
-</script> -->
+<script setup>
+// SET META FOR PAGE
+useHead({
+  title: ` سوالات متداول | Learn Aviation`,
+  meta: [{ name: 'description', content: ' سوالات متداول | Learn Aviation' }],
+});
+</script>
 
 <style lang="scss" scoped>
 .bg {

@@ -20,21 +20,11 @@ definePageMeta({
   layout: 'maintenance',
 });
 
-// export default {
-//   layout: 'maintenance',
-//   head() {
-//     return {
-//       title: `اتاق آموزش | Learn Aviation`,
-//       meta: [
-//         {
-//           hid: 'description',
-//           name: 'description',
-//           content: 'اتاق آموزش | Learn Aviation',
-//         },
-//       ],
-//     };
-//   },
-// };
+// SET META FOR PAGE
+useHead({
+  title: `اتاق آموزش | Learn Aviation`,
+  meta: [{ name: 'description', content: 'اتاق آموزش | Learn Aviation' }],
+});
 </script>
 
 <style lang="scss" scoped>

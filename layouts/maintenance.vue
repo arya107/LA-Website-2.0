@@ -18,6 +18,16 @@
   </div>
 </template>
 
+<script setup>
+// SET META FOR PAGE
+useHead({
+  title: `سایت در حال تعمیر است | Learn Aviation`,
+  meta: [
+    { name: 'description', content: 'سایت در حال تعمیر است | Learn Aviation' },
+  ],
+});
+</script>
+
 <style lang="scss" scoped>
 .hero-content-homepage {
   background-color: #ff0066 !important;

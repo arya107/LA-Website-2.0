@@ -46,14 +46,10 @@
 </template>
 
 <script setup>
-// definePageMeta({
-//   colorMode: 'dark',
-// });
-
-// set meta for page
+// SET META FOR PAGE
 useHead({
-  title: 'تماس با ما | Learn Aviation',
-  meta: [{ name: 'description', content: 'تماس با ما ' }],
+  title: `تماس با ما | Learn Aviation`,
+  meta: [{ name: 'description', content: 'تماس با ما | Learn Aviation' }],
 });
 </script>
 

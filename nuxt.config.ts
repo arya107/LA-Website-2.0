@@ -34,6 +34,12 @@ export default defineNuxtConfig({
     id: 'G-4325YB08P9',
   },
 
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://learn-aviation.com',
+    },
+  },
+
   pwa: {
     manifest: {
       name: 'Learn Aviation',

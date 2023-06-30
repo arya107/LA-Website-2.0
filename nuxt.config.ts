@@ -104,9 +104,7 @@ export default defineNuxtConfig({
     enabled: false,
   },
 
-  ssr: false,
-
-  // target: 'static',
+  // ssr: false,
 
   // nitro: {
   //   prerender: {

@@ -160,6 +160,7 @@ ul {
 }
 
 .private-classes {
+  padding-bottom: 2em !important;
   .pricing {
     position: relative;
   }
@@ -296,23 +297,23 @@ ul {
 
 @media only screen and (max-width: 991px) {
   .private-classes {
-    padding: 0 28% !important;
+    padding: 0 20% !important;
   }
 
-  .custom-title {
-    padding-bottom: 2em !important;
+  .page-title {
+    padding-bottom: 1.8em !important;
   }
 }
 
 @media only screen and (max-width: 750px) {
   .private-classes {
-    padding: 0 16% !important;
+    padding: 0 16% 3em 16% !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .private-classes {
-    padding: 0 7% !important;
+    padding: 0 7% 3em 7% !important;
   }
 }
 

@@ -27,7 +27,7 @@
       <div class="row text-center pb-5">
         <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="learn" class="btn__link">
-            <button class="btn shadow-sm">
+            <button class="btn">
               <font-awesome-icon :icon="['fa', 'plane']" class="btn__icon" />
               <span class="btn__text">LPR Training Material</span>
             </button>
@@ -36,7 +36,7 @@
 
         <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="learn" class="btn__link">
-            <button class="btn shadow-sm">
+            <button class="btn">
               <font-awesome-icon :icon="['fa', 'headset']" class="btn__icon" />
               <span class="btn__text showlarge">Radio Telephony Material</span>
               <span class="btn__text showmobile">Radio Telephony</span>
@@ -46,7 +46,7 @@
 
         <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="classes" class="btn__link">
-            <button class="btn shadow-sm">
+            <button class="btn">
               <font-awesome-icon :icon="['fa', 'comments']" class="btn__icon" />
               <span class="btn__text showlarge">Aviation English Classes</span>
               <span class="btn__text showmobile">Aviation English</span>
@@ -56,7 +56,7 @@
 
         <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="blog" class="btn__link">
-            <button class="btn shadow-sm">
+            <button class="btn">
               <font-awesome-icon :icon="['fa', 'book']" class="btn__icon" />
               <span class="btn__text">Aviation Articles</span>
             </button>
@@ -139,21 +139,22 @@ export default {};
     align-items: center !important;
     justify-content: center !important;
     font-size: 1rem !important;
-    border-radius: 18px !important;
+    border-radius: 15px !important;
     width: 100% !important;
-    height: 130px !important;
+    height: 125px !important;
     background-color: var(--hero-button-bg) !important;
     color: var(--hero-text) !important;
-    border: 3px dashed var(--hero-border) !important;
-    box-shadow: inset 0 1px 0 0 #ffffff0d !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    border: 3px solid var(--hero-border) !important;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.02) !important;
 
     a {
       text-decoration: none !important;
     }
 
     &:hover {
-      box-shadow: 0 9px 8px rgba(0, 0, 0, 0.01), 0 5px 2px rgba(0, 0, 0, 0.03) !important;
       border: 3px dashed #fbbc39 !important;
 
       .btn__icon {
@@ -162,14 +163,9 @@ export default {};
     }
 
     &__icon {
-      font-size: 2rem !important;
-      padding-bottom: 0.8rem !important;
+      font-size: 1.9rem !important;
+      padding-bottom: 0.9rem !important;
       color: var(--hero-text) !important;
-    }
-
-    &__text {
-      margin-top: 0.5rem !important;
-      font-family: sans-serif, Verdana, Geneva, Tahoma !important;
     }
   }
 
@@ -231,7 +227,7 @@ export default {};
     min-height: 85vh !important;
 
     &__icon {
-      font-size: 3.8rem !important;
+      font-size: 4.1rem !important;
     }
 
     &__container {
@@ -249,10 +245,12 @@ export default {};
 
   .page-bg {
     .btn {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
+      border: 2px solid var(--hero-border) !important;
 
       &__icon {
-        font-size: 1.7rem !important;
+        font-size: 2rem !important;
+        padding-top: 0.3rem !important;
       }
     }
   }

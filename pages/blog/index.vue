@@ -25,7 +25,7 @@
         }"
       >
         <template v-slot="{ list }">
-          <div dir="ltr" class="container my-5">
+          <div dir="ltr" class="container mt-3 mb-5">
             <div class="row">
               <div
                 class="col-lg-4 col-md-6 col-sm-12 mb-3"

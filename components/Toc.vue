@@ -71,7 +71,7 @@ const flattenLinks = (links) => {
   margin-bottom: 1.3rem !important;
   padding-bottom: 0.3rem !important;
   text-transform: uppercase !important;
-  font-style: italic !important;
+  // font-style: italic !important;
   letter-spacing: 1px !important;
   border-bottom: 1px solid #dee2e6 !important;
   border-width: 70% !important;

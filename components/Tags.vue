@@ -93,6 +93,12 @@ console.log({ articleTags });
   }
 }
 
+@media screen and (max-width: 576px) {
+  .pill {
+    font-size: 0.6rem;
+  }
+}
+
 a {
   // color: #334155 !important;
   color: var(--blog-tag-text) !important;

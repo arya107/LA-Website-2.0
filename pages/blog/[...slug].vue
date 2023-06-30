@@ -11,17 +11,24 @@
           >{{ tag }}</span
         >
 
-        <div class="img-container">
+        <!-- <div class="img-container">
           <img
             :src="`/${data.article.header}`"
             :alt="data.article.title"
             class="rounded img-fluid article-image"
           />
-        </div>
+        </div> -->
         <hr />
       </header>
       <section class="article-section row g-5">
         <article class="article col-12 col-lg-9">
+          <div class="img-container">
+            <img
+              :src="`/${data.article.header}`"
+              :alt="data.article.title"
+              class="rounded img-fluid article-image"
+            />
+          </div>
           <ContentRenderer dir="auto" class="blog-text" :value="data.article">
             <template #empty>
               <p>No content found.</p>

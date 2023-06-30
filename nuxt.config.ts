@@ -100,19 +100,17 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
-  // content: {
-  //   https://content.nuxtjs.org/api/configuration
-  // },
-
   devtools: {
     enabled: false,
   },
 
   ssr: false,
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
+  // target: 'static',
+
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
 });

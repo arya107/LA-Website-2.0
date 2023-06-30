@@ -20,7 +20,6 @@
   "devDependencies": {
     "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "^0.6.4",
-    "@types/node": "^16",
     "@vite-pwa/nuxt": "^0.1.0",
     "nuxi": "^3.6.1",
     "nuxt": "^3.6.1",

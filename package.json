@@ -16,7 +16,7 @@
     "start": "nuxt start",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build:digitalocean": "yarn install && yarn run build"
+    "build:digitalocean": "npm install && npm run build"
   },
   "devDependencies": {
     "@nuxt/content": "^2.7.0",

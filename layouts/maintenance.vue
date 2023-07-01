@@ -32,8 +32,8 @@ useHead({
 .hero-content-homepage {
   background-color: #ff0066 !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.2' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.2'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-  //   min-height: calc(100vh - 110px) !important;
-  min-height: 100vh !important;
+  // min-height: calc(100vh - 110px) !important;
+  height: 100vh !important;
 
   .hero-text-section {
     position: absolute;

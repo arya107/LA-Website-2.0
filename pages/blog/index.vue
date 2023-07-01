@@ -36,7 +36,7 @@
                   :to="article._path"
                   class="text-decoration-none text-dark"
                 >
-                  <div class="card h-100">
+                  <div class="card h-10">
                     <img
                       :src="`/${article.img}`"
                       :alt="article.title"
@@ -110,8 +110,7 @@ h1 {
 
 .blog-page__article-img {
   width: 100%;
-  // height: 200px;
-  // object-fit: cover !important;
+  object-fit: cover !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -124,6 +123,7 @@ h1 {
   border: none;
   max-width: 540px;
   min-height: 400px;
+  margin-top: 2em !important;
   position: relative !important;
   font-family: Arial, Helvetica, sans-serif !important;
 

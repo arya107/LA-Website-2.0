@@ -69,7 +69,7 @@ p {
 }
 .preferred .feather {
   border-color: var(--colourpicker-border);
-  color: var(--color-white);
+  // color: var(--color-white);
 
   /* top: -3px; */
 }

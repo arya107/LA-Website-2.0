@@ -141,7 +141,7 @@ export default {};
     font-size: 1rem !important;
     border-radius: 15px !important;
     width: 100% !important;
-    height: 125px !important;
+    height: 115px !important;
     background-color: var(--hero-button-bg) !important;
     color: var(--hero-text) !important;
     border: 2px solid var(--hero-border) !important;

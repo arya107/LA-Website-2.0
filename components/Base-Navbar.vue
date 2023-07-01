@@ -113,26 +113,27 @@ const navOpen = ref(false);
 }
 
 @media (max-width: 991px) {
-  .navbar-toggler {
-    display: block !important;
-  }
+  // .navbar-toggler {
+  //   display: block !important;
+  // }
 }
 
 .navbar-toggler-icon {
+  background-image: none !important;
   span {
-    // display: block;
-    height: 2px;
+    display: block;
+    height: 3px;
     background-color: var(--navbar-text);
     margin: 5px 0;
   }
 }
 
-#navToggle {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  pointer-events: none;
-  color: var(--navbar-text) !important;
-}
+// #navToggle {
+//   position: absolute;
+//   clip: rect(0, 0, 0, 0);
+//   pointer-events: none;
+//   color: var(--navbar-text) !important;
+// }
 
 #navToggle + label {
   cursor: pointer;

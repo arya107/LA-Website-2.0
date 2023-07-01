@@ -71,24 +71,21 @@ console.log({ articleTags });
 .pill {
   display: inline-block;
   padding: 0.7em 1em;
-  margin: 0 0 8px 8px !important;
-  font-size: 0.8rem;
+  margin: 0 0 10px 10px !important;
+  font-size: 0.7rem !important;
   font-weight: bold;
   line-height: 1;
   color: var(--blog-tag-text) !important;
-  border: 2px dashed var(--blog-tag-border) !important;
+  border: 1px solid var(--blog-tag-border) !important;
   background-color: var(--blog-tag-bg) !important;
-  // background-color: #fbbc39;
-  // border: 1px solid #e6ad33;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 5px !important;
-  font-family: Helvetica, Arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
 
   &:hover {
-    // border: 1px dashed #fbbc39 !important;
-    border: 2px solid var(--blog-tag-border) !important;
+    border: 1px dashed var(--blog-tag-border) !important;
     text-decoration: underline !important;
   }
 }
@@ -100,7 +97,6 @@ console.log({ articleTags });
 }
 
 a {
-  // color: #334155 !important;
   color: var(--blog-tag-text) !important;
   text-transform: uppercase !important;
   text-decoration: none !important;

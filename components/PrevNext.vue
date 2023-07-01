@@ -28,8 +28,8 @@ defineProps(['prev', 'next']);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  // border: 1px solid #ced4da; /* closest to slate-200 */
-  border: 1px solid #e1e3e5 !important;
+  // border: 1px solid #e1e3e5 !important;
+  border: 1px solid var(--prevnext-border) !important;
   border-radius: 10px !important;
   margin-top: 1.5rem !important;
 }
@@ -40,6 +40,8 @@ defineProps(['prev', 'next']);
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  font-size: 0.9rem !important;
+  color: var(--blog-main-text) !important;
 
   &:hover {
     text-decoration: underline !important;

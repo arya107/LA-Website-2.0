@@ -77,7 +77,7 @@
           </div>
         </aside>
       </section>
-      <PrevNext :prev="prev" :next="next" />
+      <PrevNext class="mb-3" :prev="prev" :next="next" />
     </main>
   </div>
 </template>
@@ -161,10 +161,11 @@ useHead({
 ::v-deep .article-image {
   width: 100% !important;
   object-fit: cover;
+  margin-bottom: 2em;
 }
 
 ::v-deep .article-info-row {
-  margin-top: 2em !important;
+  margin-top: 3em !important;
   color: var(--blog-toc) !important;
   border: 2px dashed var(--blog-info-border) !important;
   border-radius: 10px !important;

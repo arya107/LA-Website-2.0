@@ -144,18 +144,16 @@ export default {};
     height: 125px !important;
     background-color: var(--hero-button-bg) !important;
     color: var(--hero-text) !important;
-    border: 3px solid var(--hero-border) !important;
-    // font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    border: 2px solid var(--hero-border) !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    // font-weight: bold !important;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.02) !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.03);
 
     a {
       text-decoration: none !important;
     }
 
     &:hover {
-      border: 3px dashed #fbbc39 !important;
+      border: 2px dashed #fbbc39 !important;
 
       .btn__icon {
         color: #fbbc39 !important;
@@ -232,7 +230,7 @@ export default {};
 
 @media screen and (max-width: 576px) {
   .hero-content-homepage {
-    // min-height: 85vh !important;
+    min-height: 80vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +272,8 @@ export default {};
 @media screen and (max-width: 480px) {
   .hero-content-homepage {
     &__title {
-      font-size: 1.3rem !important;
+      font-size: 1.45rem !important;
+      padding: 0 10px !important;
     }
 
     &__subtitle {

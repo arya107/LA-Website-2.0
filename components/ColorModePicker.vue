@@ -55,23 +55,26 @@ p {
   top: 0px;
   cursor: pointer;
   padding: 7px;
-  color: var(--color-white);
+  color: var(--colourpicker-text);
   background-color: transparent !important;
-  border: 2px solid var(--color-muted);
+  border: 2px solid var(--colourpicker-border);
   margin: 0;
   border-radius: 5px;
   transition: all 0.1s ease;
 }
 .feather:hover {
-  top: -3px;
+  top: -2px;
+  border: 2px solid white;
+  color: white;
 }
 .preferred .feather {
-  border-color: var(--color-muted);
+  border-color: var(--colourpicker-border);
   color: var(--color-white);
 
   /* top: -3px; */
 }
 .selected .feather {
-  color: var(--color-white);
+  color: rgba(255, 255, 255, 0.7);
+  border: 2px dashed var(--colourpicker-border);
 }
 </style>

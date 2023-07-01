@@ -164,7 +164,7 @@ useHead({
 }
 
 ::v-deep .article-info-row {
-  margin-top: 4em !important;
+  margin-top: 2em !important;
   color: var(--blog-toc) !important;
   border: 2px dashed var(--blog-info-border) !important;
   border-radius: 10px !important;
@@ -183,12 +183,6 @@ useHead({
 
 ::v-deep .article-section {
   margin-bottom: 4rem !important;
-}
-
-::v-deep .toc {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 1rem;
 }
 
 ::v-deep .blog-text {
@@ -261,6 +255,11 @@ useHead({
 }
 
 @media (min-width: 992px) {
+  ::v-deep .toc {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+  }
   ::v-deep .article-info-row {
     margin-top: 4em !important;
   }

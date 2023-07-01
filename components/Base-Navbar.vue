@@ -111,6 +111,7 @@ const navOpen = ref(false);
   display: none !important;
   border: 1px solid white;
 }
+
 @media (max-width: 991px) {
   .navbar-toggler {
     display: block !important;
@@ -119,7 +120,7 @@ const navOpen = ref(false);
 
 .navbar-toggler-icon {
   span {
-    display: block;
+    // display: block;
     height: 2px;
     background-color: var(--navbar-text);
     margin: 5px 0;
@@ -153,6 +154,10 @@ const navOpen = ref(false);
   .navbar {
     height: 55px !important;
   }
+
+  // .navbar-toggler-icon span {
+  //   display: none !important;
+  // }
 
   .nav-item {
     margin-right: 1.6em !important;

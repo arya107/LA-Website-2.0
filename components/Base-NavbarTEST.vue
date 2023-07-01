@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <NuxtLink class="navbar-brand large" to="/">
         <img
@@ -23,21 +23,11 @@
         type="checkbox"
         id="navToggle"
       />
-      <!-- <label
-        class="navbar-toggler-icon d-lg-none"
-        for="navToggle"
-        @click="navOpen = !navOpen"
-      ></label> -->
-
       <label
         class="navbar-toggler-icon d-lg-none"
         for="navToggle"
         @click="navOpen = !navOpen"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+      ></label>
 
       <div class="collapse navbar-collapse" :class="{ show: navOpen }">
         <ul class="navbar-nav ms-auto">
@@ -113,27 +103,6 @@ const navOpen = ref(false);
   color: #007fc2;
 }
 
-.navbar-toggler {
-  display: none !important;
-  border: 1px solid white;
-}
-@media (max-width: 991px) {
-  // Other styles here
-  .navbar-toggler {
-    display: block !important;
-  }
-}
-
-.navbar-toggler-icon {
-  span {
-    display: block;
-    // width: 30px;
-    height: 2px;
-    background-color: white; // Change this to any color you want
-    margin: 5px 0;
-  }
-}
-
 /* Hide the input checkbox */
 #navToggle {
   position: absolute;
@@ -188,7 +157,6 @@ const navOpen = ref(false);
   .nav-item {
     padding: 14px 0 !important;
     margin-right: 0 !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .custom-nav-link {

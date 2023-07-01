@@ -4,8 +4,8 @@
       <NuxtLink class="navbar-brand large" to="/">
         <img
           src="~public/img/learn-aviation-logo.svg"
-          width="45"
-          height="45"
+          width="40"
+          height="40"
           alt="Learn Aviation Logo"
         />
       </NuxtLink>
@@ -13,21 +13,16 @@
       <a class="custom-nav-link mobile" href="/">
         <img
           src="~public/img/learn-aviation-logo.svg"
-          width="45"
-          height="45"
+          width="40"
+          height="40"
           alt="Learn Aviation Logo"
       /></a>
 
-      <input
+      <!-- <input
         class="btn navbar-toggler d-lg-none"
         type="checkbox"
         id="navToggle"
-      />
-      <!-- <label
-        class="navbar-toggler-icon d-lg-none"
-        for="navToggle"
-        @click="navOpen = !navOpen"
-      ></label> -->
+      /> -->
 
       <label
         class="navbar-toggler-icon d-lg-none"
@@ -94,7 +89,6 @@ const navOpen = ref(false);
 
 <style lang="scss">
 .navbar {
-  // box-shadow: 0 4px 2px -2px hsla(0, 0%, 60%, 0.5) !important;
   border-bottom: 1px solid #0f172a1a !important;
   background-color: var(--navbar-bg) !important;
 }
@@ -103,14 +97,14 @@ const navOpen = ref(false);
   font-family: IranSans;
   font-size: 0.9rem !important;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   padding-right: 1rem !important;
-  // color: black;
   color: var(--navbar-text) !important;
 }
 
 .custom-nav-link:hover {
-  color: #007fc2;
+  color: #007fc2 !important;
+  text-decoration: underline !important;
 }
 
 .navbar-toggler {
@@ -118,7 +112,6 @@ const navOpen = ref(false);
   border: 1px solid white;
 }
 @media (max-width: 991px) {
-  // Other styles here
   .navbar-toggler {
     display: block !important;
   }
@@ -127,14 +120,12 @@ const navOpen = ref(false);
 .navbar-toggler-icon {
   span {
     display: block;
-    // width: 30px;
     height: 2px;
-    background-color: white; // Change this to any color you want
+    background-color: var(--navbar-text);
     margin: 5px 0;
   }
 }
 
-/* Hide the input checkbox */
 #navToggle {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -142,22 +133,14 @@ const navOpen = ref(false);
   color: var(--navbar-text) !important;
 }
 
-/* Use the label to create a custom toggle button */
 #navToggle + label {
   cursor: pointer;
 }
 
-// .navbar-toggler-icon {
-//   // background-color: var(--navbar-text) !important;
-//   border: 1px solid var(--navbar-text) !important;
-// }
-
-/* Show the menu when the checkbox is checked */
 #navToggle:checked ~ .collapse {
   display: block;
 }
 
-/* Smooth transition */
 .collapse {
   transition: height 0.3s ease;
 }
@@ -179,7 +162,6 @@ const navOpen = ref(false);
   }
 }
 
-/* Hide the navbar when not expanded on small screens */
 @media (max-width: 991px) {
   .collapse:not(.show) {
     display: none;

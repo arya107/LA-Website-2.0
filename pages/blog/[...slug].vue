@@ -261,6 +261,9 @@ useHead({
 }
 
 @media (min-width: 992px) {
+  ::v-deep .article-info-row {
+    margin-top: 4em !important;
+  }
   ::v-deep .article-header h1 {
     font-size: 2.6rem !important;
   }

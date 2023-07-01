@@ -307,7 +307,7 @@ ul {
 
 @media only screen and (max-width: 750px) {
   .private-classes {
-    padding: 0 16% 3em 16% !important;
+    padding: 0 14% 3em 14% !important;
   }
 }
 

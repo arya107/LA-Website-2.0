@@ -11,7 +11,7 @@
         <p class="hero-content-homepage__subtitle">
           هدف ما آموزش اصولی زبان هوانوردی و پیشرفت سطح دانش زبان شما.
         </p>
-        <div class="hero-content-homepage__button-container">
+        <div class="hero-content-homepage__button-container showlarge">
           <nuxt-link to="classes">
             <button class="hero-content-homepage__button">
               <span class="hero-content-homepage__button-icon">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container button-container">
       <div class="row text-center pb-5">
         <div class="col-lg-3 col-md-6 col-6 mb-3">
           <nuxt-link to="learn" class="btn__link">
@@ -73,7 +73,7 @@ export default {};
 
 <style lang="scss" scoped>
 .hero-content-homepage {
-  min-height: calc(100vh - 110px) !important;
+  // min-height: calc(100vh - 110px) !important;
   background-color: var(--hero-bg) !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 90 90'%3E%3Ccircle fill-opacity='0.05' fill='%23FFFFFF' cx='45' cy='45' r='5'/%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E") !important;
 
@@ -82,7 +82,7 @@ export default {};
   }
 
   &__icon {
-    font-size: 4.3rem !important;
+    font-size: 4.5rem !important;
     color: var(--hero-text) !important;
     display: block !important;
     text-align: center !important;
@@ -147,7 +147,7 @@ export default {};
     border: 3px solid var(--hero-border) !important;
     // font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: bold !important;
+    // font-weight: bold !important;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.02) !important;
 
     a {
@@ -174,6 +174,12 @@ export default {};
   }
 }
 
+@media screen and (min-width: 991px) {
+  .hero-content-homepage {
+    min-height: calc(100vh - 110px) !important;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero-content-homepage {
     &__title {
@@ -188,6 +194,8 @@ export default {};
 
 @media screen and (max-width: 992px) {
   .hero-content-homepage {
+    min-height: calc(100vh - 110px) !important;
+
     &__title {
       font-size: 2.4rem !important;
     }
@@ -224,7 +232,10 @@ export default {};
 
 @media screen and (max-width: 576px) {
   .hero-content-homepage {
-    min-height: 85vh !important;
+    // min-height: 85vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__icon {
       font-size: 4.1rem !important;
@@ -241,6 +252,10 @@ export default {};
     &__subtitle {
       font-size: 1rem !important;
     }
+  }
+
+  .hero-content-homepage__text-section {
+    padding-bottom: 2em !important;
   }
 
   .page-bg {

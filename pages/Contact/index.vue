@@ -64,12 +64,12 @@ useHead({
 .title {
   font-size: 1.8rem !important;
   font-family: IranSansBold !important;
-  color: var(--color-white);
+  color: var(--contact-text) !important;
 }
 
 .subtitle {
   font-size: 1.1rem !important;
-  color: var(--color-white);
+  color: var(--contact-text) !important;
   padding-top: 6px;
   margin-bottom: 6em !important;
   font-family: IranSans !important;

@@ -2,7 +2,7 @@
   <div>
     <section dir="rtl" class="hero-content-homepage">
       <div class="container hero-text-section">
-        <h1 class="hero-title">Under Maintenance</h1>
+        <h1 class="hero-title">UNDER MAINTENANCE</h1>
         <p class="hero-subtitle pt-1 pb-3">سایت در حال بروز رسانی می باشد.</p>
 
         <nuxt-link to="/">
@@ -46,7 +46,7 @@ useHead({
   .hero-title {
     font-size: 3.6em;
     font-family: 'Arial Black', Arial, sans-serif !important;
-    font-weight: bolder;
+    font-weight: 800 !important;
     color: #fff;
     // padding-top: 2em;
     direction: ltr !important;

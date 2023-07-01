@@ -144,7 +144,7 @@ export default {};
     height: 115px !important;
     background-color: var(--hero-button-bg) !important;
     color: var(--hero-text) !important;
-    border: 2px solid var(--hero-border) !important;
+    border: 3px dashed var(--hero-border) !important;
     font-family: Arial, Helvetica, sans-serif !important;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.03);
 
@@ -153,7 +153,7 @@ export default {};
     }
 
     &:hover {
-      border: 2px dashed #fbbc39 !important;
+      border: 3px solid #fbbc39 !important;
 
       .btn__icon {
         color: #fbbc39 !important;
@@ -230,7 +230,7 @@ export default {};
 
 @media screen and (max-width: 576px) {
   .hero-content-homepage {
-    min-height: 80vh !important;
+    min-height: 75vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
